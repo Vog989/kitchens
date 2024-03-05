@@ -1,11 +1,10 @@
-@import "normalize.css";
 html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before {
+*::before{
   box-sizing: inherit;
 }
 
@@ -52,5 +51,3 @@ select {
 a {
   text-decoration: none;
 }
-
-/*# sourceMappingURL=style.css.map */
