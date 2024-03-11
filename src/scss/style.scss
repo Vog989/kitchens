@@ -40,6 +40,13 @@
 
 .user-nav {
   &__link {
+    display: inline-block;
+    background-color: $accent;
+    padding: 3px;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
     font-size: 16px;
     color: $text;
   }
