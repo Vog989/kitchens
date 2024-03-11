@@ -1,13 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kitchens</title>
-  </head>
-  <body>
-    <div id="app">
+    <link rel="stylesheet" href="src/scss/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo" href="#">
+                <img class="logo__img" src="src/images/logo.png" alt="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--active" href="#">Home</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">About Us</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">How It Works</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Residential</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Projects</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Hardware & Accessories</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-nav">
+                <a class="user-nav__link" href="#">Start here</a>
+            </div>
+        </div>
     </div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+</header>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
 </html>

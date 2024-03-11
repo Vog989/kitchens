@@ -3,4 +3,46 @@
 @import "fonts";
 @import "reset";
 @import "global";
+
+.header {
+  padding: 20px 0;
+  height: 80px;
+  background-color: $background;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 40px;
+  }
+  &__list-link {
+    color: $text;
+    font-size: 16px;
+    padding-bottom: 2px;
+    border-radius: 1px;
+    transition: all .2s;
+    &:hover {
+      color: $accent;
+      border-bottom: 2px solid $accent;
+    }
+  }
+  &__list-link--active {
+    color: $accent;
+    border-bottom: 2px solid $accent;
+  }
+}
+
+.user-nav {
+  &__link {
+    font-size: 16px;
+    color: $text;
+  }
+}
+
 @import "media";
