@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'FiraSans-Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local('FiraSans-Regular'),
+  url("../fonts/FiraSans-Regular.woff2") format('woff2'),
+  url("../fonts/FiraSans-Regular.woff") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraSans-Bold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local('FiraSans-Bold'),
+  url("../fonts/FiraSans-Bold.woff2") format('woff2'),
+  url("../fonts/FiraSans-Bold.woff") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'helveticaneuecyr_regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local('helveticaneuecyr_regular'),
+  url("../fonts/helveticaneuecyr_regular.woff2") format('woff2'),
+  url("../fonts/helveticaneuecyr_regular.woff") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'helveticaneuecyr-bold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local('helveticaneuecyr-bold'),
+  url("../fonts/helveticaneuecyr-bold.woff2") format('woff2'),
+  url("../fonts/helveticaneuecyr-bold.woff") format('woff');
+  font-display: swap;
+}
