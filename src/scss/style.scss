@@ -54,4 +54,47 @@
   }
 }
 
+.footer {
+  background-color: $bg-footer;
+}
+
+.footer-top {
+  padding: 100px 0;
+  border-bottom: 1px solid #3a3a3a;
+  display: flex;
+  &__company {
+    width: 470px;
+    height: 260px;
+    margin-right: 130px;
+  }
+  &__menu {
+    width: 240px;
+    margin-right: 40px;
+  }
+  &__social {
+    width: 240px;
+    margin-right: 40px;
+  }
+  &__contact {
+    max-width: 378px;
+  }
+  &__menu,
+  &__social,
+  &__contact {
+    line-height: 28px;
+    display: block;
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__slogan {
+    color: #fff;
+  }
+  &__title {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+}
+
 @import "media";

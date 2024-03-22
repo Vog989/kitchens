@@ -1,5 +1,5 @@
 @import "normalize.css";
-body {
+a, body {
   font-family: "helveticaneuecyr_regular", sans-serif;
   font-weight: 400;
 }
@@ -10,28 +10,28 @@ body {
 }
 
 @font-face {
-  font-family: "FiraSans-Regular", sans-serif;
+  font-family: "FiraSans-Regular";
   font-weight: 400;
   font-style: normal;
   src: local("FiraSans-Regular"), url("../fonts/FiraSans-Regular.woff2") format("woff2"), url("../fonts/FiraSans-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "FiraSans-Bold", sans-serif;
+  font-family: "FiraSans-Bold";
   font-weight: 700;
   font-style: normal;
   src: local("FiraSans-Bold"), url("../fonts/FiraSans-Bold.woff2") format("woff2"), url("../fonts/FiraSans-Bold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "helveticaneuecyr_regular", sans-serif;
+  font-family: "helveticaneuecyr_regular";
   font-weight: 400;
   font-style: normal;
   src: local("helveticaneuecyr_regular"), url("../fonts/helveticaneuecyr_regular.woff2") format("woff2"), url("../fonts/helveticaneuecyr_regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "helveticaneuecyr-bold", sans-serif;
+  font-family: "helveticaneuecyr-bold";
   font-weight: 700;
   font-style: normal;
   src: local("helveticaneuecyr-bold"), url("../fonts/helveticaneuecyr-bold.woff2") format("woff2"), url("../fonts/helveticaneuecyr-bold.woff") format("woff");
@@ -103,6 +103,12 @@ body {
   margin: 0 auto;
 }
 
+a {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
 .header {
   padding: 20px 0;
   height: 80px;
@@ -146,6 +152,47 @@ body {
   text-align: center;
   font-size: 16px;
   color: #252525;
+}
+
+.footer {
+  background-color: #252525;
+}
+
+.footer-top {
+  padding: 100px 0;
+  border-bottom: 1px solid #3a3a3a;
+  display: flex;
+}
+.footer-top__company {
+  width: 470px;
+  height: 260px;
+  margin-right: 130px;
+}
+.footer-top__menu {
+  width: 240px;
+  margin-right: 40px;
+}
+.footer-top__social {
+  width: 240px;
+  margin-right: 40px;
+}
+.footer-top__contact {
+  max-width: 378px;
+}
+.footer-top__menu, .footer-top__social, .footer-top__contact {
+  line-height: 28px;
+  display: block;
+}
+.footer-top__logo {
+  display: block;
+  margin-bottom: 30px;
+}
+.footer-top__slogan {
+  color: #fff;
+}
+.footer-top__title {
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
