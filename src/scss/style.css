@@ -151,6 +151,7 @@ a {
   border-radius: 20px;
   text-align: center;
   font-size: 16px;
+  font-weight: 700;
   color: #252525;
 }
 
@@ -164,24 +165,12 @@ a {
   display: flex;
 }
 .footer-top__company {
-  width: 470px;
+  width: 500px;
   height: 260px;
-  margin-right: 130px;
+  margin-right: 180px;
 }
-.footer-top__menu {
-  width: 240px;
-  margin-right: 40px;
-}
-.footer-top__social {
-  width: 240px;
-  margin-right: 40px;
-}
-.footer-top__contact {
-  max-width: 378px;
-}
-.footer-top__menu, .footer-top__social, .footer-top__contact {
-  line-height: 28px;
-  display: block;
+.footer-top__contact-link {
+  margin-bottom: 15px;
 }
 .footer-top__logo {
   display: block;
@@ -189,10 +178,40 @@ a {
 }
 .footer-top__slogan {
   color: #fff;
+  line-height: 60px;
+  font-size: 48px;
 }
 .footer-top__title {
   color: #fff;
   margin-bottom: 30px;
+}
+.footer-top__item {
+  margin-bottom: 15px;
+}
+.footer-top__menu {
+  width: 240px;
+  margin-right: 40px;
+}
+.footer-top__list {
+  padding-bottom: 50px;
+}
+.footer-top__social {
+  width: 240px;
+  margin-right: 40px;
+}
+.footer-top__social-link {
+  margin-bottom: 15px;
+}
+.footer-top__contact-link {
+  max-width: 378px;
+}
+.footer-top__contacts {
+  margin-bottom: 15px;
+}
+.footer-top__menu, .footer-top__social, .footer-top__contact {
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

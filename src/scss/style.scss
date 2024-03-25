@@ -50,6 +50,7 @@
     border-radius: 20px;
     text-align: center;
     font-size: 16px;
+    font-weight: 700;
     color: $text;
   }
 }
@@ -63,26 +64,12 @@
   border-bottom: 1px solid #3a3a3a;
   display: flex;
   &__company {
-    width: 470px;
+    width: 500px;
     height: 260px;
-    margin-right: 130px;
+    margin-right: 180px;
   }
-  &__menu {
-    width: 240px;
-    margin-right: 40px;
-  }
-  &__social {
-    width: 240px;
-    margin-right: 40px;
-  }
-  &__contact {
-    max-width: 378px;
-  }
-  &__menu,
-  &__social,
-  &__contact {
-    line-height: 28px;
-    display: block;
+  &__contact-link {
+    margin-bottom: 15px;
   }
   &__logo {
     display: block;
@@ -90,10 +77,43 @@
   }
   &__slogan {
     color: #fff;
+    line-height: 60px;
+    font-size: 48px;
   }
   &__title {
     color: #fff;
     margin-bottom: 30px;
+  }
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__menu {
+    width: 240px;
+    margin-right: 40px;
+  }
+  &__list {
+    padding-bottom: 50px;
+  }
+  &__social {
+    width: 240px;
+    margin-right: 40px;
+  }
+  &__social-link {
+    margin-bottom: 15px;
+  }
+  &__contact-link {
+    max-width: 378px;
+    //margin-bottom: 15px;
+  }
+  &__contacts {
+    margin-bottom: 15px;
+  }
+  &__menu,
+  &__social,
+  &__contact {
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
