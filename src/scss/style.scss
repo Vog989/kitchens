@@ -9,6 +9,7 @@
   height: 80px;
   background-color: $background;
   align-items: center;
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -19,9 +20,11 @@
   &__list {
     display: flex;
   }
+
   &__list-item + .menu__list-item {
     padding-left: 40px;
   }
+
   &__list-link {
     color: $text;
     font-size: 16px;
@@ -29,11 +32,13 @@
     border-radius: 1px;
     transition: all .2s;
     @extend %helveticaneuecyr-700;
+
     &:hover {
       color: $accent;
       border-bottom: 2px solid $accent;
     }
   }
+
   &__list-link--active {
     color: $accent;
     border-bottom: 2px solid $accent;
@@ -44,7 +49,7 @@
   &__link {
     display: inline-block;
     background-color: $accent;
-    padding: 3px;
+    padding: 6px;
     width: 120px;
     height: 40px;
     border-radius: 20px;
@@ -60,60 +65,104 @@
 }
 
 .footer-top {
-  padding: 100px 0;
+  padding: 100px 0 85px;
   border-bottom: 1px solid #3a3a3a;
   display: flex;
+
   &__company {
     width: 500px;
     height: 260px;
     margin-right: 180px;
   }
+
   &__contact-link {
     margin-bottom: 15px;
   }
+
   &__logo {
     display: block;
     margin-bottom: 30px;
   }
+
   &__slogan {
     color: #fff;
     line-height: 60px;
     font-size: 48px;
   }
+
   &__title {
     color: #fff;
     margin-bottom: 30px;
   }
+
   &__item {
     margin-bottom: 15px;
   }
+
   &__menu {
     width: 240px;
     margin-right: 40px;
   }
+
   &__list {
     padding-bottom: 50px;
   }
+
   &__social {
     width: 240px;
     margin-right: 40px;
   }
+
   &__social-link {
     margin-bottom: 15px;
+    display: flex;
   }
+
+
   &__contact-link {
     max-width: 378px;
     //margin-bottom: 15px;
   }
+
   &__contacts {
     margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
   }
+
+  &__social-link {
+    gap: 20px;
+  }
+
   &__menu,
   &__social,
   &__contact {
     line-height: 28px;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.footer-bottom {
+  height: 125px;
+  color: var(--Kitchen_Grey---Light, #FFF);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+
+  &__copy {
+    font-weight: 700;
+  }
+
+  &__legal-link {
+    margin: 0 20px;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
