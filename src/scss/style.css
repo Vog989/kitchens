@@ -1,4 +1,9 @@
 @import "normalize.css";
+.kitchen-intro .stat__number, .kitchen-intro__info-title {
+  font-family: "FiraSans-Bold", sans-serif;
+  font-weight: 700;
+}
+
 a, body {
   font-family: "helveticaneuecyr_regular", sans-serif;
   font-weight: 400;
@@ -148,10 +153,6 @@ a {
   color: #F0D88B;
   border-bottom: 2px solid #F0D88B;
 }
-.menu__list-link--active {
-  color: #F0D88B;
-  border-bottom: 2px solid #F0D88B;
-}
 
 .user-nav__link {
   display: inline-block;
@@ -166,6 +167,64 @@ a {
   color: #252525;
 }
 
+.kitchen-intro {
+  background-color: #F4F4F4;
+  padding: 100px 0;
+  display: flex;
+}
+.kitchen-intro__info-title {
+  font-size: 64px;
+  line-height: 72px;
+  width: 800px;
+  height: 144px;
+  margin-bottom: 30px;
+}
+.kitchen-intro__info-description {
+  margin-bottom: 60px;
+  width: 660px;
+  height: 96px;
+}
+.kitchen-intro__actions {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.kitchen-intro__actions-btn {
+  color: #252525;
+  font-weight: 700;
+  border: 2px solid #252525;
+  border-radius: 30px;
+  padding: 15px 30px;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.kitchen-intro__actions-btn:hover {
+  background-color: #F0D88B;
+  border: none;
+}
+.kitchen-intro__stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.kitchen-intro .stat {
+  display: flex;
+  margin-right: 100px;
+  padding-bottom: 50px;
+}
+.kitchen-intro .stat__number {
+  display: block;
+  width: 100px;
+  height: 56px;
+  font-size: 40px;
+  line-height: 56px;
+}
+.kitchen-intro .stat__text {
+  display: block;
+  width: 152px;
+  height: 56px;
+  font-size: 20px;
+  line-height: 28px;
+}
 .footer {
   background-color: #252525;
 }
