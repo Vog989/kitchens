@@ -38,11 +38,6 @@
       border-bottom: 2px solid $accent;
     }
   }
-
-  //&__list-link--active {
-  //  color: $accent;
-  //  border-bottom: 2px solid $accent;
-  //}
 }
 
 .user-nav {
@@ -65,8 +60,30 @@
   padding: 100px 0;
   display: flex;
 
-  &__info {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__image-container {
+    position: relative;
+  }
+
+  &__image-bg {
+
+  }
+
+  &__image-elips {
+    position: absolute;
+    bottom: 30px;
+    left: -80px;
+    z-index: 1;
   }
 
   &__info-title {
@@ -200,10 +217,10 @@
 
   &__contact-link {
     max-width: 378px;
-    //margin-bottom: 15px;
   }
 
   &__contacts {
+    align-items: start;
     margin-bottom: 15px;
     display: flex;
     gap: 20px;

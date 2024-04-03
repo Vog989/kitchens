@@ -102,9 +102,6 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  max-width: 1920px;
   font-size: 24px;
   line-height: 32px;
   color: #252525;
@@ -115,8 +112,9 @@ body {
 }
 
 .container {
-  max-width: 1640px;
+  max-width: 1660px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 a {
@@ -171,6 +169,23 @@ a {
   background-color: #F4F4F4;
   padding: 100px 0;
   display: flex;
+}
+.kitchen-intro__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.kitchen-intro__info {
+  display: flex;
+  flex-direction: column;
+}
+.kitchen-intro__image-container {
+  position: relative;
+}
+.kitchen-intro__image-elips {
+  position: absolute;
+  bottom: 30px;
+  left: -80px;
+  z-index: 1;
 }
 .kitchen-intro__info-title {
   font-size: 64px;
@@ -277,6 +292,7 @@ a {
   max-width: 378px;
 }
 .footer-top__contacts {
+  align-items: start;
   margin-bottom: 15px;
   display: flex;
   gap: 20px;
