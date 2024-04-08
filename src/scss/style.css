@@ -9,7 +9,7 @@ a, body {
   font-weight: 400;
 }
 
-.menu__list-link {
+.interior__button, .menu__list-link {
   font-family: "helveticaneuecyr_bold", sans-serif;
   font-weight: 700;
 }
@@ -243,69 +243,112 @@ a {
 }
 
 .interior {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 100px;
 }
 .interior__inner {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 .interior__images {
-  display: flex;
   position: relative;
-  margin-right: 140px;
+  width: 50%;
+  height: 780px;
 }
 .interior__image {
-  position: absolute;
-  z-index: 1;
-  object-fit: cover;
+  display: block;
 }
-.interior--large {
-  z-index: 3;
+.interior__image--large {
+  position: absolute;
   top: 0;
   left: 0;
-}
-.interior--medium {
-  z-index: 2;
-  right: 20px;
-}
-.interior--small {
   z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 460px;
+  height: 560px;
+}
+.interior__image--medium {
+  position: absolute;
+  z-index: 2;
+  right: 110px;
+  bottom: 10px;
+  width: 440px;
+  height: 540px;
+}
+.interior__image--small {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 80%;
+  transform: translateX(-80%);
+  width: 200px;
+  height: 200px;
 }
 .interior__pattern-points {
-  z-index: 4;
-  object-fit: cover;
+  position: absolute;
+  bottom: 90px;
+  left: 140px;
+  z-index: 0;
   width: 174.545px;
   height: 160px;
+  background: url("src/images/pattern-points.png") no-repeat;
+  background-size: cover;
 }
 .interior__info {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  z-index: 5;
+  padding: 40px;
 }
 .interior__title {
-  width: 800px;
-  height: 120px;
   font-size: 48px;
   line-height: 60px;
   margin-bottom: 30px;
+  width: 550px;
+  height: 120px;
 }
-.interior__text--main {
-  width: 800px;
-  height: 96px;
+.interior__text {
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 80px;
+  width: 800px;
+  height: 96px;
 }
 .interior__list {
-  display: flex;
-  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 340px);
+  gap: 40px;
 }
-.interior__list-items {
+.interior__list-item {
+  display: flex;
+  align-items: start;
+  gap: 15px;
   width: 345px;
   height: 84px;
+  font-size: 20px;
+  line-height: 28px;
 }
+.interior__list-item::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #F0D88B;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.interior__button {
+  color: #252525;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: #F0D88B;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.interior__arrow {
+  width: 28px;
+  height: 28px;
+}
+
 .footer {
   background-color: #252525;
 }
