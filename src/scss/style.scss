@@ -56,12 +56,6 @@
 }
 
 
-
-
-
-
-
-
 .kitchen-intro {
   background-color: $background;
   padding: 100px 0;
@@ -155,32 +149,24 @@
 }
 
 
+.interior {
+  margin-bottom: 100px;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
 
+  &__images {
+    position: relative;
+    width: 50%;
+    height: 780px;
+  }
 
-
-
-
-
-
-  .interior {
-    margin-bottom: 100px;
-
-    &__inner {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      z-index: 1;
-    }
-
-    &__images {
-      position: relative;
-      width: 50%;
-      height: 780px;
-    }
-
-    &__image {
-      display: block;
+  &__image {
+    display: block;
 
     &--large {
       position: absolute;
@@ -208,209 +194,274 @@
       transform: translateX(-80%);
       width: 200px;
       height: 200px;
-     }
     }
-
-    &__pattern-points {
-      position: absolute;
-      bottom: 90px;
-      left: 140px;
-      z-index: 0;
-      width: 174.545px;
-      height: 160px;
-      background: url('src/images/pattern-points.png') no-repeat;
-      background-size: cover;
-    }
-
-    &__info {
-      position: relative;
-      z-index: 5;
-    }
-
-    &__content {
-
-    }
-
-    &__title {
-      @extend %firasans-700;
-      font-size: 48px;
-      line-height: 60px;
-      margin-bottom: 30px;
-      width: 550px;
-      height: 120px;
-    }
-
-    &__text {
-      font-size: 24px;
-      line-height: 32px;
-      margin-bottom: 80px;
-      width: 800px;
-      height: 96px;
-    }
-
-    &__list-points {
-      margin-bottom: 80px;
-    }
-
-    &__list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    &__list-item {
-      display: flex;
-      align-items: start;
-      gap: 15px;
-      width: 380px;
-      height: 110px;
-      font-size: 20px;
-      line-height: 28px;
-
-      &::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 20px;
-        background-color: $accent;
-        border-radius: 50%;
-        flex-shrink: 0;
-      }
-    }
-
-    &__button {
-      @extend %helveticaneuecyr-700;
-      color: $text;
-      text-decoration: none;
-      padding: 15px 30px;
-      border-radius: 30px;
-      background-color: $accent;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    &__arrow {
-      width: 28px;
-      height: 28px;
-      }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  .footer {
-    background-color: $bg-footer;
+  &__pattern-points {
+    position: absolute;
+    bottom: 90px;
+    left: 140px;
+    z-index: 0;
+    width: 174.545px;
+    height: 160px;
+    background: url('src/images/pattern-points.png') no-repeat;
+    background-size: cover;
   }
 
-  .footer-top {
-    padding: 100px 0 85px;
-    border-bottom: 1px solid #3a3a3a;
+  &__info {
+    position: relative;
+    z-index: 5;
+  }
+
+  &__title {
+    @extend %firasans-700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    width: 550px;
+    height: 120px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 80px;
+    width: 800px;
+    height: 96px;
+  }
+
+  &__list-points {
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__list-item {
     display: flex;
+    align-items: start;
+    gap: 15px;
+    width: 380px;
+    height: 110px;
+    font-size: 20px;
+    line-height: 28px;
 
-    &__company {
-      width: 500px;
-      height: 260px;
-      margin-right: 180px;
-    }
-
-    &__contact-link {
-      margin-bottom: 15px;
-    }
-
-    &__logo {
+    &::before {
+      content: '';
       display: block;
-      margin-bottom: 30px;
-    }
-
-    &__slogan {
-      color: #fff;
-      line-height: 60px;
-      font-size: 48px;
-    }
-
-    &__title {
-      color: #fff;
-      margin-bottom: 30px;
-    }
-
-    &__item {
-      margin-bottom: 15px;
-    }
-
-    &__menu {
-      width: 240px;
-      margin-right: 40px;
-    }
-
-    &__list {
-      padding-bottom: 50px;
-    }
-
-    &__social {
-      width: 240px;
-      margin-right: 40px;
-    }
-
-    &__social-link {
-      margin-bottom: 15px;
-      display: flex;
-    }
-
-
-    &__contact-link {
-      max-width: 378px;
-    }
-
-    &__contacts {
-      align-items: start;
-      margin-bottom: 15px;
-      display: flex;
-      gap: 20px;
-    }
-
-    &__social-link {
-      gap: 20px;
-    }
-
-    &__menu,
-    &__social,
-    &__contact {
-      line-height: 28px;
-      display: flex;
-      flex-direction: column;
+      width: 20px;
+      height: 20px;
+      background-color: $accent;
+      border-radius: 50%;
+      flex-shrink: 0;
     }
   }
 
-  .footer-bottom {
-    height: 125px;
-    color: var(--Kitchen_Grey---Light, #FFF);
-    display: flex;
-    justify-content: space-between;
+  &__button {
+    @extend %helveticaneuecyr-700;
+    color: $text;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: $accent;
+    display: inline-flex;
     align-items: center;
-    font-size: 16px;
-    line-height: 24px;
+    gap: 10px;
+  }
 
-    &__copy {
-      font-weight: 700;
-    }
+  &__arrow {
+    width: 28px;
+    height: 28px;
+  }
+}
 
-    &__legal-link {
-      margin: 0 20px;
-      font-weight: 400;
 
-      &:hover {
-        text-decoration: underline;
-      }
+
+
+
+
+
+
+
+
+
+
+.choice {
+  margin-bottom: 100px;
+
+  &__inner {
+    //display: flex;
+    //justify-content: space-between;
+    //position: relative;
+    //z-index: 1;
+  }
+  &__text {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    @extend %firasans-700;
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 60px;
+    width: 660px;
+    height: 60px;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 32px;
+    width: 660px;
+    height: 64px;
+  }
+
+  &__item {
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 80px;
+  }
+
+  &__item-icon {
+    padding-bottom: 40px;
+  }
+
+  &__item-title {
+    @extend %firasans-700;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 15px;
+  }
+
+  &__item-text {
+    width: 380px;
+    height: 84px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: $bg-footer;
+}
+
+.footer-top {
+  padding: 100px 0 85px;
+  border-bottom: 1px solid #3a3a3a;
+  display: flex;
+
+  &__company {
+    width: 500px;
+    height: 260px;
+    margin-right: 180px;
+  }
+
+  &__contact-link {
+    margin-bottom: 15px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__slogan {
+    color: #fff;
+    line-height: 60px;
+    font-size: 48px;
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__menu {
+    width: 240px;
+    margin-right: 40px;
+  }
+
+  &__list {
+    padding-bottom: 50px;
+  }
+
+  &__social {
+    width: 240px;
+    margin-right: 40px;
+  }
+
+  &__social-link {
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+
+  &__contact-link {
+    max-width: 378px;
+  }
+
+  &__contacts {
+    align-items: start;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__social-link {
+    gap: 20px;
+  }
+
+  &__menu,
+  &__social,
+  &__contact {
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer-bottom {
+  height: 125px;
+  color: var(--Kitchen_Grey---Light, #FFF);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+
+  &__copy {
+    font-weight: 700;
+  }
+
+  &__legal-link {
+    margin: 0 20px;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
+}
 
 @import "media";

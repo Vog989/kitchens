@@ -1,5 +1,5 @@
 @import "normalize.css";
-.interior__title, .kitchen-intro .stat__number, .kitchen-intro__info-title {
+.choice__item-title, .choice__title, .interior__title, .kitchen-intro .stat__number, .kitchen-intro__info-title {
   font-family: "FiraSans-Bold", sans-serif;
   font-weight: 700;
 }
@@ -350,6 +350,43 @@ a {
 .interior__arrow {
   width: 28px;
   height: 28px;
+}
+
+.choice {
+  margin-bottom: 100px;
+}
+.choice__text {
+  margin-bottom: 80px;
+}
+.choice__title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 60px;
+  width: 660px;
+  height: 60px;
+}
+.choice__description {
+  font-size: 24px;
+  line-height: 32px;
+  width: 660px;
+  height: 64px;
+}
+.choice__item {
+  padding-bottom: 80px;
+}
+.choice__item-icon {
+  padding-bottom: 40px;
+}
+.choice__item-title {
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 15px;
+}
+.choice__item-text {
+  width: 380px;
+  height: 84px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .footer {
