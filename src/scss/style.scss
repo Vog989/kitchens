@@ -167,6 +167,8 @@
     margin-bottom: 100px;
 
     &__inner {
+      display: flex;
+      justify-content: space-between;
       position: relative;
       z-index: 1;
     }
@@ -223,7 +225,6 @@
     &__info {
       position: relative;
       z-index: 5;
-      padding: 40px;
     }
 
     &__content {
@@ -247,18 +248,21 @@
       height: 96px;
     }
 
+    &__list-points {
+      margin-bottom: 80px;
+    }
+
     &__list {
       display: grid;
-      grid-template-columns: repeat(2, 340px);
-      gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     &__list-item {
       display: flex;
       align-items: start;
       gap: 15px;
-      width: 345px;
-      height: 84px;
+      width: 380px;
+      height: 110px;
       font-size: 20px;
       line-height: 28px;
 

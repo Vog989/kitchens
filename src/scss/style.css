@@ -246,6 +246,8 @@ a {
   margin-bottom: 100px;
 }
 .interior__inner {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
 }
@@ -295,7 +297,6 @@ a {
 .interior__info {
   position: relative;
   z-index: 5;
-  padding: 40px;
 }
 .interior__title {
   font-size: 48px;
@@ -311,17 +312,19 @@ a {
   width: 800px;
   height: 96px;
 }
+.interior__list-points {
+  margin-bottom: 80px;
+}
 .interior__list {
   display: grid;
-  grid-template-columns: repeat(2, 340px);
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .interior__list-item {
   display: flex;
   align-items: start;
   gap: 15px;
-  width: 345px;
-  height: 84px;
+  width: 380px;
+  height: 110px;
   font-size: 20px;
   line-height: 28px;
 }
