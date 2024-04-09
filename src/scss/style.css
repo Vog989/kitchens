@@ -371,8 +371,12 @@ a {
   width: 660px;
   height: 64px;
 }
+.choice__points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .choice__item {
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 .choice__item-icon {
   padding-bottom: 40px;

@@ -317,10 +317,13 @@
     height: 64px;
   }
 
+  &__points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   &__item {
-    //display: grid;
-    //grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 80px;
+  margin-bottom: 80px;
   }
 
   &__item-icon {
