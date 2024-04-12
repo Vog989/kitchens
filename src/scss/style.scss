@@ -290,6 +290,8 @@
 
 .choice {
   margin-bottom: 100px;
+  //display: flex;
+  //justify-content: space-between;
 
   &__inner {
     //display: flex;
@@ -342,6 +344,18 @@
     height: 84px;
     font-size: 20px;
     line-height: 28px;
+  }
+
+  &__image {
+
+  }
+
+  &__image-main {
+
+  }
+
+  &__pattern-points {
+
   }
 }
 
