@@ -1,5 +1,5 @@
 @import "normalize.css";
-.choice__item-title, .choice__title, .interior__title, .kitchen-intro .stat__number, .kitchen-intro__info-title {
+.choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
   font-family: "FiraSans-Bold", sans-serif;
   font-weight: 700;
 }
@@ -9,7 +9,7 @@ a, body {
   font-weight: 400;
 }
 
-.interior__button, .menu__list-link {
+.interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .menu__list-link {
   font-family: "helveticaneuecyr_bold", sans-serif;
   font-weight: 700;
 }
@@ -167,7 +167,7 @@ a {
 
 .kitchen-intro {
   background-color: #F4F4F4;
-  padding: 100px 0;
+  padding: 80px 0;
   margin-bottom: 100px;
   display: flex;
 }
@@ -178,6 +178,7 @@ a {
 .kitchen-intro__info {
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
 }
 .kitchen-intro__image-container {
   position: relative;
@@ -188,6 +189,9 @@ a {
   left: -80px;
   z-index: 1;
 }
+.kitchen-intro__info-description {
+  margin-bottom: 60px;
+}
 .kitchen-intro__info-title {
   font-size: 64px;
   line-height: 72px;
@@ -195,15 +199,16 @@ a {
   height: 144px;
   margin-bottom: 30px;
 }
-.kitchen-intro__info-description {
-  margin-bottom: 60px;
-  width: 660px;
-  height: 96px;
+.kitchen-intro__info-text {
+  width: 780px;
+  height: 160px;
+  font-size: 24px;
+  line-height: 32px;
 }
 .kitchen-intro__actions {
   display: flex;
   gap: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .kitchen-intro__actions-btn {
   color: #252525;
@@ -213,31 +218,36 @@ a {
   padding: 15px 30px;
   display: inline-block;
   transition: all 0.2s;
+  font-size: 20px;
 }
 .kitchen-intro__actions-btn:hover {
   background-color: #F0D88B;
   border: none;
 }
 .kitchen-intro__stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
 }
 .kitchen-intro .stat {
   display: flex;
   margin-right: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  gap: 15px;
+  align-items: center;
 }
-.kitchen-intro .stat__number {
+.kitchen-intro .stat::before {
+  content: "";
   display: block;
-  width: 100px;
-  height: 56px;
-  font-size: 40px;
-  line-height: 56px;
+  width: 20px;
+  height: 20px;
+  background-color: #F0D88B;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 .kitchen-intro .stat__text {
   display: block;
-  width: 152px;
-  height: 56px;
+  width: 625px;
+  max-height: 56px;
   font-size: 20px;
   line-height: 28px;
 }
@@ -308,12 +318,12 @@ a {
 .interior__text {
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 80px;
-  width: 800px;
-  height: 96px;
+  margin-bottom: 60px;
+  max-width: 800px;
+  max-height: 160px;
 }
 .interior__list-points {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .interior__list {
   display: grid;
@@ -321,14 +331,19 @@ a {
 }
 .interior__list-item {
   display: flex;
-  align-items: start;
-  gap: 15px;
-  width: 380px;
-  height: 110px;
+  flex-direction: column;
+  max-width: 380px;
+  height: 140px;
   font-size: 20px;
   line-height: 28px;
 }
-.interior__list-item::before {
+.interior__list-item--name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+}
+.interior__list-item--name::before {
   content: "";
   display: block;
   width: 20px;
@@ -354,6 +369,12 @@ a {
 
 .choice {
   margin-bottom: 100px;
+  padding: 100px 0;
+  background-color: #F4F4F4;
+}
+.choice__inner {
+  display: flex;
+  justify-content: space-between;
 }
 .choice__text {
   margin-bottom: 80px;
@@ -363,13 +384,13 @@ a {
   font-size: 48px;
   line-height: 60px;
   width: 660px;
-  height: 60px;
+  height: 120px;
 }
 .choice__description {
   font-size: 24px;
   line-height: 32px;
   width: 660px;
-  height: 64px;
+  height: 160px;
 }
 .choice__points {
   display: grid;
@@ -382,13 +403,15 @@ a {
   padding-bottom: 40px;
 }
 .choice__item-title {
+  width: 380px;
+  max-height: 64px;
   font-size: 24px;
   line-height: 32px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 .choice__item-text {
   width: 380px;
-  height: 84px;
+  max-height: 112px;
   font-size: 20px;
   line-height: 28px;
 }
