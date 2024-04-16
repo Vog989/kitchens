@@ -374,6 +374,7 @@ a {
 }
 .choice__inner {
   display: flex;
+  justify-content: space-between;
 }
 .choice__text {
   margin-bottom: 80px;
@@ -416,6 +417,7 @@ a {
 }
 .choice__image {
   position: relative;
+  display: flex;
 }
 .choice__image-main {
   display: block;
@@ -424,12 +426,12 @@ a {
   width: 660px;
   height: 844px;
   top: 100px;
-  left: 90px;
+  left: 0;
 }
 .choice__pattern-points {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100px;
   z-index: 6;
   width: 240px;
   height: 220px;

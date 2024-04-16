@@ -314,13 +314,7 @@
 
   &__inner {
     display: flex;
-    //justify-content: space-between;
-    //position: relative;
-    //z-index: 1;
-  }
-
-  &__info-text {
-
+    justify-content: space-between;
   }
 
   &__text {
@@ -375,6 +369,7 @@
 
   &__image {
     position: relative;
+    display: flex;
   }
 
   &__image-main {
@@ -383,14 +378,15 @@
     z-index: 7;
     width: 660px;
     height: 844px;
+    //align-items: flex-end;
     top: 100px;
-    left: 90px;
+    left: 0;
   }
 
   &__pattern-points {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100px;
     z-index: 6;
     width: 240px;
     height: 220px;
