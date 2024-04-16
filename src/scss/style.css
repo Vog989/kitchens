@@ -271,9 +271,9 @@ a {
 }
 .interior__image--large {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
-  z-index: 1;
   width: 460px;
   height: 560px;
 }
@@ -374,7 +374,6 @@ a {
 }
 .choice__inner {
   display: flex;
-  justify-content: space-between;
 }
 .choice__text {
   margin-bottom: 80px;
@@ -389,7 +388,7 @@ a {
 .choice__description {
   font-size: 24px;
   line-height: 32px;
-  width: 660px;
+  width: 800px;
   height: 160px;
 }
 .choice__points {
@@ -415,6 +414,29 @@ a {
   font-size: 20px;
   line-height: 28px;
 }
+.choice__image {
+  position: relative;
+}
+.choice__image-main {
+  display: block;
+  position: relative;
+  z-index: 7;
+  width: 660px;
+  height: 844px;
+  top: 100px;
+  left: 90px;
+}
+.choice__pattern-points {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 240px;
+  height: 220px;
+  background: url("src/images/pattern-points.png") no-repeat;
+  background-size: cover;
+}
+
 .footer {
   background-color: #252525;
 }
