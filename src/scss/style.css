@@ -1,15 +1,15 @@
 @import "normalize.css";
-.choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
+.process__title, .choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
   font-family: "FiraSans-Bold", sans-serif;
   font-weight: 700;
 }
 
-a, body {
+.process__step-description, .process__description, a, body {
   font-family: "helveticaneuecyr_regular", sans-serif;
   font-weight: 400;
 }
 
-.interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .menu__list-link {
+.process__step-title, .process__step-number, .interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .menu__list-link {
   font-family: "helveticaneuecyr_bold", sans-serif;
   font-weight: 700;
 }
@@ -443,6 +443,59 @@ a {
   margin-bottom: 100px;
   padding: 100px 0;
 }
+.process__text {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.process__title {
+  font-size: 48px;
+  line-height: 60px;
+  max-width: 660px;
+  height: 120px;
+}
+.process__description {
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 660px;
+  height: 96px;
+}
+.process__steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.process__step {
+  background: #F4F4F4;
+  border-radius: 20px;
+  padding: 70px 30px 30px;
+}
+.process__step-number {
+  position: absolute;
+  font-size: 40px;
+  line-height: 56px;
+  background: #F0D88B;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -110px;
+}
+.process__step-title {
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+.process__step-description {
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 460px;
+  max-height: 160px;
+}
+
 .footer {
   background-color: #252525;
 }
