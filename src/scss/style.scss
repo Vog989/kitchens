@@ -403,11 +403,6 @@
 
 .process {
   margin-bottom: 100px;
-  padding: 100px 0;
-
-  &__inner{
-
-  }
 
   &__text {
     display: flex;
@@ -477,6 +472,73 @@
 
 }
 
+
+
+
+
+
+.cabinet-gallery {
+  padding-top: 100px;
+  margin-bottom: 100px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @extend %firasans-700;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 800px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    max-width: 1080px;
+    height: 96px;
+    margin-bottom: 80px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+
+  &__item {
+    background-color: $background;
+    border-radius: 20px;
+    //overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__item-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__item-title {
+    @extend %firasans-400;
+    font-size: 32px;
+    line-height: 32px;
+    color: $text;
+  }
+
+}
 
 
 
