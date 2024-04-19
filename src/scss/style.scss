@@ -501,17 +501,20 @@
     margin-bottom: 80px;
   }
 
-  &__items {
+  &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
   }
 
-  &__item {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: $background;
     border-radius: 20px;
-    //overflow: hidden;
-    text-align: center;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 
     &:hover {
@@ -519,19 +522,21 @@
     }
   }
 
-  &__item-name {
+  &__card-name {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    align-items: center;
+    padding-top: 30px;
   }
 
   &__image {
-    width: 100%;
-    height: auto;
+    width: 460px;
+    height: 300px;
     display: block;
+
   }
 
-  &__item-title {
+  &__card-title {
     @extend %firasans-400;
     font-size: 32px;
     line-height: 32px;
@@ -539,6 +544,100 @@
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.projects-slider {
+  background-color: $background;
+  padding: 100px 0;
+  //margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+.accessories {
+  padding: 100px 0;
+  //margin-bottom: 100px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @extend %firasans-700;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 940px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    max-width: 940px;
+    height: 96px;
+    margin-bottom: 80px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $background;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__card-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  &__image {
+    width: 460px;
+    height: 300px;
+    display: block;
+
+  }
+
+  &__card-title {
+    @extend %firasans-400;
+    font-size: 32px;
+    line-height: 32px;
+    color: $text;
+  }
+}
+
+
 
 
 
@@ -569,6 +668,7 @@
   &__logo {
     display: block;
     margin-bottom: 30px;
+    width: 170px;
   }
 
   &__slogan {
