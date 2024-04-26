@@ -560,6 +560,7 @@
   background-color: $background;
   padding: 100px 0;
   //margin-bottom: 100px;
+
 }
 
 
@@ -576,7 +577,20 @@
 
   &__header {
     display: flex;
+    margin-bottom: 80px;
+  }
+
+  &__header-text {
+    display: flex;
     flex-direction: column;
+  }
+
+  &__points-pattern {
+      //position: absolute;
+      width: 100px;
+      height: 110px;
+      background: url('src/images/pattern-points.png') no-repeat;
+      background-size: cover;
   }
 
   &__title {
@@ -591,7 +605,6 @@
   &__description {
     max-width: 940px;
     height: 96px;
-    margin-bottom: 80px;
   }
 
   &__cards {

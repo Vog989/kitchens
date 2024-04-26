@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kitchens</title>
+    <link rel="stylesheet" href="swiper/swiper-bundle.css">
     <link rel="stylesheet" href="src/scss/style.css">
 </head>
 <body>
@@ -207,9 +208,7 @@
                 </div>
                 <div class="choice__image">
                     <img class="choice__image-main" src="src/images/choice-kitchen.png" alt="Modern Kitchen">
-                    <div class="choice__pattern-points">
-                        <!--                        <img src="src/images/pattern-points.png">-->
-                    </div>
+                    <div class="choice__pattern-points"></div>
                 </div>
             </div>
         </div>
@@ -443,10 +442,34 @@
         </div>
     </section>
 
-    <section class="projects-slider">
+    <section class="projects-gallery">
         <div class="container">
-            <div class="projects-slider__inner">
+            <div class="projects-gallery__inner">
+                <div class="projects-gallery__carousel">
+                    <!-- Additional required wrapper -->
+                    <div class="projects-gallery__carousel-wrapper">
+                        <!-- Slides -->
+                        <div class="projects-gallery__carousel-slide">Slide 1</div>
+                        <div class="projects-gallery__carousel-slide">Slide 2</div>
+                        <div class="projects-gallery__carousel-slide">Slide 3</div>
+                        <div class="projects-gallery__carousel-slide">Slide 4</div>
+                        <div class="projects-gallery__carousel-slide">Slide 5</div>
+                        <div class="projects-gallery__carousel-slide">Slide 6</div>
+                        <div class="projects-gallery__carousel-slide">Slide 7</div>
+                        <div class="projects-gallery__carousel-slide">Slide 8</div>
+                        <div class="projects-gallery__carousel-slide">Slide 9</div>
+                        <div class="projects-gallery__carousel-slide">Slide 10</div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -455,10 +478,15 @@
         <div class="container">
             <div class="accessories__inner">
                 <div class="accessories__header">
-                    <h2 class="accessories__title">Select The Ideal Hardware & Accessories</h2>
-                    <p class="accessories__description">Kitchen Builders offers an extensive range of options, from
-                        handles and hinges to decorative hardware. Our selection is tailored for kitchen remodeling on a
-                        budget, offering affordable solutions without compromising quality.</p>
+                    <div class="accessories__header-text">
+                        <h2 class="accessories__title">Select The Ideal Hardware & Accessories</h2>
+                        <p class="accessories__description">Kitchen Builders offers an extensive range of options, from
+                            handles and hinges to decorative hardware. Our selection is tailored for kitchen remodeling on a
+                            budget, offering affordable solutions without compromising quality.</p>
+                    </div>
+                    <div class="header__pattern-points">
+                        <img class="header__points-pattern" src="src/images/pattern-points.png">
+                    </div>
                 </div>
                 <div class="accessories__cards">
                     <a class="accessories__card" href="#">
@@ -737,6 +765,7 @@
     </div>
 </footer>
 
+<script src="swiper/swiper-bundle.js"></script>
 <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>

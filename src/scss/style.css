@@ -565,7 +565,17 @@ a {
 }
 .accessories__header {
   display: flex;
+  margin-bottom: 80px;
+}
+.accessories__header-text {
+  display: flex;
   flex-direction: column;
+}
+.accessories__points-pattern {
+  width: 100px;
+  height: 110px;
+  background: url("src/images/pattern-points.png") no-repeat;
+  background-size: cover;
 }
 .accessories__title {
   font-size: 48px;
@@ -577,7 +587,6 @@ a {
 .accessories__description {
   max-width: 940px;
   height: 96px;
-  margin-bottom: 80px;
 }
 .accessories__cards {
   display: grid;
