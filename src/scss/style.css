@@ -559,6 +559,15 @@ a {
   background-color: #F4F4F4;
   padding: 100px 0;
 }
+.projects-slider__swiper-slide {
+  width: 60%;
+}
+.projects-slider__swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+.projects-slider__swiper-slide:nth-child(3n) {
+  width: 20%;
+}
 
 .accessories {
   padding: 100px 0;
