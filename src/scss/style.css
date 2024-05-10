@@ -4,7 +4,7 @@
   font-weight: 400;
 }
 
-.accessories__title, .cabinet-gallery__title, .process__title, .choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
+.contact-form__title, .accessories__title, .cabinet-gallery__title, .process__title, .choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
   font-family: "FiraSans-Bold", sans-serif;
   font-weight: 700;
 }
@@ -14,7 +14,7 @@
   font-weight: 400;
 }
 
-.process__step-title, .process__step-number, .interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .menu__list-link {
+.contact-form__button, .contact-form__label, .process__step-title, .process__step-number, .interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .menu__list-link {
   font-family: "helveticaneuecyr_bold", sans-serif;
   font-weight: 700;
 }
@@ -60,6 +60,10 @@ html {
 ul[class],
 ol[class] {
   padding: 0;
+}
+
+textarea {
+  resize: none;
 }
 
 body,
@@ -647,6 +651,70 @@ a {
   align-items: center;
   background-color: #F4F4F4;
   padding: 100px 0;
+}
+.contact-form__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact-form__title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 60px;
+  max-width: 600px;
+  max-height: 120px;
+}
+.contact-form__description {
+  max-width: 1080px;
+  max-height: 64px;
+}
+.contact-form__form {
+  width: 800px;
+  height: 655px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 25px 50px;
+}
+.contact-form__field {
+  margin-bottom: 30px;
+}
+.contact-form__label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #252525;
+}
+.contact-form__input {
+  width: 700px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid #E9E9E9;
+  font-size: 16px;
+  padding-left: 30px;
+}
+.contact-form__textarea {
+  width: 700px;
+  height: 70px;
+  border-radius: 20px;
+  border: 1px solid #E9E9E9;
+  font-size: 16px;
+  padding: 15px 30px;
+}
+.contact-form__button {
+  width: 700px;
+  height: 58px;
+  background-color: #F0D88B;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.contact-form__button:hover {
+  background-color: #DFBC4B;
 }
 
 .footer {
