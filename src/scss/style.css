@@ -4,7 +4,7 @@
   font-weight: 400;
 }
 
-.contact-form__title, .accessories__title, .cabinet-gallery__title, .process__title, .choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
+.faq__title, .contact-form__title, .accessories__title, .cabinet-gallery__title, .process__title, .choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
   font-family: "FiraSans-Bold", sans-serif;
   font-weight: 700;
 }
@@ -14,8 +14,18 @@
   font-weight: 400;
 }
 
-.contact-form__button, .contact-form__label, .process__step-title, .process__step-number, .interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .menu__list-link {
+.faq__button, .contact-form__button, .contact-form__label, .process__step-title, .process__step-number, .interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .menu__list-link {
   font-family: "helveticaneuecyr_bold", sans-serif;
+  font-weight: 700;
+}
+
+.faq__answer {
+  font-family: "roboto-regular", sans-serif;
+  font-weight: 400;
+}
+
+.faq__question {
+  font-family: "roboto-bold", sans-serif;
   font-weight: 700;
 }
 
@@ -41,10 +51,17 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "helveticaneuecyr-bold";
+  font-family: "roboto-regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("roboto-regular"), url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto-bold";
   font-weight: 700;
   font-style: normal;
-  src: local("helveticaneuecyr-bold"), url("../fonts/helveticaneuecyr-bold.woff2") format("woff2"), url("../fonts/helveticaneuecyr-bold.woff") format("woff");
+  src: local("roboto-bold"), url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff");
   font-display: swap;
 }
 html {
@@ -172,6 +189,9 @@ a {
   font-size: 16px;
   font-weight: 700;
   color: #252525;
+}
+.user-nav__link:hover {
+  background-color: #DFBC4B;
 }
 
 .kitchen-intro {
@@ -369,6 +389,9 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+}
+.interior__button:hover {
+  background-color: #DFBC4B;
 }
 .interior__arrow {
   width: 28px;
@@ -741,6 +764,89 @@ a {
   font-size: 20px;
 }
 .contact-form__button:hover {
+  background-color: #DFBC4B;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+.faq__header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.faq__title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 60px;
+  max-width: 1076px;
+  height: 60px;
+}
+.faq__description {
+  margin: 0 auto;
+  max-width: 1080px;
+  max-height: 96px;
+}
+.faq__list {
+  width: 1360px;
+  margin-bottom: 50px;
+}
+.faq__item {
+  margin-bottom: 30px;
+}
+.faq__line {
+  width: 1360px;
+  background: #E9E9E9;
+  height: 1px;
+  margin-bottom: 30px;
+}
+.faq__question {
+  position: relative;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+.faq__question:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  content: "";
+  background-image: url("src/images/arrow-down.svg");
+  width: 32px;
+  height: 32px;
+}
+.faq__question.active:after {
+  transform: rotate(180deg);
+}
+.faq__answer {
+  font-size: 20px;
+  line-height: 28px;
+  color: #676767;
+  width: 1060px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq__btn {
+  display: flex;
+  justify-content: center;
+}
+.faq__button {
+  color: #252525;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: #F0D88B;
+  display: inline-flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 10px;
+}
+.faq__button:hover {
   background-color: #DFBC4B;
 }
 

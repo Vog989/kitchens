@@ -29,11 +29,21 @@
 }
 
 @font-face {
-  font-family: 'helveticaneuecyr-bold';
+  font-family: 'roboto-regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('roboto-regular'),
+  url("../fonts/roboto-regular.woff2") format('woff2'),
+  url("../fonts/roboto-regular.woff") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'roboto-bold';
   font-weight: 700;
   font-style: normal;
-  src: local('helveticaneuecyr-bold'),
-  url("../fonts/helveticaneuecyr-bold.woff2") format('woff2'),
-  url("../fonts/helveticaneuecyr-bold.woff") format('woff');
+  src: local('roboto-bold'),
+  url("../fonts/roboto-bold.woff2") format('woff2'),
+  url("../fonts/roboto-bold.woff") format('woff');
   font-display: swap;
 }

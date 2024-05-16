@@ -52,6 +52,10 @@
     font-size: 16px;
     font-weight: 700;
     color: $text;
+
+    &:hover {
+      background-color: #DFBC4B;
+    }
   }
 }
 
@@ -288,6 +292,10 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
+
+    &:hover {
+      background-color: #DFBC4B;
+    }
   }
 
   &__arrow {
@@ -797,8 +805,106 @@
 
 
 
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
 
+  &__header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
 
+  &__title {
+    @extend %firasans-700;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 1076px;
+    height: 60px;
+  }
+
+  &__description {
+    margin: 0 auto;
+    max-width: 1080px;
+    max-height: 96px;
+  }
+
+  &__list {
+    width: 1360px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__line {
+    width: 1360px;
+    background: #E9E9E9;
+    height: 1px;
+    margin-bottom: 30px;
+  }
+
+  &__question {
+    position: relative;
+    @extend %roboto-700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+
+    &:after {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      content: '';
+      background-image: url("src/images/arrow-down.svg");
+      width: 32px;
+      height: 32px;
+    }
+
+    &.active:after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__answer {
+    @extend %roboto-400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #676767;
+    width: 1060px;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    @extend %helveticaneuecyr-700;
+    color: $text;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: $accent;
+    display: inline-flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+      background-color: #DFBC4B;
+    }
+  }
+}
 
 
 
