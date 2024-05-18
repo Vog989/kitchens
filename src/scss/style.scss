@@ -127,7 +127,7 @@
 
     &:hover {
       background-color: $accent;
-      border: none;
+      border: 2px solid $accent;
     }
   }
 
@@ -141,7 +141,7 @@
     margin-right: 100px;
     padding-bottom: 20px;
     gap: 15px;
-    align-items: center;
+    align-items: start;
 
     &::before {
       content: '';
@@ -305,16 +305,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .choice {
   margin-bottom: 100px;
   padding: 100px 0;
@@ -404,11 +394,6 @@
 }
 
 
-
-
-
-
-
 .process {
   margin-bottom: 100px;
 
@@ -481,10 +466,6 @@
 }
 
 
-
-
-
-
 .cabinet-gallery {
   padding-top: 100px;
   margin-bottom: 100px;
@@ -554,16 +535,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .projects-gallery {
   background-color: $background;
   padding: 100px 0;
@@ -593,18 +564,12 @@
 }
 
 
-
-
-
-
-
-
-
 .accessories {
   padding: 100px 0;
   //margin-bottom: 100px;
 
   &__header {
+    position: relative;
     display: flex;
     margin-bottom: 80px;
   }
@@ -614,12 +579,20 @@
     flex-direction: column;
   }
 
+  &__pattern-points {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
   &__points-pattern {
-      //position: absolute;
-      width: 100px;
-      height: 110px;
-      background: url('src/images/pattern-points.png') no-repeat;
-      background-size: cover;
+    position: absolute;
+    top: 35px;
+    left: 1050px;
+    width: 110px;
+    height: 100px;
+    //background: url('src/images/pattern-points.png') no-repeat;
+    background-size: cover;
   }
 
   &__title {
@@ -678,10 +651,6 @@
     color: $text;
   }
 }
-
-
-
-
 
 
 .contact-form {
@@ -803,8 +772,6 @@
 }
 
 
-
-
 .faq {
   display: flex;
   flex-direction: column;
@@ -907,8 +874,6 @@
 }
 
 
-
-
 .footer {
   background-color: $bg-footer;
 }
@@ -1007,12 +972,16 @@
   }
 
   &__legal-link {
-    margin: 0 20px;
+    //margin: 0 20px;
     font-weight: 400;
 
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &__legal-divider {
+    margin: 0 20px;
   }
 }
 
