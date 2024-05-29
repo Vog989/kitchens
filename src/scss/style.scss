@@ -21,6 +21,21 @@
     display: flex;
   }
 
+  &__btn {
+    display: none;
+    width: 30px;
+    height: 18px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__btn span{
+    background-color: $bg-footer;
+    height: 3px;
+    width: 24px;
+    border-radius: 50px;
+  }
+
   &__list-item + .menu__list-item {
     padding-left: 40px;
   }
@@ -986,3 +1001,37 @@
 }
 
 @import "media";
+
+@media (max-width: 1024px) {
+  .header {
+    &__inner {
+      padding: 20px 52px;
+      align-items: center;
+    }
+
+    &__logo {
+      margin-right: auto;
+      padding-left: 30px;
+    }
+  }
+
+  .menu {
+    order: -1;
+
+    &__list {
+      display: none;
+    }
+
+    &__btn {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 360px) {
+
+}
