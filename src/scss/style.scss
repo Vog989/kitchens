@@ -29,7 +29,7 @@
     justify-content: space-between;
   }
 
-  &__btn span{
+  &__btn span {
     background-color: $bg-footer;
     height: 3px;
     width: 24px;
@@ -170,7 +170,7 @@
   }
 
   .stat__text {
-    display: block;
+    //display: block;
     width: 625px;
     max-height: 56px;
     font-size: 20px;
@@ -1003,9 +1003,15 @@
 @import "media";
 
 @media (max-width: 1024px) {
+
+  .container {
+    width: 920px;
+  }
+
   .header {
+
     &__inner {
-      padding: 20px 52px;
+      padding: 20px 0;
       align-items: center;
     }
 
@@ -1024,6 +1030,57 @@
 
     &__btn {
       display: flex;
+    }
+  }
+
+  .kitchen-intro {
+    display: flex;
+    flex-direction: column;
+    padding-left: 52px;
+    padding-right: 52px;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__info-description {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__info-title {
+      text-align: center;
+      font-size: 48px;
+      width: 680px;
+      line-height: 60px;
+
+    }
+
+    &__info-text {
+      text-align: center;
+      font-size: 20px;
+      width: 680px;
+      line-height: 28px;
+    }
+
+    &__actions {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+    }
+    .stat {
+
+      &__text {
+        font-size: 16px;
+        line-height: 24px;
+        width: 405px;
+        height: 48px;
+      }
     }
   }
 }
