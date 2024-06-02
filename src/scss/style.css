@@ -621,6 +621,10 @@ a {
   object-fit: cover;
 }
 
+.current-counter__value {
+  color: #252525;
+}
+
 .accessories {
   padding: 100px 0;
 }

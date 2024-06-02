@@ -578,6 +578,11 @@
 
 }
 
+.current-counter {
+  &__value {
+    color: $text;
+  }
+}
 
 .accessories {
   padding: 100px 0;
