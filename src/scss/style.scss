@@ -552,29 +552,84 @@
 .projects-gallery {
   background-color: $background;
   padding: 100px 0;
-  //margin-bottom: 100px;
 
-  .swiper {
-    width: 520px;
-    height: 600px;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+  &__inner {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
 
-  .swiper-slide img {
+  &__description {
+    margin-right: 40px;
+  }
+
+  &__description-title {
+    @extend %firasans-700;
+    font-size: 48px;
+    line-height: 60px;
+    width: 520px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  &__description-text {
+    @extend %helveticaneuecyr-400;
+    font-size: 24px;
+    line-height: 32px;
+    width: 520px;
+    height: 256px;
+    margin-bottom: 135px;
+  }
+
+  &__btn {
+
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__swiper {
+    width: 1392px;
+    height: 600px;
+    overflow-x: hidden;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: end;
+  }
+
+  &__swiper-slide  {
     display: block;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+    width: 416px;
+    height: 500px;
+    border-radius: 20px;
   }
 
+  .swiper-slide-active  {
+    height: 600px;
+    width: 520px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__swiper-actions {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    right: 320px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+  }
+
+  &__patterns {
+    position: absolute;
+    top: 30px;
+    left: 440px;
+    width: 109px;
+    height: 100px;
+  }
 }
 
 .current-counter {
@@ -1105,7 +1160,7 @@
 
     &__inner {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       //padding-left: 52px;
       //padding-right: 52px;
@@ -1131,11 +1186,12 @@
       margin-bottom: 30px;
     }
 
-    &__list-item{
+    &__list-item {
       font-size: 16px;
     }
   }
 }
+
 
 @media (max-width: 768px) {
 

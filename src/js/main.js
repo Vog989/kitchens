@@ -12,9 +12,13 @@ import '../scss/style.scss';
 
 const swiper = new Swiper(".mySwiper", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".projects-gallery__swiper-actions-next",
+        prevEl: ".projects-gallery__swiper-actions-prev",
     },
+    slidesPerView: 3,
+    spaceBetween: 20,
+    allowTouchMove: false,
+    loop: true,
 });
 
 document.addEventListener('DOMContentLoaded', () => {

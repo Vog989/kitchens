@@ -4,12 +4,12 @@
   font-weight: 400;
 }
 
-.faq__title, .contact-form__title, .accessories__title, .cabinet-gallery__title, .process__title, .choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
+.faq__title, .contact-form__title, .accessories__title, .projects-gallery__description-title, .cabinet-gallery__title, .process__title, .choice__item-title, .choice__title, .interior__title, .kitchen-intro__info-title {
   font-family: "FiraSans-Bold", sans-serif;
   font-weight: 700;
 }
 
-.process__step-description, .process__description, a, body {
+.projects-gallery__description-text, .process__step-description, .process__description, a, body {
   font-family: "helveticaneuecyr_regular", sans-serif;
   font-weight: 400;
 }
@@ -121,6 +121,7 @@ select {
 button {
   padding: 0;
   border: none;
+  background: none;
 }
 
 a {
@@ -146,6 +147,7 @@ body {
   max-width: 1660px;
   margin: 0 auto;
   padding: 0 10px;
+  overflow-x: hidden;
 }
 
 a {
@@ -601,23 +603,66 @@ a {
   background-color: #F4F4F4;
   padding: 100px 0;
 }
-.projects-gallery .swiper {
-  width: 520px;
-  height: 600px;
-}
-.projects-gallery .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.projects-gallery__inner {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
 }
-.projects-gallery .swiper-slide img {
+.projects-gallery__description {
+  margin-right: 40px;
+}
+.projects-gallery__description-title {
+  font-size: 48px;
+  line-height: 60px;
+  width: 520px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.projects-gallery__description-text {
+  font-size: 24px;
+  line-height: 32px;
+  width: 520px;
+  height: 256px;
+  margin-bottom: 135px;
+}
+.projects-gallery__slider {
+  position: relative;
+}
+.projects-gallery__swiper {
+  width: 1392px;
+  height: 600px;
+  overflow-x: hidden;
+}
+.projects-gallery .swiper-wrapper {
+  display: flex;
+  align-items: end;
+}
+.projects-gallery__swiper-slide {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  width: 416px;
+  height: 500px;
+  border-radius: 20px;
+}
+.projects-gallery .swiper-slide-active {
+  height: 600px;
+  width: 520px;
+  transition: all 0.5s ease-in-out;
+}
+.projects-gallery__swiper-actions {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  right: 320px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.projects-gallery__patterns {
+  position: absolute;
+  top: 30px;
+  left: 440px;
+  width: 109px;
+  height: 100px;
 }
 
 .current-counter__value {
@@ -1040,7 +1085,7 @@ a {
   }
   .interior__inner {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
   .interior__title {
