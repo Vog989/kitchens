@@ -621,7 +621,7 @@
     right: 320px;
     display: flex;
     flex-direction: row;
-    gap: 30px
+    gap: 30px;
   }
 
   &__patterns {
@@ -1401,6 +1401,82 @@
       font-size: 24px;
       line-height: 32px;
       color: $text;
+    }
+  }
+
+  .projects-gallery {
+    padding-top: 80px;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__description {
+      margin-bottom: 60px;
+    }
+
+    &__description-title {
+      font-size: 40px;
+      width: 920px;
+      height: 56px;
+      margin-bottom: 20px;
+    }
+
+    &__description-text {
+      font-size: 20px;
+      line-height: 28px;
+      width: 920px;
+      height: 112px;
+      margin-bottom: 40px;
+    }
+
+    &__swiper-actions {
+      right: 0;
+    }
+  }
+
+  .accessories {
+
+    &__header {
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      font-size: 40px;
+      height: 56px;
+      width: 920px;
+    }
+    &__description {
+      font-size: 20px;
+      line-height: 28px;
+      width: 920px;
+      height: 84px;
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+    }
+
+    &__card {
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    &__card-name {
+      padding-top: 20px;
+    }
+
+    &__image {
+      width: 400px;
+      height: 280px;
+    }
+
+    &__card-title {
+      @extend %firasans-400;
+      font-size: 24px;
+      line-height: 32px;
     }
   }
 }
