@@ -600,7 +600,7 @@
     align-items: end;
   }
 
-  &__swiper-slide  {
+  &__swiper-slide {
     display: block;
     object-fit: cover;
     width: 416px;
@@ -608,7 +608,7 @@
     border-radius: 20px;
   }
 
-  .swiper-slide-active  {
+  .swiper-slide-active {
     height: 600px;
     width: 520px;
     transition: all 0.5s ease-in-out;
@@ -851,7 +851,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding-top: 100px;
+  margin-bottom: 100px;
 
   &__header {
     text-align: center;
@@ -958,8 +959,10 @@
   display: flex;
 
   &__company {
-    width: 500px;
-    height: 260px;
+    display: flex;
+    flex-direction: column;
+    //width: 520px;
+    //height: 260px;
     margin-right: 180px;
   }
 
@@ -974,14 +977,23 @@
   }
 
   &__slogan {
+    width: 520px;
+    height: 180px;
     color: #fff;
     line-height: 60px;
     font-size: 48px;
   }
 
   &__title {
+    @extend %helveticaneuecyr-700;
+    font-size: 24px;
     color: #fff;
     margin-bottom: 30px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__item {
@@ -1249,7 +1261,7 @@
     }
 
     &__text {
-    margin-bottom: 60px;
+      margin-bottom: 60px;
     }
 
     &__title {
@@ -1381,6 +1393,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 40px;
     }
+
     &__card {
       border-radius: 20px;
       padding: 20px;
@@ -1445,6 +1458,7 @@
       height: 56px;
       width: 920px;
     }
+
     &__description {
       font-size: 20px;
       line-height: 28px;
@@ -1541,9 +1555,19 @@
   }
 
   .faq {
+    padding-top: 80px;
+    //margin-bottom: 80px;
 
     &__header {
       margin-bottom: 60px;
+    }
+
+    &__list {
+      margin-bottom: 60px;
+    }
+
+    &__item {
+      margin-bottom: 20px;
     }
 
     &__title {
@@ -1569,6 +1593,15 @@
       font-size: 20px;
       width: 800px;
       height: 28px;
+
+      &:after {
+        top: 0;
+        right: -111px;
+        content: '';
+        background-image: url("src/images/icons/arrow-down-24px.svg");
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &__answer {
@@ -1576,6 +1609,22 @@
       width: 800px;
       height: 48px;
     }
+  }
+}
+
+.footer-top {
+  padding: 80px 0 80px;
+  //flex-direction: column;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__slogan {
+    //font-size: 40px;
+    //width: 920px;
+    //height: 56px;
   }
 }
 
