@@ -759,13 +759,13 @@ a {
   margin-bottom: 30px;
   font-size: 48px;
   line-height: 60px;
-  max-width: 600px;
-  max-height: 120px;
+  width: 600px;
+  height: 120px;
 }
 .contact-form__description {
   margin: 0 auto;
-  max-width: 1080px;
-  max-height: 64px;
+  width: 1080px;
+  height: 64px;
 }
 .contact-form__inner {
   position: relative;
@@ -857,14 +857,13 @@ a {
   margin: 0 auto;
   margin-bottom: 30px;
   font-size: 48px;
-  line-height: 60px;
-  max-width: 1076px;
   height: 60px;
+  width: 1076px;
 }
 .faq__description {
   margin: 0 auto;
-  max-width: 1080px;
-  max-height: 96px;
+  width: 1080px;
+  height: 96px;
 }
 .faq__list {
   width: 1360px;
@@ -1343,6 +1342,82 @@ a {
   .accessories__card-title {
     font-size: 24px;
     line-height: 32px;
+  }
+  .contact-form__header {
+    margin-bottom: 40px;
+  }
+  .contact-form__title {
+    font-size: 40px;
+    line-height: 56px;
+    width: 680px;
+    height: 112px;
+  }
+  .contact-form__description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 680px;
+    height: 84px;
+  }
+  .contact-form__image {
+    display: none;
+  }
+  .contact-form__form {
+    position: absolute;
+    width: 680px;
+    height: 654px;
+    padding: 15px 30px;
+    justify-content: center;
+  }
+  .contact-form__field {
+    margin-bottom: 30px;
+  }
+  .contact-form__label {
+    margin-bottom: 15px;
+  }
+  .contact-form__input {
+    width: 600px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 30px;
+  }
+  .contact-form__textarea {
+    width: 600px;
+    height: 70px;
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .contact-form__button {
+    width: 600px;
+    height: 58px;
+  }
+  .faq__header {
+    margin-bottom: 60px;
+  }
+  .faq__title {
+    font-size: 40px;
+    width: 680px;
+    height: 56px;
+    margin-bottom: 20px;
+  }
+  .faq__description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 680px;
+    height: 112px;
+  }
+  .faq__line {
+    width: 920px;
+    margin-bottom: 20px;
+  }
+  .faq__question {
+    font-size: 20px;
+    width: 800px;
+    height: 28px;
+  }
+  .faq__answer {
+    font-size: 16px;
+    width: 800px;
+    height: 48px;
   }
 }
 
