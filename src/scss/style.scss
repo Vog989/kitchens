@@ -153,7 +153,7 @@
 
   .stat {
     display: flex;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
     gap: 15px;
     align-items: start;
 
@@ -169,7 +169,6 @@
   }
 
   .stat__text {
-    //display: block;
     width: 625px;
     max-height: 56px;
     font-size: 20px;
@@ -1077,7 +1076,6 @@
 
   .container {
     width: 920px;
-
   }
 
   .header {
@@ -1681,6 +1679,8 @@
   }
 
   .kitchen-intro {
+    padding: 80px 0;
+    margin-bottom: 80px;
 
     &__info-title {
       height: 120px;
@@ -1694,6 +1694,34 @@
 
     &__info-description {
       margin-bottom: 40px;
+    }
+
+    &__stats {
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .stat {
+      //margin-bottom: 60px;
+
+      &__text {
+        width: 285px;
+        max-height: 72px;
+      }
+    }
+
+    &__image-container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__image-bg {
+      width: 680px;
+      height: 500px;
+    }
+
+    &__image-elips {
+      left: 39%;
     }
   }
 

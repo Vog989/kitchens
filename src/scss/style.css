@@ -279,7 +279,6 @@ a {
 }
 .kitchen-intro .stat {
   display: flex;
-  padding-bottom: 20px;
   gap: 15px;
   align-items: start;
 }
@@ -1495,6 +1494,10 @@ a {
   .header__inner {
     padding: 20px 52px;
   }
+  .kitchen-intro {
+    padding: 80px 0;
+    margin-bottom: 80px;
+  }
   .kitchen-intro__info-title {
     height: 120px;
     margin-bottom: 20px;
@@ -1505,6 +1508,25 @@ a {
   }
   .kitchen-intro__info-description {
     margin-bottom: 40px;
+  }
+  .kitchen-intro__stats {
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  .kitchen-intro .stat__text {
+    width: 285px;
+    max-height: 72px;
+  }
+  .kitchen-intro__image-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .kitchen-intro__image-bg {
+    width: 680px;
+    height: 500px;
+  }
+  .kitchen-intro__image-elips {
+    left: 39%;
   }
 }
 
