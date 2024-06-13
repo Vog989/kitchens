@@ -157,7 +157,6 @@ a {
 
 .header {
   padding: 20px 0;
-  height: 80px;
   background-color: #F4F4F4;
   align-items: center;
 }
@@ -178,7 +177,6 @@ a {
 }
 .menu__btn span {
   background-color: #252525;
-  height: 3px;
   width: 24px;
   border-radius: 50px;
 }
@@ -244,12 +242,10 @@ a {
   font-size: 64px;
   line-height: 72px;
   width: 800px;
-  height: 144px;
   margin-bottom: 30px;
 }
 .kitchen-intro__info-text {
   width: 780px;
-  height: 160px;
   font-size: 24px;
   line-height: 32px;
 }
@@ -275,6 +271,7 @@ a {
 .kitchen-intro__stats {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .kitchen-intro .stat {
   display: flex;
@@ -292,7 +289,6 @@ a {
 }
 .kitchen-intro .stat__text {
   width: 625px;
-  max-height: 56px;
   font-size: 20px;
   line-height: 28px;
 }
@@ -357,14 +353,12 @@ a {
   line-height: 60px;
   margin-bottom: 30px;
   width: 550px;
-  height: 120px;
 }
 .interior__text {
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 60px;
   max-width: 800px;
-  max-height: 160px;
 }
 .interior__list-points {
   margin-bottom: 50px;
@@ -378,7 +372,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 380px;
-  height: 140px;
   font-size: 20px;
   line-height: 28px;
 }
@@ -432,13 +425,11 @@ a {
   font-size: 48px;
   line-height: 60px;
   width: 660px;
-  height: 120px;
 }
 .choice__description {
   font-size: 24px;
   line-height: 32px;
   width: 800px;
-  height: 160px;
 }
 .choice__points {
   display: grid;
@@ -452,7 +443,6 @@ a {
 }
 .choice__item-title {
   width: 380px;
-  max-height: 64px;
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 15px;
@@ -503,13 +493,11 @@ a {
   font-size: 48px;
   line-height: 60px;
   width: 660px;
-  height: 120px;
 }
 .process__description {
   font-size: 24px;
   line-height: 32px;
   width: 660px;
-  height: 96px;
 }
 .process__steps {
   display: flex;
@@ -558,12 +546,10 @@ a {
   font-size: 48px;
   line-height: 60px;
   max-width: 800px;
-  height: 60px;
   margin-bottom: 30px;
 }
 .cabinet-gallery__description {
   max-width: 1080px;
-  height: 96px;
   margin-bottom: 80px;
 }
 .cabinet-gallery__cards {
@@ -616,14 +602,12 @@ a {
   font-size: 48px;
   line-height: 60px;
   width: 520px;
-  height: 120px;
   margin-bottom: 30px;
 }
 .projects-gallery__description-text {
   font-size: 24px;
   line-height: 32px;
   width: 520px;
-  height: 256px;
   margin-bottom: 135px;
 }
 .projects-gallery__slider {
@@ -1218,11 +1202,11 @@ a {
   .process__text {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
   }
   .process__title {
     font-size: 40px;
     width: 920px;
-    height: 56px;
   }
   .process__description {
     font-size: 20px;
@@ -1235,6 +1219,7 @@ a {
   .process__step {
     margin-bottom: 30px;
     width: 920px;
+    height: 178px;
     padding: 50px 30px 30px;
   }
   .process__step-number {
@@ -1247,14 +1232,12 @@ a {
   }
   .process__step-title {
     font-size: 24px;
-    width: 920px;
-    height: 32px;
-    margin-bottom: 10px;
+    width: 100%;
   }
   .process__step-description {
     font-size: 20px;
-    width: 860px;
-    height: 56px;
+    width: 100%;
+    height: 100%;
   }
   .cabinet-gallery {
     padding-top: 80px;
@@ -1262,14 +1245,12 @@ a {
   }
   .cabinet-gallery__title {
     font-size: 40px;
-    width: 920px;
-    height: 56px;
+    width: 100%;
     margin-bottom: 20px;
   }
   .cabinet-gallery__description {
     font-size: 20px;
-    width: 920px;
-    height: 84px;
+    width: 100%;
     line-height: 28px;
     margin-bottom: 60px;
   }
@@ -1306,14 +1287,12 @@ a {
   .projects-gallery__description-title {
     font-size: 40px;
     width: 920px;
-    height: 56px;
     margin-bottom: 20px;
   }
   .projects-gallery__description-text {
     font-size: 20px;
     line-height: 28px;
     width: 920px;
-    height: 112px;
     margin-bottom: 40px;
   }
   .projects-gallery__swiper-actions {
@@ -1567,14 +1546,14 @@ a {
     left: 760px;
   }
   .interior__image--medium {
-    right: 0;
-    bottom: 20px;
+    right: 109px;
+    bottom: 27px;
     width: 420px;
     height: 520px;
   }
   .interior__pattern-points {
-    bottom: 110px;
-    left: 360px;
+    bottom: 90px;
+    left: 250px;
   }
 }
 
