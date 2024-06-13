@@ -147,7 +147,6 @@ body {
   max-width: 1660px;
   margin: 0 auto;
   padding: 0 10px;
-  overflow-x: hidden;
 }
 
 a {
@@ -373,11 +372,12 @@ a {
 .interior__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 .interior__list-item {
   display: flex;
   flex-direction: column;
-  max-width: 380px;
+  width: 380px;
   height: 140px;
   font-size: 20px;
   line-height: 28px;
@@ -1050,7 +1050,6 @@ a {
   }
   .kitchen-intro__inner {
     flex-direction: column;
-    overflow-y: auto;
   }
   .kitchen-intro__info-description {
     margin-left: auto;
@@ -1119,6 +1118,9 @@ a {
     height: 112px;
     margin-bottom: 60px;
   }
+  .interior__list {
+    max-height: 96px;
+  }
   .interior__list-points {
     margin-bottom: 30px;
   }
@@ -1128,7 +1130,6 @@ a {
   .interior__images {
     position: relative;
     width: 920px;
-    height: 1038px;
   }
   .interior__image {
     display: block;
@@ -1150,7 +1151,7 @@ a {
   .interior__image--medium {
     position: absolute;
     right: 0;
-    bottom: 20px;
+    bottom: -240px;
     width: 560px;
     height: 678px;
   }
@@ -1512,14 +1513,16 @@ a {
   .kitchen-intro__stats {
     gap: 40px;
     margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .kitchen-intro .stat__text {
     width: 285px;
     max-height: 72px;
   }
   .kitchen-intro__image-container {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .kitchen-intro__image-bg {
     width: 680px;
@@ -1527,6 +1530,51 @@ a {
   }
   .kitchen-intro__image-elips {
     left: 39%;
+  }
+  .interior {
+    margin-bottom: 80px;
+  }
+  .interior__title {
+    line-height: 56px;
+    width: 480px;
+    height: 112px;
+    margin-bottom: 20px;
+  }
+  .interior__text {
+    width: 680px;
+    height: 140px;
+  }
+  .interior__list {
+    gap: 40px;
+  }
+  .interior__list-item {
+    max-height: 120px;
+    width: 320px;
+  }
+  .interior__list-points {
+    margin-bottom: 60px;
+  }
+  .interior__image--large {
+    top: 0;
+    left: 120px;
+    width: 440px;
+    height: 540px;
+  }
+  .interior__image--small {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 760px;
+  }
+  .interior__image--medium {
+    right: 0;
+    bottom: 20px;
+    width: 420px;
+    height: 520px;
+  }
+  .interior__pattern-points {
+    bottom: 110px;
+    left: 360px;
   }
 }
 
