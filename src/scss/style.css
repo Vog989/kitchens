@@ -576,11 +576,6 @@ a {
   align-items: center;
   padding-top: 30px;
 }
-.cabinet-gallery__image {
-  width: 460px;
-  height: 300px;
-  display: block;
-}
 .cabinet-gallery__card-title {
   font-size: 32px;
   line-height: 32px;
@@ -590,6 +585,9 @@ a {
 .projects-gallery {
   background-color: #F4F4F4;
   padding: 100px 0;
+}
+.projects-gallery__slider {
+  overflow-x: hidden;
 }
 .projects-gallery__inner {
   display: flex;
@@ -647,8 +645,6 @@ a {
   position: absolute;
   top: 30px;
   left: 440px;
-  width: 109px;
-  height: 100px;
 }
 
 .current-counter__value {
@@ -678,18 +674,15 @@ a {
   left: 1050px;
   width: 110px;
   height: 100px;
-  background-size: cover;
 }
 .accessories__title {
   font-size: 48px;
   line-height: 60px;
   max-width: 940px;
-  height: 60px;
   margin-bottom: 30px;
 }
 .accessories__description {
   max-width: 940px;
-  height: 96px;
 }
 .accessories__cards {
   display: grid;
@@ -743,12 +736,10 @@ a {
   font-size: 48px;
   line-height: 60px;
   width: 600px;
-  height: 120px;
 }
 .contact-form__description {
   margin: 0 auto;
   width: 1080px;
-  height: 64px;
 }
 .contact-form__inner {
   position: relative;
@@ -760,10 +751,9 @@ a {
   align-items: center;
   z-index: 10;
   width: 800px;
-  height: 655px;
   border-radius: 20px;
   background-color: #ffffff;
-  padding: 25px 50px;
+  padding: 50px;
 }
 .contact-form__field {
   margin-bottom: 30px;
@@ -776,19 +766,17 @@ a {
 }
 .contact-form__input {
   width: 700px;
-  height: 50px;
   border-radius: 20px;
   border: 1px solid #E9E9E9;
   font-size: 16px;
-  padding-left: 30px;
+  padding: 10px 30px;
 }
 .contact-form__textarea {
   width: 700px;
-  height: 70px;
   border-radius: 20px;
   border: 1px solid #E9E9E9;
   font-size: 16px;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 .contact-form__images {
   height: 660px;
@@ -841,13 +829,11 @@ a {
   margin: 0 auto;
   margin-bottom: 30px;
   font-size: 48px;
-  height: 60px;
   width: 1076px;
 }
 .faq__description {
   margin: 0 auto;
   width: 1080px;
-  height: 96px;
 }
 .faq__list {
   width: 1360px;
@@ -933,7 +919,6 @@ a {
 }
 .footer-top__slogan {
   width: 520px;
-  height: 180px;
   color: #fff;
   line-height: 60px;
   font-size: 48px;
@@ -1043,14 +1028,12 @@ a {
     text-align: center;
     font-size: 48px;
     width: 680px;
-    height: 120px;
     line-height: 60px;
   }
   .kitchen-intro__info-text {
     text-align: center;
     font-size: 20px;
     width: 680px;
-    height: 140px;
     line-height: 28px;
   }
   .kitchen-intro__actions {
@@ -1067,7 +1050,6 @@ a {
     font-size: 16px;
     line-height: 24px;
     width: 405px;
-    height: 48px;
   }
   .kitchen-intro__image-container {
     margin-right: auto;
@@ -1091,7 +1073,6 @@ a {
   }
   .interior__title {
     font-size: 40px;
-    height: 56px;
     width: 920px;
     margin-bottom: 20px;
   }
@@ -1099,11 +1080,7 @@ a {
     font-size: 20px;
     line-height: 28px;
     width: 920px;
-    height: 112px;
     margin-bottom: 60px;
-  }
-  .interior__list {
-    max-height: 96px;
   }
   .interior__list-points {
     margin-bottom: 30px;
@@ -1165,7 +1142,6 @@ a {
     font-size: 20px;
     line-height: 28px;
     width: 920px;
-    height: 112px;
   }
   .choice__item {
     margin-bottom: 60px;
@@ -1177,7 +1153,6 @@ a {
   .choice__item-text {
     font-size: 16px;
     width: 440px;
-    max-height: 72px;
   }
   .choice__item-icon {
     padding-bottom: 20px;
@@ -1211,7 +1186,6 @@ a {
   .process__description {
     font-size: 20px;
     width: 920px;
-    height: 56px;
   }
   .process__steps {
     flex-direction: column;
@@ -1219,7 +1193,6 @@ a {
   .process__step {
     margin-bottom: 30px;
     width: 920px;
-    height: 178px;
     padding: 50px 30px 30px;
   }
   .process__step-number {
@@ -1303,14 +1276,12 @@ a {
   }
   .accessories__title {
     font-size: 40px;
-    height: 56px;
     width: 920px;
   }
   .accessories__description {
     font-size: 20px;
     line-height: 28px;
     width: 920px;
-    height: 84px;
   }
   .accessories__cards {
     display: grid;
@@ -1339,13 +1310,11 @@ a {
     font-size: 40px;
     line-height: 56px;
     width: 680px;
-    height: 112px;
   }
   .contact-form__description {
     font-size: 20px;
     line-height: 28px;
     width: 680px;
-    height: 84px;
   }
   .contact-form__image {
     display: none;
@@ -1353,8 +1322,7 @@ a {
   .contact-form__form {
     position: absolute;
     width: 680px;
-    height: 654px;
-    padding: 15px 30px;
+    padding: 40px;
     justify-content: center;
   }
   .contact-form__field {
