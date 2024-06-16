@@ -231,7 +231,7 @@ a {
 }
 .kitchen-intro__image-elips {
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   left: -80px;
   z-index: 1;
 }
@@ -304,7 +304,6 @@ a {
 .interior__images {
   position: relative;
   width: 50%;
-  height: 780px;
 }
 .interior__image {
   display: block;
@@ -341,7 +340,6 @@ a {
   z-index: 0;
   width: 174.545px;
   height: 160px;
-  background: url("src/images/pattern-points.png") no-repeat;
   background-size: cover;
 }
 .interior__info {
@@ -636,7 +634,7 @@ a {
   position: absolute;
   top: 0;
   z-index: 2;
-  right: 320px;
+  right: 0;
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -678,11 +676,11 @@ a {
 .accessories__title {
   font-size: 48px;
   line-height: 60px;
-  max-width: 940px;
+  width: 100%;
   margin-bottom: 30px;
 }
 .accessories__description {
-  max-width: 940px;
+  width: 940px;
 }
 .accessories__cards {
   display: grid;
@@ -836,7 +834,7 @@ a {
   width: 1080px;
 }
 .faq__list {
-  width: 1360px;
+  width: 100%;
   margin-bottom: 50px;
 }
 .faq__item {
@@ -852,7 +850,7 @@ a {
   position: relative;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .faq__question:after {
   position: absolute;
@@ -907,6 +905,7 @@ a {
 .footer-top__company {
   display: flex;
   flex-direction: column;
+  width: 520px;
   margin-right: 180px;
 }
 .footer-top__contact-link {
@@ -981,6 +980,7 @@ a {
   font-weight: 700;
 }
 .footer-bottom__legal-link {
+  font-size: 16px;
   font-weight: 400;
 }
 .footer-bottom__legal-link:hover {
@@ -993,10 +993,6 @@ a {
 @media (max-width: 1024px) {
   .container {
     width: 920px;
-  }
-  .header__inner {
-    padding: 20px 0;
-    align-items: center;
   }
   .header__logo {
     margin-right: auto;
@@ -1054,6 +1050,7 @@ a {
   .kitchen-intro__image-container {
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
   }
   .kitchen-intro__image-elips {
     bottom: -50px;
@@ -1069,7 +1066,7 @@ a {
     align-items: center;
   }
   .interior__info {
-    margin-bottom: 60px;
+    margin-bottom: 75px;
   }
   .interior__title {
     font-size: 40px;
@@ -1083,14 +1080,16 @@ a {
     margin-bottom: 60px;
   }
   .interior__list-points {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .interior__list-item {
     font-size: 16px;
+    width: 405px;
   }
   .interior__images {
     position: relative;
     width: 920px;
+    height: 770px;
   }
   .interior__image {
     display: block;
@@ -1276,12 +1275,15 @@ a {
   }
   .accessories__title {
     font-size: 40px;
-    width: 920px;
+    width: 100%;
   }
   .accessories__description {
     font-size: 20px;
     line-height: 28px;
     width: 920px;
+  }
+  .accessories__points-pattern {
+    display: none;
   }
   .accessories__cards {
     display: grid;
@@ -1301,7 +1303,6 @@ a {
   }
   .accessories__card-title {
     font-size: 24px;
-    line-height: 32px;
   }
   .contact-form__header {
     margin-bottom: 40px;
@@ -1333,15 +1334,13 @@ a {
   }
   .contact-form__input {
     width: 600px;
-    height: 50px;
+    padding: 10px 30px;
     font-size: 16px;
-    padding-left: 30px;
   }
   .contact-form__textarea {
     width: 600px;
-    height: 70px;
     font-size: 16px;
-    padding: 15px 30px;
+    padding: 15px 30px 0;
   }
   .contact-form__button {
     width: 600px;
@@ -1362,14 +1361,12 @@ a {
   .faq__title {
     font-size: 40px;
     width: 680px;
-    height: 56px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .faq__description {
     font-size: 20px;
     line-height: 28px;
     width: 680px;
-    height: 112px;
   }
   .faq__line {
     width: 920px;
@@ -1378,7 +1375,6 @@ a {
   .faq__question {
     font-size: 20px;
     width: 800px;
-    height: 28px;
   }
   .faq__question:after {
     top: 0;
@@ -1408,11 +1404,9 @@ a {
   .footer-top__slogan {
     font-size: 40px;
     width: 920px;
-    height: 56px;
   }
   .footer-top__title {
     font-size: 20px;
-    height: 28px;
     margin-bottom: 20px;
   }
   .footer-top__list {
@@ -1420,16 +1414,13 @@ a {
   }
   .footer-top__link {
     font-size: 16px;
-    height: 24px;
   }
   .footer-top__social-link {
     font-size: 16px;
-    height: 24px;
     gap: 10px;
   }
   .footer-top__contacts {
     font-size: 16px;
-    max-height: 72px;
     gap: 10px;
     padding-bottom: 10px;
     line-height: 24px;
@@ -1438,16 +1429,18 @@ a {
 @media (max-width: 768px) {
   .container {
     width: 768px;
+    margin: 0 auto;
+    padding-right: 44px;
+    padding-left: 44px;
   }
   .header__inner {
-    padding: 20px 52px;
+    display: flex;
   }
   .kitchen-intro {
     padding: 80px 0;
     margin-bottom: 80px;
   }
   .kitchen-intro__info-title {
-    height: 120px;
     margin-bottom: 20px;
   }
   .kitchen-intro__actions {
@@ -1465,7 +1458,6 @@ a {
   }
   .kitchen-intro .stat__text {
     width: 285px;
-    max-height: 72px;
   }
   .kitchen-intro__image-container {
     margin-left: auto;
@@ -1484,19 +1476,16 @@ a {
   .interior__title {
     line-height: 56px;
     width: 480px;
-    height: 112px;
     margin-bottom: 20px;
   }
   .interior__text {
     width: 680px;
-    height: 140px;
   }
   .interior__list {
     gap: 40px;
   }
   .interior__list-item {
-    max-height: 120px;
-    width: 320px;
+    width: 310px;
   }
   .interior__list-points {
     margin-bottom: 60px;
@@ -1521,7 +1510,98 @@ a {
   }
   .interior__pattern-points {
     bottom: 90px;
-    left: 250px;
+    left: 260px;
+  }
+  .choice__title {
+    width: 680px;
+    margin-bottom: 20px;
+  }
+  .choice__description {
+    width: 680px;
+  }
+  .choice__points {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-column-gap: 40px;
+  }
+  .choice__item-title {
+    width: 320px;
+  }
+  .choice__item-text {
+    width: 320px;
+  }
+  .choice__image-main-tablet {
+    width: 680px;
+    height: 500px;
+  }
+  .process__text {
+    margin-bottom: 80px;
+  }
+  .process__title {
+    width: 680px;
+    margin-bottom: -20px;
+  }
+  .process__description {
+    width: 680px;
+  }
+  .process__step {
+    width: 680px;
+  }
+  .cabinet-gallery__image {
+    width: 280px;
+    height: 200px;
+  }
+  .projects-gallery__description-title {
+    width: 100%;
+  }
+  .projects-gallery__description-text {
+    width: 680px;
+  }
+  .projects-gallery__patterns {
+    top: 50px;
+    left: 418px;
+  }
+  .projects-gallery__patterns img {
+    width: 108.824px;
+    height: 100px;
+  }
+  .accessories__header-text {
+    width: 100%;
+  }
+  .accessories__description {
+    width: 680px;
+  }
+  .accessories__points-pattern {
+    display: none;
+  }
+  .accessories__card {
+    padding: 20px;
+  }
+  .accessories__image {
+    width: 280px;
+    height: 200px;
+  }
+  .faq__list {
+    width: 100%;
+  }
+  .faq__line {
+    width: 100%;
+  }
+  .faq__question {
+    width: 560px;
+  }
+  .faq__answer {
+    width: 560px;
+  }
+  .footer-top__company {
+    width: 680px;
+    margin-right: 0;
+  }
+  .footer-top__slogan {
+    width: 680px;
+  }
+  .footer-top__contacts {
+    width: 201px;
   }
 }
 
