@@ -6,7 +6,6 @@
 
 .header {
   padding: 20px 0;
-  //height: 80px;
   background-color: $background;
   align-items: center;
 
@@ -57,14 +56,13 @@
 .user-nav {
   &__link {
     display: inline-block;
+    @extend %helveticaneuecyr-700;
     background-color: $accent;
-    padding: 6px;
+    padding: 10px 20px;
     width: 120px;
-    height: 40px;
-    border-radius: 20px;
+    border-radius: 50px;
     text-align: center;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
     color: $text;
 
     &:hover {
@@ -111,13 +109,11 @@
     font-size: 64px;
     line-height: 72px;
     width: 800px;
-    //height: 144px;
     margin-bottom: 30px;
   }
 
   &__info-text {
     width: 780px;
-    //height: 160px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -153,7 +149,6 @@
 
   .stat {
     display: flex;
-    //padding-bottom: 20px;
     gap: 15px;
     align-items: start;
 
@@ -170,7 +165,6 @@
 
   .stat__text {
     width: 625px;
-    //max-height: 56px;
     font-size: 20px;
     line-height: 28px;
   }
@@ -1880,5 +1874,101 @@
 }
 
 @media (max-width: 360px) {
+
+  .container {
+    width: 360px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &__logo {
+      padding-left: 20px;
+    }
+
+  }
+
+  .user-nav {
+    &__link {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+
+  .kitchen-intro {
+    padding: 60px 0;
+    margin-bottom: 60px;
+
+    &__info-description {
+      margin-bottom: 30px;
+    }
+
+    &__info-title {
+      font-size: 36px;
+      width: 320px;
+      line-height: 44px;
+      margin-bottom: 10px;
+    }
+
+    &__info-text {
+      font-size: 16px;
+      line-height: 24px;
+      width: 320px;
+    }
+
+    &__actions {
+      margin-bottom: 40px;
+    }
+
+    &__actions-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    &__stats {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 320px;
+      margin-bottom: 40px;
+    }
+
+    &__image-bg {
+      width: 320px;
+      height: 240px;
+    }
+
+    &__image-elips {
+      width: 73.333px;
+      height: 73.333px;
+      left: 37%;
+      bottom: -40px;
+    }
+  }
+
+  .interior {
+
+    &__info {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 32px;
+      width: 320px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__list-points {
+      margin-bottom: 30px;
+    }
+  }
 
 }
