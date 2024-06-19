@@ -781,7 +781,7 @@
 
     &--main {
       position: absolute;
-      top: 50px;
+      top: 75px;
       right: 0;
       z-index: 9;
       width: 660px;
@@ -2052,6 +2052,7 @@
   }
 
   .process {
+    margin-bottom: 60px;
 
     &__text {
       margin-bottom: 60px;
@@ -2122,12 +2123,12 @@
 
   .projects-gallery {
     padding-top: 60px;
-
-    &__description {
-      margin-right: 0;
-    }
+    padding-bottom: 60px;
 
     &__description-title {
+      font-size: 32px;
+      line-height: 40px;
+      width: 320px;
       margin-bottom: 10px;
     }
 
@@ -2143,6 +2144,112 @@
       line-height: 24px;
       padding: 10px 97px;
       width: 320px;
+    }
+  }
+
+  .accessories {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__header {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+      width: 320px;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      width: 320px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      padding: 10px;
+    }
+
+    &__card-name {
+      padding-top: 10px;
+    }
+
+    &__card-title {
+      font-size: 20px;
+    }
+
+    &__image {
+      width: 300px;
+      height: 200px;
+    }
+  }
+
+  .contact-form {
+    padding-top: 60px;
+    padding-bottom: 0;
+
+
+    &__header {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+      text-align: left;
+      width: 320px;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+      width: 320px;
+    }
+
+    &__form {
+      width: 320px;
+      padding: 20px;
+    }
+
+    &__label {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      width: 280px;
+    }
+
+    &__input {
+      width: 280px;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 15px 20px;
+    }
+
+    &__textarea {
+      width: 280px;
+      padding: 15px 20px 55px 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__button {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 10px 20px;
+      width: 280px;
+    }
+
+    &__field {
+      margin-bottom: 20px;
     }
   }
 }
