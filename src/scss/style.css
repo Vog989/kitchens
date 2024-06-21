@@ -170,10 +170,13 @@ a {
 }
 .menu__btn {
   display: none;
-  width: 30px;
+  width: 24px;
   height: 18px;
-  flex-direction: column;
-  justify-content: space-between;
+}
+.menu__btn span {
+  background: #252525;
+  height: 3px;
+  width: 100%;
 }
 .menu__btn span {
   background-color: #252525;
@@ -992,6 +995,9 @@ a {
   .container {
     width: 920px;
   }
+  .header__inner {
+    align-items: center;
+  }
   .header__logo {
     margin-right: auto;
     padding-left: 30px;
@@ -1004,6 +1010,8 @@ a {
   }
   .menu__btn {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .kitchen-intro {
     display: flex;
@@ -1431,7 +1439,7 @@ a {
     padding-left: 44px;
   }
   .header__inner {
-    display: flex;
+    align-items: center;
   }
   .kitchen-intro {
     padding: 80px 0;
@@ -1612,15 +1620,34 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  .header__inner {
+    align-items: center;
+  }
   .header__logo {
-    padding-left: 20px;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 0px;
+  }
+  .header__logo img {
+    width: 135.002px;
+    height: 30px;
+  }
+  .menu__btn {
+    width: 16px;
+    height: 12px;
+  }
+  .menu__btn span {
+    background: #252525;
+    height: 2px;
+    width: 16px;
   }
   .user-nav__link {
     font-size: 14px;
     padding: 5px 10px;
   }
   .kitchen-intro {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 50px;
     margin-bottom: 60px;
   }
   .kitchen-intro__info-description {
@@ -1638,6 +1665,7 @@ a {
     width: 320px;
   }
   .kitchen-intro__actions {
+    gap: 10px;
     margin-bottom: 40px;
   }
   .kitchen-intro__actions-btn {
