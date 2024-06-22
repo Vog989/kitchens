@@ -26,7 +26,7 @@
     height: 18px;
   }
 
-  &__btn span{
+  &__btn span {
     background: $text;
     height: 3px;
     width: 100%;
@@ -764,7 +764,8 @@
     border-radius: 20px;
     border: 1px solid #E9E9E9;
     font-size: 16px;
-    padding: 10px 30px;
+    line-height: 20px;
+    padding: 15px 30px;
   }
 
   &__textarea {
@@ -772,7 +773,8 @@
     border-radius: 20px;
     border: 1px solid #E9E9E9;
     font-size: 16px;
-    padding: 10px 30px;
+    line-height: 20px;
+    padding: 15px 30px;
   }
 
   &__images {
@@ -785,7 +787,7 @@
 
     &--main {
       position: absolute;
-      top: 75px;
+      top: 70px;
       right: 0;
       z-index: 9;
       width: 660px;
@@ -807,7 +809,7 @@
     height: 58px;
     background-color: #F0D88B;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 20px;
     @extend %helveticaneuecyr-700;
@@ -833,10 +835,10 @@
 
   &__title {
     @extend %firasans-700;
-    margin: 0 auto;
+    text-align: center;
     margin-bottom: 30px;
     font-size: 48px;
-    width: 1076px;
+    width: 100%;
   }
 
   &__description {
@@ -847,17 +849,21 @@
   &__list {
     width: 100%;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
   }
 
   &__item {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px
   }
 
   &__line {
     width: 1360px;
     background: #E9E9E9;
     height: 1px;
-    margin-bottom: 30px;
   }
 
   &__question {
@@ -865,7 +871,6 @@
     @extend %roboto-700;
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: 10px;
 
     &:after {
       position: absolute;
@@ -946,6 +951,7 @@
   }
 
   &__slogan {
+    @extend %firasans-700;
     width: 520px;
     color: #fff;
     line-height: 60px;
@@ -987,7 +993,6 @@
     display: flex;
   }
 
-
   &__contact-link {
     max-width: 378px;
   }
@@ -1013,7 +1018,6 @@
 }
 
 .footer-bottom {
-  height: 125px;
   color: var(--Kitchen_Grey---Light, #FFF);
   display: flex;
   justify-content: space-between;
@@ -1022,12 +1026,12 @@
   line-height: 24px;
 
   &__copy {
-    font-weight: 700;
+    @extend %helveticaneuecyr-700;
   }
 
   &__legal-link {
     font-size: 16px;
-    font-weight: 400;
+    @extend %helveticaneuecyr-400; //need connect helvetica 550
 
     &:hover {
       text-decoration: underline;
@@ -1064,6 +1068,10 @@
 
     &__list {
       display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
     }
 
     &__btn {
@@ -1176,6 +1184,7 @@
     &__images {
       position: relative;
       width: 920px;
+      height: 1038px;
     }
 
     &__image {
@@ -1200,7 +1209,7 @@
       &--medium {
         position: absolute;
         right: 0;
-        bottom: -240px;
+        bottom: 20px;
         width: 560px;
         height: 678px;
       }
@@ -1374,13 +1383,18 @@
   .projects-gallery {
     padding-top: 80px;
 
+    .custom-container {
+      width: 1024px;
+      padding-left: 52px;
+      padding-right: 0;
+    }
+
     &__inner {
       flex-direction: column;
     }
 
     &__description {
       margin-bottom: 60px;
-
     }
 
     &__description-title {
@@ -1396,9 +1410,42 @@
       margin-bottom: 40px;
     }
 
-    &__swiper-actions {
-      right: 0;
+    &__swiper {
+      width: 1060px;
+      height: 640px;
     }
+
+    &__swiper-slide {
+      width: 460px;
+      height: 540px;
+    }
+
+    .swiper-slide-active {
+      width: 560px;
+      height: 640px;
+    }
+
+    &__swiper-actions {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      right: 52px;
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    &__patterns {
+      position: absolute;
+      top: 50px;
+      left: 478px;
+    }
+
+    &__patterns img {
+      width: 108.824px;
+      height: 100px;
+    }
+
   }
 
   .accessories {
@@ -1691,6 +1738,10 @@
       margin-bottom: 60px;
     }
 
+    &__images {
+      height: 760px;
+    }
+
     &__image {
 
       &--large {
@@ -1709,7 +1760,7 @@
 
       &--medium {
         right: 109px;
-        bottom: 27px;
+        bottom: 7px;
         width: 420px;
         height: 520px;
       }
@@ -1782,12 +1833,43 @@
 
   .projects-gallery {
 
+    .custom-container {
+      width: 768px;
+      padding-left: 44px;
+      padding-right: 0;
+    }
+
     &__description-title {
       width: 100%;
     }
 
     &__description-text {
       width: 680px;
+    }
+
+    &__swiper {
+      width: 820px;
+      height: 500px;
+    }
+
+    &__swiper-slide {
+      width: 340px;
+      height: 400px;
+    }
+
+    .swiper-slide-active {
+      width: 440px;
+      height: 500px;
+    }
+
+    &__swiper-actions {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      right: 44px;
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
     }
 
     &__patterns {
@@ -1887,6 +1969,19 @@
       width: 135.002px;
       height: 30px;
     }
+
+    .user-nav {
+
+      &__link {
+        width: 80px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      &__link-second {
+        display: none;
+      }
+    }
   }
 
   .menu {
@@ -1895,7 +1990,7 @@
       height: 12px;
     }
 
-    &__btn span{
+    &__btn span {
       background: $text;
       height: 2px;
       width: 16px;
@@ -1963,6 +2058,7 @@
   }
 
   .interior {
+    margin-bottom: 60px;
 
     &__info {
       margin-bottom: 30px;
@@ -2009,31 +2105,40 @@
       padding: 10px 97px;
     }
 
-    &__image--large {
-      width: 210px;
-      height: 250px;
-      left: 300px;
+    &__images {
+      height: 350px;
     }
 
-    &__image--medium {
-      width: 200px;
-      height: 240px;
-      right: 297px;
-      bottom: -345px;
-    }
+    &__image {
+      display: block;
 
-    &__image--small {
-      width: 90px;
-      height: 90px;
-      left: 600px;
+      &--large {
+        width: 210px;
+        height: 250px;
+        left: 300px;
+      }
+
+      &--medium {
+        width: 200px;
+        height: 240px;
+        right: 297px;
+        bottom: 5px;
+      }
+
+      &--small {
+        width: 90px;
+        height: 90px;
+        left: 600px;
+      }
     }
 
     &__pattern-points {
       width: 82.139px;
       height: 75.294px;
-      bottom: -300px;
-      left: 375px;
+      bottom: 42px;
+      left: 363px;
     }
+
   }
 
   .choice {
@@ -2157,6 +2262,13 @@
   }
 
   .projects-gallery {
+
+    .custom-container {
+      width: 360px;
+      padding-left: 20px;
+      padding-right: 0;
+    }
+
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -2179,6 +2291,34 @@
       line-height: 24px;
       padding: 10px 97px;
       width: 320px;
+    }
+
+    &__swiper {
+      width: 640px;
+      height: 368px;
+    }
+
+    &__swiper-slide {
+      width: 290px;
+      height: 320px;
+    }
+
+    .swiper-slide-active {
+      width: 290px;
+      height: 320px;
+    }
+
+    &__swiper-actions {
+      width: 320px;
+      right: 15px;
+      gap: 90px;
+      position: absolute;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__patterns {
+      display: none;
     }
   }
 
@@ -2338,6 +2478,97 @@
       padding: 10px 37px;
       width: 320px;
       font-size: 16px;
+    }
+  }
+
+  .footer {
+
+    .footer-top {
+      padding-top: 60px;
+      padding-bottom: 30px;
+      border-bottom: none;
+
+      &__sub-icons {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        //margin-top: 20px;
+      }
+
+      &__company {
+        margin-bottom: 60px;
+      }
+
+      &__logo {
+        width: 225px;
+      }
+
+      &__logo-img img {
+        width: 225.004px;
+        height: 50px;
+      }
+
+      &__slogan {
+        font-size: 32px;
+        line-height: 40px;
+        width: 320px;
+      }
+
+      &__title {
+        position: relative;
+        font-size: 20px;
+        line-height: 28px;
+        width: 320px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        &:after {
+          position: absolute;
+          display: block;
+          top: 0;
+          right: 0;
+          content: '';
+          background-image: url("src/images/icons/chevron.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 32px;
+          height: 32px;
+        }
+
+        &.active:after {
+          transform: rotate(180deg);
+        }
+      }
+
+      &__items {
+        display: none;
+      }
+
+      &__line {
+        width: 320px;
+        height: 1px;
+        background: #fff;
+        opacity: 0.1;
+      }
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 60px;
+
+      &__copy {
+        text-align: center;
+        width: 320px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 30px;
+      }
+
+      &__legal-link {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 }
