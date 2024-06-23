@@ -841,7 +841,7 @@ a {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 .faq__item {
   display: flex;
@@ -852,6 +852,7 @@ a {
   width: 1360px;
   background: #E9E9E9;
   height: 1px;
+  margin-bottom: 15px;
 }
 .faq__question {
   position: relative;
@@ -907,6 +908,9 @@ a {
   padding: 100px 0 85px;
   border-bottom: 1px solid #3a3a3a;
   display: flex;
+}
+.footer-top__accordion {
+  display: none;
 }
 .footer-top__company {
   display: flex;
@@ -1394,15 +1398,9 @@ a {
   .faq__header {
     margin-bottom: 60px;
   }
-  .faq__list {
-    margin-bottom: 60px;
-  }
-  .faq__item {
-    margin-bottom: 20px;
-  }
   .faq__title {
     font-size: 40px;
-    width: 680px;
+    width: 100%;
     margin-bottom: 30px;
   }
   .faq__description {
@@ -1410,12 +1408,20 @@ a {
     line-height: 28px;
     width: 680px;
   }
+  .faq__list {
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+  .faq__item {
+    gap: 10px;
+  }
   .faq__line {
     width: 920px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .faq__question {
     font-size: 20px;
+    line-height: 24px;
     width: 800px;
   }
   .faq__question:after {
@@ -1429,7 +1435,6 @@ a {
   .faq__answer {
     font-size: 16px;
     width: 800px;
-    height: 48px;
   }
   .footer-top {
     padding: 80px 0 80px;
@@ -2090,7 +2095,6 @@ a {
     width: 276px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 10px;
   }
   .faq__question:after {
     right: -45px;
@@ -2131,6 +2135,9 @@ a {
     font-size: 32px;
     line-height: 40px;
     width: 320px;
+  }
+  .footer .footer-top__accordion {
+    display: block;
   }
   .footer .footer-top__title {
     position: relative;
