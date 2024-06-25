@@ -183,12 +183,13 @@ a {
   width: 24px;
   border-radius: 50px;
 }
-.menu__list-item + .menu__list-item {
-  padding-left: 40px;
+.menu__list {
+  gap: 40px;
 }
 .menu__list-link {
   color: #252525;
   font-size: 16px;
+  line-height: 24px;
   padding-bottom: 2px;
   border-radius: 1px;
   transition: all 0.2s;
@@ -1010,11 +1011,16 @@ a {
     order: -1;
   }
   .menu__list {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    width: 920px;
+    margin: 0 auto;
+    background-color: #F4F4F4;
+    text-align: center;
+    padding-top: 80px;
   }
   .menu__btn {
     display: flex;
