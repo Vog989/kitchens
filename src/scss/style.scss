@@ -18,6 +18,7 @@
 .menu {
   &__list {
     display: flex;
+    gap: 40px;
   }
 
   &__btn {
@@ -38,9 +39,9 @@
     border-radius: 50px;
   }
 
-  //&__list-item + .menu__list-item {
-  //  padding-left: 40px;
-  //}
+  &__close {
+    display: none;
+  }
 
   &__list {
     gap: 40px;
@@ -60,6 +61,10 @@
       border-bottom: 2px solid $accent;
     }
   }
+}
+
+.search-bar {
+  display: none;
 }
 
 .user-nav {
@@ -1055,6 +1060,88 @@
 
 @import "media";
 
+@media (max-width: 1440px) {
+
+
+  .container {
+    width: 1290px;
+  }
+
+  .menu {
+    &__list {
+      gap: 30px;
+    }
+  }
+
+  .kitchen-intro {
+
+    display: flex;
+    flex-direction: column;
+    //padding-left: 52px;
+    //padding-right: 52px;
+
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__info-description {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+
+    &__info-title {
+      text-align: center;
+      font-size: 64px;
+      width: 1050px;
+      line-height: 72px;
+
+    }
+
+    &__info-text {
+      text-align: center;
+      font-size: 24px;
+      width: 1070px;
+      line-height: 32px;
+    }
+
+    &__actions {
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+
+    &__stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .stat {
+
+      &__text {
+        font-size: 16px;
+        line-height: 24px;
+        width: 405px;
+      }
+    }
+
+    &__image-container {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 50px;
+    }
+
+    &__image-elips {
+      bottom: -50px;
+      left: 43%;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 @media (max-width: 1024px) {
 
   .container {
@@ -1085,11 +1172,14 @@
       right: 0;
       width: 920px;
       margin: 0 auto !important;
-      margin-top: 80px !important;
+      margin-top: 140px !important;
       //padding-top: 80px !important;
       background-color: $background;
       text-align: center;
+    }
 
+    &__close {
+      display: block;
     }
 
     &__list-link {
@@ -1101,11 +1191,21 @@
       padding-bottom: 20px;
     }
 
+    &__close-btn {
+      position: absolute;
+      top: -108px;
+      left: 10px;
+    }
+
     &__btn {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
+  }
+
+  .search-bar {
+    display: block;
   }
 
   .kitchen-intro {
