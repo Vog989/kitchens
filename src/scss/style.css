@@ -1038,17 +1038,22 @@ a {
   .kitchen-intro__actions {
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 60px;
+  }
+  .kitchen-intro__actions-btn {
+    padding: 15px 40px;
   }
   .kitchen-intro__stats {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0fr);
     grid-gap: 40px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
   }
   .kitchen-intro .stat__text {
-    font-size: 16px;
-    line-height: 24px;
-    width: 405px;
+    font-size: 20px;
+    line-height: 28px;
+    width: 485px;
   }
   .kitchen-intro__image-container {
     margin-right: auto;
