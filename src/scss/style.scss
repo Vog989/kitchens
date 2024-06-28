@@ -253,14 +253,13 @@
     line-height: 60px;
     margin-bottom: 30px;
     width: 550px;
-    //height: 120px;
   }
 
   &__text {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 60px;
-    max-width: 800px;
+    width: 800px;
   }
 
   &__list-points {
@@ -480,7 +479,6 @@
     font-size: 24px;
     line-height: 32px;
     width: 460px;
-    height: 160px;
   }
 }
 
@@ -1142,6 +1140,195 @@
       transform: rotate(-45deg);
     }
   }
+
+  .interior {
+    margin-bottom: 100px;
+
+    &__inner {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 1290px;
+    }
+
+    &__info {
+      margin-bottom: 80px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 60px;
+      width: 1068px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      width: 1068px;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 50px;
+    }
+
+    &__list-points {
+      margin-bottom: 60px;
+    }
+
+    &__list-item {
+      font-size: 20px;
+      line-height: 28px;
+      width: 485px;
+    }
+
+    &__images {
+      position: relative;
+      width: 1068px;
+      height: 1040px;
+    }
+
+    &__image {
+      display: block;
+
+      &--large {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 630px;
+        height: 680px;
+      }
+
+      &--small {
+        position: absolute;
+        width: 410px;
+        height: 320px;
+        top: 0;
+        left: 990px;
+      }
+
+      &--medium {
+        position: absolute;
+        right: -15px;
+        bottom: 20px;
+        width: 630px;
+        height: 680px;
+      }
+    }
+
+    &__pattern-points {
+      position: absolute;
+      bottom: 210px;
+      left: 330px;
+    }
+  }
+
+  .choice {
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      width: 1290px;
+    }
+
+    &__info-text {
+      margin-bottom: 60px;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 60px;
+      width: 1068px;
+      margin-bottom: 30px;
+    }
+
+    &__description {
+      font-size: 24px;
+      line-height: 32px;
+      width: 1068px;
+    }
+
+    &__points {
+      display: grid;
+      grid-template-columns: repeat(2, 0fr);
+      grid-gap: 30px;
+    }
+
+    &__item {
+      margin-bottom: 0;
+      width: 520px;
+    }
+
+    &__item-title {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 15px;
+    }
+
+    &__item-text {
+      font-size: 24px;
+      line-height: 32px;
+      width: 520px;
+    }
+
+    &__item-icon {
+      padding-bottom: 20px;
+    }
+
+    &__pattern-points {
+      display: none;
+    }
+
+    &__image-main {
+      display: none;
+    }
+
+    &__image-main-tablet {
+      display: none;
+    }
+
+    &__image-main-1440 {
+      display: block;
+      position: relative;
+    }
+  }
+
+  .process {
+    margin-bottom: 100px;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    &__title {
+      width: 630px;
+    }
+
+    &__description {
+      width: 630px;
+    }
+
+    &__steps {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    &__step {
+      padding: 70px 20px 20px;
+    }
+
+    &__step-description {
+      width: 370px;
+    }
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -1282,6 +1469,7 @@
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
+      width: 920px;
     }
 
     &__info {
@@ -1377,8 +1565,14 @@
       width: 920px;
     }
 
+    &__points {
+      display: grid;
+      grid-template-columns: repeat(2, 0fr);
+      grid-gap: 40px;
+    }
+
     &__item {
-      margin-bottom: 60px;
+      width: 420px;
     }
 
     &__item-title {
@@ -2171,7 +2365,7 @@
       flex-direction: column;
       gap: 10px;
       width: 320px;
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
 
     &__image-bg {
