@@ -171,18 +171,6 @@ a {
 }
 .menu__btn {
   display: none;
-  width: 24px;
-  height: 18px;
-}
-.menu__btn span {
-  background: #252525;
-  height: 3px;
-  width: 100%;
-}
-.menu__btn span {
-  background-color: #252525;
-  width: 24px;
-  border-radius: 50px;
 }
 .menu__close {
   display: none;
@@ -1049,6 +1037,11 @@ a {
     padding-bottom: 60px;
     margin: 0 auto;
   }
+  .kitchen-intro__image-bg {
+    width: 1070px;
+    height: 700px;
+    content: url("src/images/intro-kitchen-1440px.png");
+  }
   .kitchen-intro .stat__text {
     font-size: 20px;
     line-height: 28px;
@@ -1181,15 +1174,15 @@ a {
   .choice__pattern-points {
     display: none;
   }
-  .choice__image-main {
-    display: none;
-  }
-  .choice__image-main-tablet {
-    display: none;
-  }
-  .choice__image-main-1440 {
+  .choice_image {
     display: block;
-    position: relative;
+    width: 1070px;
+    height: 700px;
+  }
+  .choice__image-main {
+    width: 1070px;
+    height: 700px;
+    content: url("src/images/choice-kitchen-1440px.png");
   }
   .process {
     margin-bottom: 100px;
@@ -1217,6 +1210,18 @@ a {
   .process__step-description {
     width: 370px;
   }
+  .faq__line {
+    width: 1290px;
+  }
+  .faq__question:after {
+    right: -20px;
+  }
+  .footer-top__company {
+    margin-right: 30px;
+  }
+  .footer-top__slogan {
+    width: 410px;
+  }
 }
 @media (max-width: 1024px) {
   .container {
@@ -1233,6 +1238,7 @@ a {
     order: -1;
   }
   .menu__list {
+    transform: translateY(-140%);
     display: block;
     position: absolute;
     top: 0;
@@ -1240,12 +1246,26 @@ a {
     right: 0;
     width: 920px;
     margin: 0 auto !important;
-    margin-top: 140px !important;
+    margin-top: 100px !important;
     background-color: #F4F4F4;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu .expanded {
+    transform: translateY(0%);
   }
   .menu__close {
     display: block;
+  }
+  .menu__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu__close-btn {
+    position: absolute;
+    top: -108px;
+    left: 10px;
   }
   .menu__list-link {
     font-size: 16px;
@@ -1253,19 +1273,6 @@ a {
   }
   .menu__list-item {
     padding-bottom: 20px;
-  }
-  .menu__close-btn {
-    position: absolute;
-    top: -108px;
-    left: 10px;
-  }
-  .menu__btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .search-bar {
-    display: block;
   }
   .kitchen-intro {
     display: flex;
@@ -1316,6 +1323,11 @@ a {
     bottom: -50px;
     left: 43%;
     transform: rotate(-45deg);
+  }
+  .kitchen-intro__image-bg {
+    width: 920px;
+    height: 600px;
+    content: url("src/images/intro-kitchen-1024px.png");
   }
   .interior {
     margin-bottom: 60px;
@@ -1426,7 +1438,9 @@ a {
     display: none;
   }
   .choice__image-main {
-    display: none;
+    width: 920px;
+    height: 680px;
+    content: url("src/images/choice-kitchen-1024px.png");
   }
   .choice__image-main-tablet {
     display: block;
@@ -1735,6 +1749,9 @@ a {
   .header__inner {
     align-items: center;
   }
+  .menu__list {
+    width: 768px;
+  }
   .kitchen-intro {
     padding: 80px 0;
     margin-bottom: 80px;
@@ -1769,8 +1786,16 @@ a {
   .kitchen-intro__image-elips {
     left: 39%;
   }
+  .kitchen-intro__image-bg {
+    width: 680px;
+    height: 500px;
+    content: url("src/images/intro-kitchen-768px.png");
+  }
   .interior {
     margin-bottom: 80px;
+  }
+  .interior__inner {
+    width: 768px;
   }
   .interior__title {
     line-height: 56px;
@@ -1832,9 +1857,10 @@ a {
   .choice__item-text {
     width: 320px;
   }
-  .choice__image-main-tablet {
+  .choice__image-main {
     width: 680px;
     height: 500px;
+    content: url("src/images/choice-kitchen-768px.png");
   }
   .process__text {
     margin-bottom: 80px;
@@ -1955,6 +1981,9 @@ a {
     width: 135.002px;
     height: 30px;
   }
+  .header .menu__list {
+    width: 360px;
+  }
   .header .user-nav__link {
     width: 80px;
     font-size: 14px;
@@ -2020,8 +2049,17 @@ a {
     left: 37%;
     bottom: -40px;
   }
+  .kitchen-intro__image-bg {
+    width: 320px;
+    height: 240px;
+    content: url("src/images/intro-kitchen-360px.png");
+  }
   .interior {
     margin-bottom: 60px;
+  }
+  .interior__inner {
+    width: 360px;
+    margin: 0 auto;
   }
   .interior__info {
     margin-bottom: 30px;
@@ -2123,9 +2161,10 @@ a {
     font-size: 16px;
     line-height: 24px;
   }
-  .choice__image-main-tablet {
+  .choice__image-main {
     width: 320px;
     height: 240px;
+    content: url("src/images/choice-kitchen-360px.png");
   }
   .process {
     margin-bottom: 60px;

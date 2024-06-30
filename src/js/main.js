@@ -10,6 +10,26 @@ import '../scss/style.scss';
 //     },
 // });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttonImage = document.querySelector('.menu__open-btn');
+    const menuList = document.querySelector('.menu__list');
+    const menuIcon = 'src/images/icons/menu-btn.svg';
+    const menuClose = 'src/images/icons/close.svg';
+    buttonImage.addEventListener('click', () => {
+        if (buttonImage.src.endsWith(menuIcon)) {
+            buttonImage.src = menuClose;
+            // menuList.style.display = 'block';
+            menuList.classList.toggle('expanded');
+        } else {
+            buttonImage.src = menuIcon;
+            menuList.classList.toggle('expanded');
+            // menuList.style.display = 'none';
+        }
+    })
+})
+
+
 let swiperOptions = {
     slidesPerView: 3,
     spaceBetween: 20,
