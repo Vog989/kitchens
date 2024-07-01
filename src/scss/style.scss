@@ -336,7 +336,6 @@
     font-size: 24px;
     line-height: 32px;
     width: 800px;
-    //height: 160px;
   }
 
   &__points {
@@ -356,7 +355,6 @@
   &__item-title {
     @extend %firasans-700;
     width: 380px;
-    //max-height: 64px;
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 15px;
@@ -372,6 +370,7 @@
   &__image {
     position: relative;
     display: flex;
+    bottom: 100px;
   }
 
   &__image-main {
@@ -482,12 +481,12 @@
     @extend %firasans-700;
     font-size: 48px;
     line-height: 60px;
-    max-width: 800px;
+    width: 800px;
     margin-bottom: 30px;
   }
 
   &__description {
-    max-width: 1080px;
+    width: 1080px;
     margin-bottom: 80px;
   }
 
@@ -599,6 +598,7 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+    //width: 310px;
   }
 
   &__patterns {
@@ -606,6 +606,11 @@
     top: 30px;
     left: 440px;
   }
+
+  //&__counter {
+  //  font-size: 32px;
+  //  @extend %helveticaneuecyr-700;
+  //}
 }
 
 .current-counter {
@@ -993,7 +998,7 @@
   }
 
   &__contact-link {
-    max-width: 378px;
+    width: 378px;
   }
 
   &__contacts {
@@ -1219,11 +1224,13 @@
     &__inner {
       display: flex;
       flex-direction: column;
-      width: 1290px;
+      width: 1070px;
+      transform: translateX(8%)
     }
 
     &__info-text {
       margin-bottom: 60px;
+      width: 1070px;
     }
 
     &__text {
@@ -1233,20 +1240,21 @@
     &__title {
       font-size: 48px;
       line-height: 60px;
-      width: 1068px;
+      width: 1070px;
       margin-bottom: 30px;
     }
 
     &__description {
       font-size: 24px;
       line-height: 32px;
-      width: 1068px;
+      width: 1070px;
     }
 
     &__points {
       display: grid;
       grid-template-columns: repeat(2, 0fr);
       grid-gap: 30px;
+      width: 1070px;
     }
 
     &__item {
@@ -1320,6 +1328,53 @@
     }
   }
 
+  .cabinet-gallery {
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 0fr);
+      grid-gap: 30px;
+    }
+
+    &__card {
+      padding: 20px;
+      width: 410px;
+    }
+
+    &__card-name {
+      padding-top: 20px;
+      width: 370px;
+    }
+
+    &__image {
+      width: 370px;
+      height: 270px;
+    }
+  }
+
+  .accessories {
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 0fr);
+      grid-gap: 30px;
+    }
+
+    &__card {
+      padding: 20px;
+      width: 410px;
+    }
+
+    &__card-name {
+      padding-top: 20px;
+      width: 370px;
+    }
+
+    &__image {
+      width: 370px;
+      height: 270px;
+    }
+  }
+
   .faq {
     &__line {
       width: 1290px;
@@ -1338,6 +1393,10 @@
 
     &__slogan {
       width: 410px;
+    }
+
+    &__contact-link {
+      width: 290px;
     }
   }
 }
@@ -1454,7 +1513,6 @@
     }
 
 
-
     .stat {
 
       &__text {
@@ -1568,10 +1626,16 @@
       display: flex;
       flex-direction: column;
       width: 920px;
+      transform: translateX(0%)
+    }
+
+    &__info-text {
+      width: 920px;
     }
 
     &__text {
       margin-bottom: 60px;
+      width: 920px;
     }
 
     &__title {
@@ -1590,6 +1654,7 @@
       display: grid;
       grid-template-columns: repeat(2, 0fr);
       grid-gap: 40px;
+      width: 920px;
     }
 
     &__item {
@@ -1823,7 +1888,7 @@
 
     &__card {
       border-radius: 20px;
-      padding: 30px;
+      padding: 20px;
     }
 
     &__card-name {
@@ -2076,7 +2141,8 @@
     margin-bottom: 80px;
 
     &__inner {
-      width: 768px;
+      width: 680px;
+
     }
 
     &__title {
@@ -2189,9 +2255,17 @@
 
   .cabinet-gallery {
 
+    &__card {
+      width: 320px;
+    }
+
     &__image {
       width: 280px;
       height: 200px;
+    }
+
+    &__card-name {
+      width: 280px;
     }
   }
 
@@ -2262,12 +2336,16 @@
     }
 
     &__card {
-      padding: 20px;
+      width: 320px;
     }
 
     &__image {
       width: 280px;
       height: 200px;
+    }
+
+    &__card-name {
+      width: 280px;
     }
   }
 
@@ -2438,7 +2516,7 @@
     margin-bottom: 60px;
 
     &__inner {
-      width: 360px;
+      width: 320px;
       margin: 0 auto;
     }
 
@@ -2527,6 +2605,10 @@
     padding-bottom: 60px;
     margin-bottom: 60px;
 
+    &__inner {
+      width: 320px;
+    }
+
     &__text {
       margin-bottom: 30px;
     }
@@ -2556,6 +2638,7 @@
 
     &__item {
       margin-bottom: 20px;
+      width: 320px;
     }
 
     &__item-title {
@@ -2565,6 +2648,10 @@
     &__item-text {
       font-size: 16px;
       line-height: 24px;
+    }
+
+    &__image {
+      width: 320px;
     }
 
     &__image-main {
