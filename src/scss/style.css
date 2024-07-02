@@ -14,7 +14,7 @@
   font-weight: 400;
 }
 
-.footer-bottom__copy, .footer-top__title, .faq__button, .contact-form__button, .contact-form__label, .process__step-title, .process__step-number, .interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .user-nav__link, .menu__list-link {
+.footer-bottom__copy, .footer-top__title, .faq__button, .contact-form__button, .contact-form__label, .projects-gallery__counter, .process__step-title, .process__step-number, .interior__button, .interior__list-item--name, .kitchen-intro__actions-btn, .user-nav__link, .menu__list-link {
   font-family: "helveticaneuecyr_bold", sans-serif;
   font-weight: 700;
 }
@@ -641,6 +641,9 @@ a {
   position: absolute;
   top: 30px;
   left: 440px;
+}
+.projects-gallery__counter {
+  font-size: 32px;
 }
 
 .current-counter__value {
@@ -1629,6 +1632,9 @@ a {
     width: 108.824px;
     height: 100px;
   }
+  .projects-gallery__counter {
+    font-size: 24px;
+  }
   .accessories__header {
     margin-bottom: 60px;
   }
@@ -2335,6 +2341,9 @@ a {
   }
   .projects-gallery__patterns {
     display: none;
+  }
+  .projects-gallery__counter {
+    font-size: 20px;
   }
   .accessories {
     padding-top: 60px;
