@@ -1221,6 +1221,14 @@
     &__card-name {
       width: 280px;
     }
+
+    &__card-title {
+      font-size: 24px;
+    }
+
+    &__icon {
+      width: 22px;
+    }
   }
 
   .projects-gallery {
@@ -1300,6 +1308,10 @@
 
     &__card-name {
       width: 280px;
+    }
+
+    &__icon {
+      width: 22px;
     }
   }
 

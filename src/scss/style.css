@@ -1938,6 +1938,12 @@ a {
   .cabinet-gallery__card-name {
     width: 280px;
   }
+  .cabinet-gallery__card-title {
+    font-size: 24px;
+  }
+  .cabinet-gallery__icon {
+    width: 22px;
+  }
   .projects-gallery .custom-container {
     width: 768px;
     padding-left: 44px;
@@ -1996,6 +2002,9 @@ a {
   }
   .accessories__card-name {
     width: 280px;
+  }
+  .accessories__icon {
+    width: 22px;
   }
   .faq__list {
     width: 100%;
