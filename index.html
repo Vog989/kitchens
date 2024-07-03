@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kitchens</title>
+    <link rel="stylesheet" href="src/scss/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="src/scss/style.css">
 </head>
 <body>
@@ -11,10 +12,13 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a class="logo" href="#">
-                <img class="logo__img" src="src/images/logo.png" alt="logo">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="src/images/logo.svg" alt="logo">
             </a>
             <nav class="menu">
+                <button class="menu__btn">
+                    <img class="menu__open-btn" src="src/images/icons/menu-btn.svg" alt="Menu">
+                </button>
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a class="menu__list-link menu__list-link--active" href="#">Home</a>
@@ -40,7 +44,8 @@
                 </ul>
             </nav>
             <div class="user-nav">
-                <a class="user-nav__link" href="#">Start here</a>
+                <a class="user-nav__link" href="#">
+                    Start <span class="user-nav__link-second">here</span></a>
             </div>
         </div>
     </div>
@@ -51,47 +56,52 @@
         <div class="container">
             <div class="kitchen-intro__inner">
                 <div class="kitchen-intro__info">
-                    <h1 class="kitchen-intro__info-title">Make Your Kitchen More Minimalist & Modern</h1>
-                    <p class="kitchen-intro__info-description">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="kitchen-intro__info-description">
+                        <h1 class="kitchen-intro__info-title">Change Your Kitchen Design, Change Your Life</h1>
+                        <p class="kitchen-intro__info-text">Welcome to Kitchen Builders, your premier kitchen design
+                            partner in Calgary. Our expert Calgary kitchen designers aim to transform your culinary
+                            space into a masterpiece of utility and design. Whether you're seeking an innovative, modern
+                            kitchen design or a cosy, traditional
+                            layout, our comprehensive kitchen design services fit your demand.</p>
+                    </div>
                     <div class="kitchen-intro__actions">
-                        <a class="kitchen-intro__actions-btn kitchen-intro__actions-btn--primary" href="#">Start
-                            here</a>
-                        <a class="kitchen-intro__actions-btn kitchen-intro__actions-btn--secondary" href="#">Contact
-                            Us</a>
+                        <a class="kitchen-intro__actions-btn kitchen-intro__actions-btn--primary" href="#">Start Your
+                            Kitchen Renovation</a>
+                        <a class="kitchen-intro__actions-btn kitchen-intro__actions-btn--secondary" href="#">Contact Us
+                            for a Kitchen Design</a>
                     </div>
                     <div class="kitchen-intro__stats">
                         <div class="stat">
-                            <span class="stat__number">15k+</span>
-                            <span class="stat__text">Trusted brands around the world</span>
+                            <span class="stat__text">Proudly serving with 100+ affordable kitchen renovations in Calgary.</span>
                         </div>
                         <div class="stat">
-                            <span class="stat__number">25k+</span>
-                            <span class="stat__text">Completed individual design projects</span>
+                            <span class="stat__text">Featured in Home & Design magazines for innovative kitchen cabinet designs.</span>
                         </div>
                         <div class="stat">
-                            <span class="stat__number">50k+</span>
-                            <span class="stat__text">Variants of designed furniture</span>
+                            <span class="stat__text">Exclusive partnerships with top-quality hardware brands that enhance our kitchen renovation services.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__text">5-star customer satisfaction rating.</span>
                         </div>
                     </div>
                 </div>
                 <div class="kitchen-intro__image-container">
                     <img class="kitchen-intro__image-elips" src="src/images/icons/elips.png">
-                    <img class="kitchen-intro__image-bg" src="src/images/intro-kitchen.png">
+                    <img class="kitchen-intro__image-bg" src="src/images/intro-kitchen.png" alt="Kitchen">
                 </div>
             </div>
         </div>
     </section>
+
     <section class="interior">
         <div class="container">
             <div class="interior__inner">
                 <div class="interior__images">
-                    <img class="interior__image interior__image--large" src="src/images/modern-kitchen-1.png"
+                    <img class="interior__image interior__image--large" alt="Interior Kitchen" src="src/images/modern-kitchen-1.png" srcset="src/images/modern-kitchen-1-1440px.png"
                          alt="Kitchen">
-                    <img class="interior__image interior__image--small" src="src/images/modern-kitchen-2.png"
+                    <img class="interior__image interior__image--small" alt="Interior Kitchen" src="src/images/modern-kitchen-2.png" srcset="src/images/modern-kitchen-2-1440px.png"
                          alt="Kitchen">
-                    <img class="interior__image interior__image--medium" src="src/images/modern-kitchen-3.png"
+                    <img class="interior__image interior__image--medium" alt="Interior Kitchen" src="src/images/modern-kitchen-3.png" srcset="src/images/modern-kitchen-3-1440px.png"
                          alt="Kitchen">
                     <div class="interior__pattern-points">
                         <img src="src/images/pattern-points.png">
@@ -99,35 +109,47 @@
                 </div>
                 <div class="interior__info">
                     <div class="interior__content">
-                        <h1 class="interior__title">We help you Make Modern Interior Design</h1>
-                        <p class="interior__text interior__text--main">Lorem Ipsum is simply dummy text of the printing
-                            and
-                            typesetting industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of
-                            the
-                            printing and typesetting industry industry.</p>
+                        <h1 class="interior__title">Expertise in Kitchen
+                            Remodel “Near Me”</h1>
+                        <p class="interior__text interior__text--main">At Kitchen Builders, we're not just about kitchen
+                            design in Calgary; we will create the soul of your house. From the initial idea to
+                            realization, our services cover all aspects of kitchen renovation in Calgary, including
+                            custom kitchen cabinet crafting, remodeling the kitchen on a budget, and kitchen renovation
+                            services.</p>
                     </div>
                     <div class="interior__list-points">
                         <ul class="interior__list">
-                            <li class="interior__list-item">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry.
+                            <li class="interior__list-item">
+                                <h3 class="interior__list-item--name">Custom Kitchen Designs, Calgary</h3>
+                                <p class="interior__list-item--text">
+                                    Design kitchens that are both practical and stylish, tailored to your lifestyle.
+                                </p>
                             </li>
-                            <li class="interior__list-item">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry.
+                            <li class="interior__list-item">
+                                <h3 class="interior__list-item--name">Kitchen Renovation and Remodel</h3>
+                                <p class="interior__list-item--text">From minor kitchen updates to complete overhauls,
+                                    we are ready to make your vision a
+                                    reality.
+                                </p>
                             </li>
-                            <li class="interior__list-item">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry.
+                            <li class="interior__list-item">
+                                <h3 class="interior__list-item--name">Custom kitchen cabinets in Calgary</h3>
+                                <p class="interior__list-item--text">
+                                    Our custom kitchen cabinetry is designed to efficiently utilize your space while
+                                    harmonizing with your home's aesthetic appeal.
+                                </p>
                             </li>
-                            <li class="interior__list-item">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry.
+                            <li class="interior__list-item">
+                                <h3 class="interior__list-item--name">Hardware and Kitchen Accessories</h3>
+                                <p class="interior__list-item--text">
+                                    Choose from an exclusive collection of premium kitchen hardware and accessories to
+                                    complete your kitchen design.
+                                </p>
                             </li>
                         </ul>
                     </div>
                     <div class="interior__btn">
-                        <a class="interior__button btn__about-us" href="#">About us
+                        <a class="interior__button btn__about-us" href="#">Learn More
                             <span class="interior__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
                                                                viewBox="0 0 28 28" fill="none">
                         <g clip-path="url(#clip0_114_2779)">
@@ -146,46 +168,433 @@
             </div>
         </div>
     </section>
+
     <section class="choice">
         <div class="container">
             <div class="choice__inner">
-                <div class="choice__text">
-                    <h3 class="choice__title">Why Choose us</h3>
-                    <p class="choice__description">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry.</p>
-                </div>
-                <div class="choice__points">
-                    <div class="choice__item">
-                        <img class="choice__item-icon" src="src/images/icons/setup.png">
-                        <h3 class="choice__item-title">Transparency</h3>
-                        <p class="choice__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry.</p>
+                <div class="choice__info-text">
+                    <div class="choice__text">
+                        <h3 class="choice__title">Why Choose Us for Your Calgary Kitchen Renovation?</h3>
+                        <p class="choice__description">Choosing us means choosing a team that's committed to excellence.
+                            As
+                            a premier kitchen renovation contractor, we are experts at transforming spaces, focusing on
+                            solutions that fit your demands. We're recognized as one of Calgary's best kitchen
+                            renovation
+                            companies for our quality craftsmanship and innovative methods.</p>
                     </div>
-                    <div class="choice__item">
-                        <img class="choice__item-icon" src="src/images/icons/setup.png">
-                        <h3 class="choice__item-title">Convenience</h3>
-                        <p class="choice__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry.</p>
-                    </div>
-                    <div class="choice__item">
-                        <img class="choice__item-icon" src="src/images/icons/setup.png">
-                        <h3 class="choice__item-title">Modern design</h3>
-                        <p class="choice__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry.</p>
-                    </div>
-                    <div class="choice__item">
-                        <img class="choice__item-icon" src="src/images/icons/setup.png">
-                        <h3 class="choice__item-title">Confidence</h3>
-                        <p class="choice__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry.</p>
+                    <div class="choice__points">
+                        <div class="choice__item">
+                            <img class="choice__item-icon" src="src/images/icons/setup-1.svg">
+                            <h3 class="choice__item-title">Tailored Approach</h3>
+                            <p class="choice__item-text">Our Calgary kitchen designers excel at creating individual
+                                designs
+                                that reflect customers' style and needs.</p>
+                        </div>
+                        <div class="choice__item">
+                            <img class="choice__item-icon" src="src/images/icons/setup-2.svg" alt="">
+                            <h3 class="choice__item-title">Quality Craftsmanship</h3>
+                            <p class="choice__item-text">Known for building kitchen units that are as durable as they
+                                are
+                                beautiful.</p>
+                        </div>
+                        <div class="choice__item">
+                            <img class="choice__item-icon" src="src/images/icons/setup-3.svg">
+                            <h3 class="choice__item-title">Transparent Kitchen Renovation Costs</h3>
+                            <p class="choice__item-text">We deliver accurate, detailed estimates of the average cost to
+                                renovate a kitchen, ensuring affordability and quality.</p>
+                        </div>
+                        <div class="choice__item">
+                            <img class="choice__item-icon" src="src/images/icons/setup-4.svg">
+                            <h3 class="choice__item-title">Sustainable Solutions</h3>
+                            <p class="choice__item-text">We are committed to eco-friendly practices in all kitchen
+                                remodels,
+                                from custom kitchen renovations in Calgary to budget-friendly updates.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="choice__image">
-                    <img class="choice__image-main" src="src/images/choice-kitchen.png" alt="Modern Kitchen">
-                    <div class="choice__pattern-points">
-                        <img src="src/images/pattern-points.png">
+                    <img class="choice__image-main"  src="src/images/choice-kitchen.png" alt="Modern Kitchen">
+                    <div class="choice__pattern-points"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="process__inner">
+                <div class="process__text">
+                    <h3 class="process__title">How to Make Your Dream Kitchen a Reality</h3>
+                    <p class="process__description">Starting your kitchen remodeling journey with us is easy. From the
+                        initial meeting to the final unveiling, our team is by your side to ensure a personalized
+                        experience.</p>
+                </div>
+                <div class="process__steps">
+                    <div class="process__step process__steps--one">
+                        <div class="process__step-number">1</div>
+                        <header class="process__step-title">Consultation</header>
+                        <p class="process__step-description">Share your ideas with us during a personal consultation,
+                            whether for a custom kitchen renovation in Calgary or a quick update.</p>
+                    </div>
+                    <div class="process__step process__steps--two">
+                        <div class="process__step-number">2</div>
+                        <header class="process__step-title">Planning & Design</header>
+                        <p class="process__step-description">We will develop a design strategy tailored to your desires
+                            and
+                            needs, demonstrating our expertise in kitchen unit construction.</p>
+                    </div>
+                    <div class="process__step process__steps--three">
+                        <div class="process__step-number">3</div>
+                        <header class="process__step-title">Build & Install</header>
+                        <p class="process__step-description">See how we make your ideal kitchen a reality with careful
+                            attention to detail. Whether cabinetry in Calgary or a complete remodeling, we guarantee
+                            superior quality.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cabinet-gallery">
+        <div class="container">
+            <div class="cabinet-gallery__inner">
+                <div class="cabinet-gallery__header">
+                    <h2 class="cabinet-gallery__title">Our Cabinet Solutions in Calgary</h2>
+                    <p class="cabinet-gallery__description">Dive into our extensive range of cabinet units where form
+                        meets function. At Kitchen Builders, we craft custom kitchen cabinets in Calgary tailored to fit
+                        any recs. Whether you're updating a kitchen or seeking cabinet solutions in Calgary, our
+                        selection promises unmatched style and quality.</p>
+                </div>
+                <div class="cabinet-gallery__cards">
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-1.png"
+                             alt="Kitchen Cabinets">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Kitchen Cabinets</h3>
+                            <span class="cabinet-gallery__arrow">
+                                <img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg">
+                            </span>
+                        </div>
+                    </a>
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-2.png"
+                             alt="Bath Vanity Cabinets">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Bath Vanity Cabinets</h3>
+                            <span class="cabinet-gallery__arrow"><img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-3.png"
+                             alt="Living Room Cabinets">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Living Room Cabinets</h3>
+                            <span class="cabinet-gallery__arrow"><img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-4.png" alt="Credenza">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Credenza</h3>
+                            <span class="cabinet-gallery__arrow"><img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-5.png"
+                             alt="Mudroom Cabinets">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Mudroom Cabinets</h3>
+                            <span class="cabinet-gallery__arrow"><img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-6.png"
+                             alt="Home Office Cabinets">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Home Office Cabinets</h3>
+                            <span class="cabinet-gallery__arrow"><img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-7.png"
+                             alt="Laundry Cabinets">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Laundry Cabinets</h3>
+                            <span class="cabinet-gallery__arrow"><img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-8.png"
+                             alt="Closet Cabinets">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Closet Cabinets</h3>
+                            <span class="cabinet-gallery__arrow"><img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="cabinet-gallery__card" href="#">
+                        <img class="cabinet-gallery__image" src="src/images/cabinet-gallery-item-9.png"
+                             alt="Wet Bar Cabinets">
+                        <div class="cabinet-gallery__card-name">
+                            <h3 class="cabinet-gallery__card-title">Wet Bar Cabinets</h3>
+                            <span class="cabinet-gallery__arrow"><img class="cabinet-gallery__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-gallery">
+        <div class="container custom-container">
+            <div class="projects-gallery__inner">
+                <div class="projects-gallery__description">
+                    <h3 class="projects-gallery__description-title">Proudly Showcasing Our Projects</h3>
+                    <p class="projects-gallery__description-text">Discover the excellence and innovation behind Kitchen
+                        Builders through our featured projects. As a leading kitchen builder and one of the best Calgary
+                        kitchen renovation companies, we are proud of our portfolio of stunning kitchen transformations.
+                        Each project highlights our craftsmanship, setting us apart as a leader in Calgary kitchen
+                        contractors.</p>
+                    <div class="projects-gallery__btn">
+                        <a class="interior__button btn__about-us" href="#">Learn More
+                            <span class="interior__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                               viewBox="0 0 28 28" fill="none">
+                        <g clip-path="url(#clip0_114_2779)">
+                            <path d="M22.234 4.58329L10.6845 4.58329C10.3787 4.58861 10.0871 4.71385 9.87272 4.93203C9.6583 5.15021 9.53815 5.44388 9.53815 5.74978C9.53815 6.05569 9.6583 6.34936 9.87272 6.56754C10.0871 6.78572 10.3787 6.91096 10.6845 6.91627L19.4175 6.91628L4.90984 21.424C4.69105 21.6428 4.56813 21.9395 4.56813 22.2489C4.56813 22.5584 4.69105 22.8551 4.90984 23.0739C5.12863 23.2927 5.42538 23.4156 5.7348 23.4156C6.04422 23.4156 6.34096 23.2927 6.55975 23.0739L21.0675 8.56619V17.2992C21.0648 17.4541 21.093 17.608 21.1504 17.7518C21.2078 17.8957 21.2933 18.0267 21.4019 18.1372C21.5104 18.2477 21.6399 18.3355 21.7828 18.3954C21.9257 18.4553 22.079 18.4861 22.234 18.4861C22.3889 18.4861 22.5422 18.4553 22.6851 18.3954C22.828 18.3355 22.9575 18.2477 23.0661 18.1372C23.1746 18.0267 23.2601 17.8957 23.3175 17.7518C23.375 17.608 23.4031 17.4541 23.4004 17.2992L23.4004 5.74978C23.4004 5.44043 23.2775 5.14375 23.0587 4.925C22.84 4.70625 22.5433 4.58334 22.234 4.58329Z"
+                                  fill="#252525"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_114_2779">
+                                <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-gallery__slider">
+                    <div class="projects-gallery__swiper-actions">
+                        <button class="projects-gallery__swiper-actions-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                 fill="none">
+                                <g>
+                                    <path d="M1.5111 14.8261L9.67777 22.9928C9.89781 23.2053 10.1925 23.3229 10.4984 23.3203C10.8043 23.3176 11.0969 23.1949 11.3132 22.9786C11.5295 22.7623 11.6522 22.4697 11.6549 22.1638C11.6575 21.8579 11.54 21.5632 11.3274 21.3431L5.15227 15.168L25.6693 15.168C25.9787 15.168 26.2754 15.0451 26.4942 14.8263C26.713 14.6075 26.8359 14.3107 26.8359 14.0013C26.8359 13.6919 26.713 13.3951 26.4942 13.1764C26.2754 12.9576 25.9787 12.8346 25.6693 12.8346L5.15227 12.8346L11.3274 6.65948C11.4389 6.55186 11.5277 6.42312 11.5889 6.28079C11.65 6.13845 11.6822 5.98536 11.6836 5.83045C11.6849 5.67554 11.6554 5.52192 11.5967 5.37854C11.5381 5.23516 11.4514 5.10489 11.3419 4.99535C11.2324 4.88581 11.1021 4.79918 10.9587 4.74052C10.8153 4.68186 10.6617 4.65234 10.5068 4.65369C10.3519 4.65504 10.1988 4.68722 10.0565 4.74836C9.91413 4.80951 9.78539 4.89838 9.67777 5.00981L1.5111 13.1765C1.29239 13.3953 1.16952 13.692 1.16952 14.0013C1.16952 14.3107 1.29239 14.6074 1.5111 14.8261Z"
+                                          fill="#252525"/>
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="projects-gallery__counter">
+                            <span class="projects-gallery__current-counter-value">1</span>
+                            <span class="projects-gallery__total-counter-value">of 10</span>
+                        </div>
+                        <button class="projects-gallery__swiper-actions-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                 fill="none">
+                                <path d="M26.4889 13.1739L18.3222 5.00719C18.1022 4.79467 17.8075 4.67707 17.5016 4.67973C17.1957 4.68239 16.9031 4.80509 16.6868 5.0214C16.4705 5.23771 16.3478 5.53032 16.3451 5.83622C16.3425 6.14211 16.46 6.43682 16.6726 6.65685L22.8477 12.832L2.33073 12.832C2.02131 12.832 1.72456 12.9549 1.50577 13.1737C1.28698 13.3925 1.16406 13.6893 1.16406 13.9987C1.16406 14.3081 1.28698 14.6049 1.50577 14.8236C1.72456 15.0424 2.02131 15.1654 2.33073 15.1654L22.8477 15.1654L16.6726 21.3405C16.5611 21.4481 16.4723 21.5769 16.4111 21.7192C16.35 21.8616 16.3178 22.0146 16.3164 22.1696C16.3151 22.3245 16.3446 22.4781 16.4033 22.6215C16.4619 22.7648 16.5486 22.8951 16.6581 23.0046C16.7676 23.1142 16.8979 23.2008 17.0413 23.2595C17.1847 23.3181 17.3383 23.3477 17.4932 23.3463C17.6481 23.345 17.8012 23.3128 17.9435 23.2516C18.0859 23.1905 18.2146 23.1016 18.3222 22.9902L26.4889 14.8235C26.7076 14.6047 26.8305 14.308 26.8305 13.9987C26.8305 13.6893 26.7076 13.3926 26.4889 13.1739Z"
+                                      fill="#252525"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper mySwiper projects-gallery__swiper">
+                        <div class="swiper-wrapper">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-1.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-2.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-3.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-4.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-5.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-6.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-7.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-8.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-9.jpeg">
+                            <img class="projects-gallery__swiper-slide swiper-slide"
+                                 src="src/images/gallery-slider/gallery-slider-10.jpeg">
+                        </div>
+                    </div>
+                    <div class="projects-gallery__patterns"><img src="src/images/pattern-points.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="accessories">
+        <div class="container">
+            <div class="accessories__inner">
+                <div class="accessories__header">
+                    <div class="accessories__header-text">
+                        <h2 class="accessories__title">Select The Ideal Hardware & Accessories</h2>
+                        <p class="accessories__description">Kitchen Builders offers an extensive range of options, from
+                            handles and hinges to decorative hardware. Our selection is tailored for kitchen remodeling
+                            on a
+                            budget, offering affordable solutions without compromising quality.</p>
+                    </div>
+                    <!--                    <div class="accessories__pattern-points">-->
+                    <img class="accessories__points-pattern" src="src/images/pattern-points.png">
+                    <!--                    </div>-->
+                </div>
+                <div class="accessories__cards">
+                    <a class="accessories__card" href="#">
+                        <img class="accessories__image" src="src/images/accessories-1.png" alt="Handles">
+                        <div class="accessories__card-name">
+                            <h3 class="accessories__card-title">Handles</h3>
+                            <span class="accessories__arrow"><img class="accessories__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="accessories__card" href="#">
+                        <img class="accessories__image" src="src/images/accessories-2.png" alt="Accessories">
+                        <div class="accessories__card-name">
+                            <h3 class="accessories__card-title">Accessories</h3>
+                            <span class="accessories__arrow"><img class="accessories__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="accessories__card" href="#">
+                        <img class="accessories__image" src="src/images/accessories-3.png" alt="Hinges & Slides">
+                        <div class="accessories__card-name">
+                            <h3 class="accessories__card-title">Hinges & Slides</h3>
+                            <span class="accessories__arrow"><img class="accessories__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="accessories__card" href="#">
+                        <img class="accessories__image" src="src/images/accessories-4.png" alt="Sink Selections">
+                        <div class="accessories__card-name">
+                            <h3 class="accessories__card-title">Sink Selections</h3>
+                            <span class="accessories__arrow"><img class="accessories__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="accessories__card" href="#">360
+
+                        <img class="accessories__image" src="src/images/accessories-5.png" alt="Decorative Hardware">
+                        <div class="accessories__card-name">
+                            <h3 class="accessories__card-title">Decorative Hardware</h3>
+                            <span class="accessories__arrow"><img class="accessories__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                    <a class="accessories__card" href="#">
+                        <img class="accessories__image" src="src/images/accessories-6.png" alt="Drawer Systems">
+                        <div class="accessories__card-name">
+                            <h3 class="accessories__card-title">Drawer Systems</h3>
+                            <span class="accessories__arrow"><img class="accessories__icon" src="src/images/icons/arrow.svg"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <div class="contact-form__header">
+                <h3 class="contact-form__title">Ready to Start Your
+                    Kitchen Design Journey?</h3>
+                <p class="contact-form__description">A dream kitchen awaits. Fill out our contact form to begin the
+                    transformation. Whether you're considering a small kitchen renovation in Calgary or a custom
+                    kitchen
+                    renovation, we’ll guide you.</p>
+            </div>
+            <div class="contact-form__inner">
+
+                <div class="contact-form__form">
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="name">Name</label>
+                        <input class="contact-form__input" type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="email">Email address</label>
+                        <input class="contact-form__input" type="email" id="email"
+                               placeholder="Enter your email address">
+                    </div>
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="phone">Phone number</label>
+                        <input class="contact-form__input" type="tel" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="message">Your message</label>
+                        <textarea class="contact-form__textarea" id="message"
+                                  placeholder="Write your message here. What do you want to do?"></textarea>
+                    </div>
+                    <button class="contact-form__button" type="submit">Build Your Kitchen Design Now</button>
+                </div>
+                <div class="contact-form__images">
+                    <img class="contact-form__image contact-form__image--main" src="src/images/contact-form-img.png">
+                    <img class="contact-form__image contact-form__image--pattern" src="src/images/grey-patterns.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="faq__header">
+                <h2 class="faq__title">Frequently Asked Questions</h2>
+                <p class="faq__description">Browse our FAQ section for answers to frequently asked questions about our
+                    Calgary kitchen design, custom cabinetry, and remodeling services. If you're curious about the
+                    process, our materials, or how to get started, you'll find the information you need here.</p>
+            </div>
+            <div class="faq__list">
+                <div class="faq__line"></div>
+                <div class="faq__item">
+                    <h3 class="faq__question">What kitchen design services do you offer in Calgary?</h3>
+                    <p class="faq__answer">We offer specialized custom kitchen design services, including personal
+                        consultations, 3D modelling, layout planning, cabinet crafting, and installation. </p>
+                </div>
+                <div class="faq__line"></div>
+                <div class="faq__item">
+                    <h3 class="faq__question">How long does a typical kitchen remodel take?</h3>
+                    <p class="faq__answer">The duration of a typical kitchen renovation varies depending on the
+                        complexity and scope of the project. Typically, it takes 6 to 12 weeks from demolition to
+                        finishing touches. Our focus is on maintaining an efficient project timeline while ensuring that
+                        the quality of the work is not compromised, guaranteeing a meticulous and thorough completion of
+                        your kitchen.</p>
+                </div>
+                <div class="faq__line"></div>
+                <div class="faq__item">
+                    <h3 class="faq__question">Can you work with my layout?</h3>
+                    <p class="faq__answer">Definitely! Our team specializes in unlocking the full potential of your
+                        current kitchen layout. We evaluate your space, understand your demand, and suggest kitchen
+                        designs that enhance function and beauty.</p>
+                </div>
+                <div class="faq__line"></div>
+                <div class="faq__item">
+                    <h3 class="faq__question">What types of kitchen cabinets do you offer?</h3>
+                    <p class="faq__answer">Creative Cabinets Woodwork offers various custom kitchen cabinets in modern,
+                        classic, and other styles. We build our units with the best materials, from sleek, handleless
+                        cabinets to classic wood. Our selection is designed to suit various tastes and kitchen
+                        designs.</p>
+                </div>
+                <div class="faq__line"></div>
+                <div class="faq__item">
+                    <h3 class="faq__question">How much does a kitchen renovation cost in Calgary?</h3>
+                    <p class="faq__answer">The average cost to renovate a kitchen in Calgary will differ from project to
+                        project, depending on the materials chosen and the specific needs of your space. At Creative
+                        Cabinets Woodwork, we prioritize transparent pricing and collaborate closely with you to
+                        establish a budget. We will present a precise estimate to prevent unexpected expenses in our
+                        first meeting.</p>
+                </div>
+                <div class="faq__line"></div>
+            </div>
+            <div class="faq__btn">
+                <a class="faq__button" href="#">Explore Our Complete FAQ
+                    <span class="faq__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                  viewBox="0 0 28 28" fill="none">
+                        <g clip-path="url(#clip0_114_2779)">
+                            <path d="M22.234 4.58329L10.6845 4.58329C10.3787 4.58861 10.0871 4.71385 9.87272 4.93203C9.6583 5.15021 9.53815 5.44388 9.53815 5.74978C9.53815 6.05569 9.6583 6.34936 9.87272 6.56754C10.0871 6.78572 10.3787 6.91096 10.6845 6.91627L19.4175 6.91628L4.90984 21.424C4.69105 21.6428 4.56813 21.9395 4.56813 22.2489C4.56813 22.5584 4.69105 22.8551 4.90984 23.0739C5.12863 23.2927 5.42538 23.4156 5.7348 23.4156C6.04422 23.4156 6.34096 23.2927 6.55975 23.0739L21.0675 8.56619V17.2992C21.0648 17.4541 21.093 17.608 21.1504 17.7518C21.2078 17.8957 21.2933 18.0267 21.4019 18.1372C21.5104 18.2477 21.6399 18.3355 21.7828 18.3954C21.9257 18.4553 22.079 18.4861 22.234 18.4861C22.3889 18.4861 22.5422 18.4553 22.6851 18.3954C22.828 18.3355 22.9575 18.2477 23.0661 18.1372C23.1746 18.0267 23.2601 17.8957 23.3175 17.7518C23.375 17.608 23.4031 17.4541 23.4004 17.2992L23.4004 5.74978C23.4004 5.44043 23.2775 5.14375 23.0587 4.925C22.84 4.70625 22.5433 4.58334 22.234 4.58329Z"
+                                  fill="#252525"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_114_2779">
+                                <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg></span>
+                </a>
             </div>
         </div>
     </section>
@@ -194,143 +603,184 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-top">
-            <div class="footer-top__item footer-top__company">
+            <div class="footer-top__company">
                 <a class="logo footer-top__logo" href="#">
-                    <img class="logo__img" src="src/images/logo.png" alt="logo">
+                    <img class="logo__img" src="src/images/logo-white.svg" alt="logo">
                 </a>
-                <h2 class="footer-top__slogan">Kitchen Builders helps you to redesign your kitchen</h2>
+                <h2 class="footer-top__slogan">Crafting Kitchen Designs, Crafting Memories</h2>
             </div>
-            <div class="footer-top__item footer-top__menu">
-                <h6 class="footer-top__title">
-                    Menu
-                </h6>
-                <ul class="footer-top__list">
-                    <li class="footer-top__item">
-                        <a class="footer-top__link" href="#">Home</a>
-                    </li>
-                    <li class="footer-top__item">
-                        <a class="footer-top__link" href="#">About us</a>
-                    </li>
-                    <li class="footer-top__item">
-                        <a class="footer-top__link" href="#">How it works</a>
-                    </li>
-                    <li class="footer-top__item">
-                        <a class="footer-top__link" href="#">Residential</a>
-                    </li>
-                    <li class="footer-top__item">
-                        <a class="footer-top__link" href="#">Projects</a>
-                    </li>
-                    <li class="footer-top__item">
-                        <a class="footer-top__link" href="#">Hardware & Accessories</a>
-                    </li>
-                    <li class="footer-top__item">
-                        <a class="footer-top__link" href="#">FAQ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-top__item footer-top__social footer-top__social-links">
-                <h6 class="footer-top__title">
-                    Social Media
-                </h6>
-                <a class="footer-top__social-link" href="#">
-                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                    <!--                        <path d="M7.26938 9.93831H5.48738C5.19938 9.93831 5.10938 9.83031 5.10938 9.56031V7.38231C5.10938 7.09431 5.21738 7.00431 5.48738 7.00431H7.26938V5.42031C7.26938 4.70031 7.39537 4.01631 7.75537 3.38631C8.13337 2.73831 8.67337 2.30631 9.35737 2.05431C9.80737 1.89231 10.2574 1.82031 10.7434 1.82031H12.5074C12.7594 1.82031 12.8674 1.92831 12.8674 2.18031V4.23231C12.8674 4.48431 12.7594 4.59231 12.5074 4.59231C12.0214 4.59231 11.5354 4.59231 11.0494 4.61031C10.5634 4.61031 10.3114 4.84431 10.3114 5.34831C10.2934 5.88831 10.3114 6.41031 10.3114 6.96831H12.3994C12.6874 6.96831 12.7954 7.07631 12.7954 7.36431V9.54231C12.7954 9.83031 12.7054 9.92031 12.3994 9.92031H10.3114V15.7883C10.3114 16.0943 10.2214 16.2023 9.89737 16.2023H7.64737C7.37737 16.2023 7.26938 16.0943 7.26938 15.8243V9.93831Z" fill="#252525"/>-->
-                    <!--                    </svg>-->
-                    <img class="footer-bottom__social-img" src="src/images/icons/facebook.svg">
-                    <span>Facebook</span>
-                </a>
-                <a class="footer-top__social-link" href="#">
-                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                    <!--                        <g clip-path="url(#clip0_114_3446)">-->
-                    <!--                            <path d="M17.9821 5.29205C17.9399 4.33561 17.7852 3.67813 17.5636 3.10835C17.3351 2.50358 16.9834 1.96214 16.5228 1.51201C16.0726 1.05489 15.5276 0.699676 14.9298 0.474702C14.3568 0.253174 13.7027 0.0984567 12.7463 0.0563313C11.7827 0.0105489 11.4768 0 9.03301 0C6.58917 0 6.28329 0.0105489 5.3233 0.0527447C4.3669 0.0949404 3.70938 0.249728 3.13978 0.471115C2.53483 0.699676 1.99339 1.05131 1.54326 1.51201C1.08614 1.9621 0.731102 2.50713 0.505952 3.1049C0.284424 3.67813 0.129742 4.3321 0.0875813 5.28846C0.0418341 6.25204 0.03125 6.55792 0.03125 9.00176C0.03125 11.4456 0.0418341 11.7515 0.0839947 12.7115C0.12619 13.6679 0.280978 14.3254 0.502541 14.8952C0.731102 15.4999 1.08614 16.0414 1.54326 16.4915C1.99339 16.9486 2.53842 17.3038 3.13619 17.5288C3.70935 17.7503 4.36331 17.9051 5.31989 17.9472C6.2797 17.9895 6.58576 17.9999 9.0296 17.9999C11.4734 17.9999 11.7793 17.9895 12.7393 17.9472C13.6957 17.905 14.3532 17.7504 14.9228 17.5288C15.5211 17.2975 16.0644 16.9438 16.518 16.4902C16.9715 16.0367 17.3253 15.4934 17.5567 14.8952C17.778 14.322 17.9329 13.6679 17.975 12.7115C18.0172 11.7515 18.0278 11.4456 18.0278 9.00176C18.0278 6.55792 18.0242 6.252 17.9821 5.29205ZM16.3611 12.6411C16.3224 13.5202 16.1747 13.9949 16.0516 14.3114C15.7492 15.0955 15.1268 15.7179 14.3426 16.0204C14.0262 16.1435 13.5481 16.2911 12.6724 16.3297C11.723 16.372 11.4383 16.3824 9.03659 16.3824C6.63492 16.3824 6.34662 16.372 5.40062 16.3297C4.52154 16.2911 4.04684 16.1435 3.73038 16.0204C3.34017 15.8761 2.98499 15.6476 2.69665 15.3487C2.39776 15.0568 2.1692 14.7052 2.02496 14.315C1.90189 13.9985 1.75424 13.5202 1.71567 12.6447C1.67333 11.6953 1.66292 11.4104 1.66292 9.00876C1.66292 6.60708 1.67333 6.31878 1.71567 5.37296C1.75424 4.49388 1.90189 4.01918 2.02496 3.70271C2.1692 3.31233 2.39776 2.95722 2.70024 2.66881C2.99195 2.36992 3.34358 2.14136 3.73396 1.9973C4.05043 1.87423 4.52872 1.72654 5.40421 1.68783C6.35361 1.64563 6.63851 1.63508 9.04001 1.63508C11.4453 1.63508 11.73 1.64563 12.676 1.68783C13.5551 1.72658 14.0298 1.87419 14.3462 1.99726C14.7364 2.14136 15.0916 2.36992 15.38 2.66881C15.6788 2.9607 15.9074 3.31233 16.0516 3.70271C16.1747 4.01918 16.3224 4.49729 16.3611 5.37296C16.4033 6.32236 16.4138 6.60708 16.4138 9.00876C16.4138 11.4104 16.4033 11.6917 16.3611 12.6411Z" fill="#252525"/>-->
-                    <!--                            <path d="M9.0302 4.37947C6.47743 4.37947 4.40625 6.45051 4.40625 9.00342C4.40625 11.5563 6.47743 13.6274 9.0302 13.6274C11.583 13.6274 13.6542 11.5563 13.6542 9.00342C13.6542 6.45051 11.583 4.37947 9.0302 4.37947ZM9.0302 12.0028C7.37409 12.0028 6.03072 10.6597 6.03072 9.00342C6.03072 7.34717 7.37409 6.00401 9.03017 6.00401C10.6864 6.00401 12.0296 7.34717 12.0296 9.00342C12.0296 10.6597 10.6864 12.0028 9.0302 12.0028ZM14.9166 4.19663C14.9166 4.79278 14.4332 5.27613 13.8369 5.27613C13.2408 5.27613 12.7575 4.79278 12.7575 4.19663C12.7575 3.6004 13.2408 3.11719 13.837 3.11719C14.4332 3.11719 14.9166 3.60036 14.9166 4.19663Z" fill="#252525"/>-->
-                    <!--                        </g>-->
-                    <!--                        <defs>-->
-                    <!--                            <clipPath id="clip0_114_3446">-->
-                    <!--                                <rect width="18" height="18" fill="white"/>-->
-                    <!--                            </clipPath>-->
-                    <!--                        </defs>-->
-                    <!--                    </svg>-->
-                    <img class="footer-bottom__social-img" src="src/images/icons/instagram.svg">
-                    <span>Instagram</span>
+
+            <div class="footer-top__items">
+                <div class="footer-top__item footer-top__menu">
+                    <h6 class="footer-top__title">
+                        Menu
+                    </h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Home</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">About us</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">How it works</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Residential</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Projects</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Hardware & Accessories</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__social footer-top__social-links">
+                    <h6 class="footer-top__title">
+                        Social Media
+                    </h6>
                     <a class="footer-top__social-link" href="#">
-                        <!--                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                        <!--                            <path d="M13.2691 8.34265C13.1916 8.30549 13.1128 8.26972 13.033 8.23548C12.8941 5.67546 11.4952 4.20984 9.14643 4.19484C9.13579 4.19478 9.1252 4.19478 9.11456 4.19478C7.70966 4.19478 6.54123 4.79446 5.82206 5.88569L7.11384 6.77183C7.65109 5.95672 8.49424 5.78295 9.11518 5.78295C9.12235 5.78295 9.12955 5.78295 9.13665 5.78302C9.91003 5.78795 10.4936 6.01281 10.8713 6.45131C11.1462 6.77056 11.3301 7.21172 11.4211 7.76848C10.7354 7.65194 9.99384 7.61611 9.20109 7.66156C6.96794 7.79019 5.53229 9.09262 5.62871 10.9024C5.67764 11.8204 6.13497 12.6101 6.91641 13.126C7.5771 13.5622 8.42803 13.7754 9.3124 13.7272C10.4803 13.6631 11.3965 13.2175 12.0357 12.4028C12.5212 11.784 12.8282 10.9822 12.9637 9.97181C13.5203 10.3077 13.9328 10.7498 14.1607 11.2811C14.548 12.1844 14.5706 13.6687 13.3595 14.8789C12.2983 15.939 11.0227 16.3976 9.09502 16.4118C6.95664 16.3959 5.33942 15.7102 4.28795 14.3735C3.30333 13.1218 2.79447 11.3139 2.77549 9C2.79447 6.68604 3.30333 4.87815 4.28795 3.6265C5.33942 2.28983 6.95662 1.60406 9.09499 1.58817C11.2489 1.60418 12.8943 2.29326 13.986 3.63637C14.5213 4.29502 14.9249 5.12333 15.191 6.08909L16.7048 5.68521C16.3823 4.49646 15.8748 3.4721 15.1842 2.62256C13.7846 0.900626 11.7377 0.0182951 9.10027 0H9.08971C6.45765 0.0182316 4.43363 0.903919 3.0739 2.63243C1.86393 4.1706 1.23979 6.31085 1.21882 8.99367L1.21875 9L1.21882 9.00633C1.23979 11.6891 1.86393 13.8294 3.0739 15.3676C4.43363 17.0961 6.45765 17.9818 9.08971 18H9.10027C11.4403 17.9838 13.0897 17.3711 14.4486 16.0135C16.2263 14.2374 16.1728 12.0112 15.5869 10.6445C15.1665 9.66441 14.365 8.86839 13.2691 8.34265ZM9.2288 12.1413C8.25005 12.1964 7.23322 11.7571 7.18309 10.8161C7.14593 10.1184 7.67961 9.33994 9.28886 9.2472C9.47316 9.23657 9.654 9.23137 9.83166 9.23137C10.4162 9.23137 10.963 9.28816 11.4602 9.39684C11.2747 11.7127 10.1871 12.0887 9.2288 12.1413Z" fill="#252525"/>-->
-                        <!--                        </svg>-->
-                        <img class="footer-bottom__social-img" src="src/images/icons/threads.svg">
-                        <span>Threads</span>
+                        <img class="footer-bottom__social-img" src="src/images/icons/facebook.svg">
+                        <span>Facebook</span>
                     </a>
                     <a class="footer-top__social-link" href="#">
-                        <!--                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                        <!--                            <path d="M10.4893 7.77491L16.3176 1H14.9365L9.87577 6.88256L5.8338 1H1.17188L7.28412 9.89547L1.17188 17H2.55307L7.8973 10.7878L12.1659 17H16.8278L10.489 7.77491H10.4893ZM8.59756 9.97384L7.97826 9.08805L3.05073 2.03974H5.17217L9.14874 7.72795L9.76804 8.61374L14.9371 16.0075H12.8157L8.59756 9.97418V9.97384Z" fill="#252525"/>-->
-                        <!--                        </svg>-->
-                        <img class="footer-bottom__social-img" src="src/images/icons/twitter.svg">
-                        <span>Twitter</span>
+                        <img class="footer-bottom__social-img" src="src/images/icons/instagram.svg">
+                        <span>Instagram</span>
+                        <a class="footer-top__social-link" href="#">
+                            <img class="footer-bottom__social-img" src="src/images/icons/threads.svg">
+                            <span>Threads</span>
+                        </a>
+                        <a class="footer-top__social-link" href="#">
+                            <img class="footer-bottom__social-img" src="src/images/icons/twitter.svg">
+                            <span>Twitter</span>
+                        </a>
+                        <a class="footer-top__social-link" href="#">
+                            <img class="footer-bottom__social-img" src="src/images/icons/linkedin.svg">
+                            <span>Linkedin</span>
+                        </a>
+                        <a class="footer-top__social-link" href="#">
+                            <img class="footer-bottom__social-img" src="src/images/icons/pinterest.svg">
+                            <span>Pinterest</span>
+                        </a>
                     </a>
-                    <a class="footer-top__social-link" href="#">
-                        <!--                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                        <!--                            <path d="M16.1969 16.1969V10.9229C16.1969 8.33087 15.6389 6.35087 12.6149 6.35087C11.1569 6.35087 10.1849 7.14288 9.78888 7.89888H9.75287V6.58487H6.89087V16.1969H9.87887V11.4269C9.87887 10.1669 10.1129 8.96087 11.6609 8.96087C13.1909 8.96087 13.2089 10.3829 13.2089 11.4989V16.1789H16.1969V16.1969ZM2.03088 6.58487H5.01887V16.1969H2.03088V6.58487ZM3.52488 1.79688C2.57087 1.79688 1.79688 2.57087 1.79688 3.52488C1.79688 4.47887 2.57087 5.27087 3.52488 5.27087C4.47887 5.27087 5.25288 4.47887 5.25288 3.52488C5.25288 2.57087 4.47887 1.79688 3.52488 1.79688Z" fill="#252525"/>-->
-                        <!--                        </svg>-->
-                        <img class="footer-bottom__social-img" src="src/images/icons/linkedin.svg">
-                        <span>Linkedin</span>
+                </div>
+                <div class="footer-top__item footer-top__contact footer-top__contact-link">
+                    <h6 class="footer-top__title">
+                        Contacts
+                    </h6>
+                    <a class="footer-top__address footer-top__contacts" href="#">
+                        <img class="footer-bottom__contact-img" src="src/images/icons/address.svg">
+                        <span>Address: Canada, Ontario, street Sf. Nicolas 55</span>
                     </a>
-                    <a class="footer-top__social-link" href="#">
-                        <!--                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                        <!--                            <g clip-path="url(#clip0_114_3467)">-->
-                        <!--                                <path d="M9.24447 0C4.31112 0 1.6875 3.16139 1.6875 6.60855C1.6875 8.20724 2.58079 10.2008 4.01073 10.8331C4.22786 10.931 4.34599 10.8894 4.39437 10.688C4.43712 10.535 4.62501 9.79807 4.71614 9.45043C4.74426 9.33905 4.72964 9.24229 4.63963 9.13766C4.16486 8.58864 3.78797 7.58847 3.78797 6.65017C3.78797 4.24594 5.69943 1.91146 8.95195 1.91146C11.7646 1.91146 13.7323 3.73854 13.7323 6.35204C13.7323 9.30529 12.1696 11.3484 10.1389 11.3484C9.01496 11.3484 8.17792 10.4663 8.44343 9.37505C8.76407 8.07561 9.39297 6.6783 9.39297 5.74113C9.39297 4.90072 8.9182 4.20544 7.94841 4.20544C6.80423 4.20544 5.87606 5.33837 5.87606 6.85943C5.87606 7.82585 6.21808 8.47838 6.21808 8.47838C6.21808 8.47838 5.08628 13.0506 4.87589 13.9045C4.52038 15.3502 4.92427 17.6914 4.95915 17.8928C4.98052 18.0042 5.1054 18.0391 5.17516 17.9479C5.28654 17.8017 6.6546 15.8497 7.03824 14.4389C7.17775 13.9248 7.7504 11.84 7.7504 11.84C8.12729 12.5207 9.21521 13.0911 10.374 13.0911C13.8212 13.0911 16.312 10.0613 16.312 6.30141C16.2997 2.69675 13.2148 0 9.24447 0Z" fill="#252525"/>-->
-                        <!--                            </g>-->
-                        <!--                            <defs>-->
-                        <!--                                <clipPath id="clip0_114_3467">-->
-                        <!--                                    <rect width="18" height="18" fill="white"/>-->
-                        <!--                                </clipPath>-->
-                        <!--                            </defs>-->
-                        <!--                        </svg>-->
-                        <img class="footer-bottom__social-img" src="src/images/icons/pinterest.svg">
-                        <span>Pinterest</span>
+                    <a class="footer-top__website footer-top__contacts" href="#">
+                        <img class="footer-bottom__contact-img" src="src/images/icons/website.svg">
+                        <span>Website: website.com</span>
                     </a>
-                </a>
+                    <a class="footer-top__mail footer-top__contacts" href="#">
+                        <img class="footer-bottom__contact-img" src="src/images/icons/email.svg">
+                        <span>Youremail@gmail.com</span>
+                    </a>
+                    <a class="footer-top__phone footer-top__contacts" href="tel:+0206 895-7522">
+                        <img class="footer-bottom__contact-img" src="src/images/icons/phone.svg">
+                        <span>Phone: (206) 895-7522</span>
+                    </a>
+                </div>
             </div>
-            <div class="footer-top__item footer-top__contact footer-top__contact-link">
-                <h6 class="footer-top__title">
-                    Contacts
-                </h6>
-                <a class="footer-top__address footer-top__contacts" href="#">
-                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                    <!--                        <path d="M9.00329 0C5.40874 0 2.48438 2.92437 2.48438 6.51888C2.48438 10.9798 8.31817 17.5287 8.56655 17.8053C8.79984 18.0651 9.20716 18.0647 9.44004 17.8053C9.68842 17.5287 15.5222 10.9798 15.5222 6.51888C15.5221 2.92437 12.5978 0 9.00329 0ZM9.00329 9.79871C7.19479 9.79871 5.7235 8.32739 5.7235 6.51888C5.7235 4.71037 7.19482 3.23909 9.00329 3.23909C10.8118 3.23909 12.2831 4.71041 12.2831 6.51892C12.2831 8.32743 10.8118 9.79871 9.00329 9.79871Z" fill="#252525"/>-->
-                    <!--                    </svg>-->
-                    <img class="footer-bottom__contact-img" src="src/images/icons/address.svg">
-                    <span>Address: Canada, Ontario, street Sf. Nicolas 55</span>
-                </a>
-                <a class="footer-top__website footer-top__contacts" href="#">
-                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                    <!--                        <g clip-path="url(#clip0_114_3422)">-->
-                    <!--                            <path d="M9 0.5625C7.33122 0.5625 5.69992 1.05735 4.31238 1.98448C2.92484 2.9116 1.84338 4.22936 1.20477 5.77111C0.566156 7.31286 0.399065 9.00936 0.724628 10.6461C1.05019 12.2828 1.85378 13.7862 3.03379 14.9662C4.2138 16.1462 5.71721 16.9498 7.35393 17.2754C8.99064 17.6009 10.6871 17.4338 12.2289 16.7952C13.7706 16.1566 15.0884 15.0752 16.0155 13.6876C16.9427 12.3001 17.4375 10.6688 17.4375 9C17.435 6.76301 16.5452 4.61837 14.9634 3.03658C13.3816 1.45479 11.237 0.565031 9 0.5625ZM9 16.3125C7.83844 16.3125 6.62232 14.8151 6.01875 12.375H11.9813C11.3777 14.8151 10.1616 16.3125 9 16.3125ZM5.79038 11.25C5.56988 9.7581 5.56988 8.2419 5.79038 6.75H12.2096C12.3212 7.49478 12.3765 8.24691 12.375 9C12.3765 9.75309 12.3212 10.5052 12.2096 11.25H5.79038ZM1.6875 9C1.68791 8.23587 1.80864 7.47657 2.04525 6.75H4.66088C4.44638 8.24233 4.44638 9.75767 4.66088 11.25H2.04525C1.80864 10.5234 1.68791 9.76413 1.6875 9ZM9 1.6875C10.1616 1.6875 11.3777 3.18488 11.9813 5.625H6.01875C6.62232 3.18488 7.83844 1.6875 9 1.6875ZM13.3391 6.75H15.9548C16.4316 8.2121 16.4316 9.7879 15.9548 11.25H13.3391C13.4458 10.5047 13.4996 9.75286 13.5 9C13.4996 8.24714 13.4458 7.49526 13.3391 6.75ZM15.4806 5.625H13.1366C12.8863 4.40157 12.3955 3.24004 11.6927 2.20781C13.3229 2.85795 14.6666 4.07012 15.4806 5.625ZM6.30732 2.20781C5.60451 3.24004 5.1137 4.40157 4.86338 5.625H2.51944C3.33345 4.07012 4.67711 2.85795 6.30732 2.20781ZM2.51944 12.375H4.86338C5.1137 13.5984 5.60451 14.76 6.30732 15.7922C4.67711 15.142 3.33345 13.9299 2.51944 12.375ZM11.6927 15.7922C12.3955 14.76 12.8863 13.5984 13.1366 12.375H15.4806C14.6666 13.9299 13.3229 15.142 11.6927 15.7922Z" fill="#252525"/>-->
-                    <!--                        </g>-->
-                    <!--                        <defs>-->
-                    <!--                            <clipPath id="clip0_114_3422">-->
-                    <!--                                <rect width="18" height="18" fill="white"/>-->
-                    <!--                            </clipPath>-->
-                    <!--                        </defs>-->
-                    <!--                    </svg>-->
-                    <img class="footer-bottom__contact-img" src="src/images/icons/website.svg">
-                    <span>Website: website.com</span>
-                </a>
-                <a class="footer-top__mail footer-top__contacts" href="#">
-                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                    <!--                        <path d="M16.418 2.67188H1.58203C0.711492 2.67188 0 3.38024 0 4.25391V13.7461C0 14.6201 0.711949 15.3281 1.58203 15.3281H16.418C17.2885 15.3281 18 14.6198 18 13.7461V4.25391C18 3.38003 17.2882 2.67188 16.418 2.67188ZM16.175 3.72656L9.40866 10.515C9.2025 10.7218 8.79761 10.722 8.59134 10.515L1.82496 3.72656H16.175ZM1.05469 13.5522V4.44779L5.59213 9L1.05469 13.5522ZM1.82496 14.2734L6.3367 9.747L7.84438 11.2596C8.46221 11.8794 9.53803 11.8792 10.1557 11.2596L11.6633 9.74704L16.175 14.2734H1.82496ZM16.9453 13.5522L12.4079 9L16.9453 4.44779V13.5522Z" fill="#252525"/>-->
-                    <!--                    </svg>-->
-                    <img class="footer-bottom__contact-img" src="src/images/icons/email.svg">
-                    <span>Youremail@gmail.com</span>
-                </a>
-                <a class="footer-top__phone footer-top__contacts" href="tel:+0206 895-7522">
-                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">-->
-                    <!--                        <path d="M16.5336 13.14C16.0419 12.7277 13.1586 10.9018 12.6793 10.9856C12.4543 11.0256 12.2822 11.2174 11.8215 11.7669C11.6085 12.0374 11.3745 12.2908 11.1217 12.5246C10.6587 12.4128 10.2105 12.2466 9.78638 12.0296C8.12322 11.2199 6.77961 9.87589 5.97038 8.2125C5.75338 7.78841 5.58723 7.34018 5.47538 6.87712C5.70922 6.62439 5.96256 6.39042 6.23306 6.17738C6.78206 5.71669 6.97444 5.54569 7.01438 5.31956C7.09819 4.83919 5.27063 1.95694 4.86 1.46531C4.68788 1.26169 4.5315 1.125 4.33125 1.125C3.75075 1.125 1.125 4.37175 1.125 4.7925C1.125 4.82681 1.18125 8.20688 5.45006 12.5499C9.79313 16.8188 13.1732 16.875 13.2075 16.875C13.6283 16.875 16.875 14.2492 16.875 13.6687C16.875 13.4685 16.7383 13.3121 16.5336 13.14ZM12.9375 8.4375H14.0625C14.0612 7.24444 13.5866 6.10062 12.743 5.257C11.8994 4.41338 10.7556 3.93884 9.5625 3.9375V5.0625C10.4573 5.06339 11.3153 5.41926 11.948 6.052C12.5807 6.68474 12.9366 7.54267 12.9375 8.4375Z" fill="#252525"/>-->
-                    <!--                        <path d="M15.75 8.4375H16.875C16.8728 6.49879 16.1016 4.64012 14.7308 3.26925C13.3599 1.89837 11.5012 1.12723 9.5625 1.125V2.25C11.2029 2.25194 12.7756 2.90445 13.9356 4.06441C15.0955 5.22438 15.7481 6.79707 15.75 8.4375Z" fill="#252525"/>-->
-                    <!--                    </svg>-->
-                    <img class="footer-bottom__contact-img" src="src/images/icons/phone.svg">
-                    <span>Phone: (206) 895-7522</span>
-                </a>
+
+            <div class="footer-top__accordion">
+                <div class="footer-top__item footer-top__menu">
+                    <h6 class="footer-top__title">
+                        Menu
+                    </h6>
+                    <div class="footer-top__sub-icons">
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a class="footer-top__link" href="#">Home</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a class="footer-top__link" href="#">About us</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a class="footer-top__link" href="#">How it works</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a class="footer-top__link" href="#">Residential</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a class="footer-top__link" href="#">Projects</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a class="footer-top__link" href="#">Hardware & Accessories</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a class="footer-top__link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-top__line"></div>
+                <div class="footer-top__item footer-top__social footer-top__social-links">
+                    <h6 class="footer-top__title">
+                        Social Media
+                    </h6>
+                    <div class="footer-top__sub-icons">
+                        <a class="footer-top__social-link" href="#">
+                            <img class="footer-bottom__social-img" src="src/images/icons/facebook.svg">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="footer-top__social-link" href="#">
+                            <img class="footer-bottom__social-img" src="src/images/icons/instagram.svg">
+                            <span>Instagram</span>
+                            <a class="footer-top__social-link" href="#">
+                                <img class="footer-bottom__social-img" src="src/images/icons/threads.svg">
+                                <span>Threads</span>
+                            </a>
+                            <a class="footer-top__social-link" href="#">
+                                <img class="footer-bottom__social-img" src="src/images/icons/twitter.svg">
+                                <span>Twitter</span>
+                            </a>
+                            <a class="footer-top__social-link" href="#">
+                                <img class="footer-bottom__social-img" src="src/images/icons/linkedin.svg">
+                                <span>Linkedin</span>
+                            </a>
+                            <a class="footer-top__social-link" href="#">
+                                <img class="footer-bottom__social-img" src="src/images/icons/pinterest.svg">
+                                <span>Pinterest</span>
+                            </a>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-top__line"></div>
+                <div class="footer-top__item footer-top__contact footer-top__contact-link">
+                    <h6 class="footer-top__title">
+                        Contacts
+                    </h6>
+                    <div class="footer-top__sub-icons">
+                        <a class="footer-top__address footer-top__contacts" href="#">
+                            <img class="footer-bottom__contact-img" src="src/images/icons/address.svg">
+                            <span>Address: Canada, Ontario, street Sf. Nicolas 55</span>
+                        </a>
+                        <a class="footer-top__website footer-top__contacts" href="#">
+                            <img class="footer-bottom__contact-img" src="src/images/icons/website.svg">
+                            <span>Website: website.com</span>
+                        </a>
+                        <a class="footer-top__mail footer-top__contacts" href="#">
+                            <img class="footer-bottom__contact-img" src="src/images/icons/email.svg">
+                            <span>Youremail@gmail.com</span>
+                        </a>
+                        <a class="footer-top__phone footer-top__contacts" href="tel:+0206 895-7522">
+                            <img class="footer-bottom__contact-img" src="src/images/icons/phone.svg">
+                            <span>Phone: (206) 895-7522</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-top__line"></div>
             </div>
+
         </div>
         <div class="footer-bottom">
             <p class="footer-bottom__copy">
@@ -347,6 +797,8 @@
     </div>
 </footer>
 
+<script src="src/js/swiper.js"></script>
+<script src="src/js/swiper-bundle.min.js"></script>
 <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
