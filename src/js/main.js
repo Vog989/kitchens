@@ -1,4 +1,6 @@
 import '../scss/style.scss';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/pagination';
 
 // const swiper = new Swiper(".mySwiper", {
 //     slidesPerView: "auto",
