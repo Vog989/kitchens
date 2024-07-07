@@ -1821,7 +1821,7 @@ a {
   }
   .kitchen-intro__stats {
     gap: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2027,6 +2027,53 @@ a {
   }
   .footer-top__contacts {
     width: 201px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .menu__list {
+    width: 480px;
+  }
+  .kitchen-intro {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+  }
+  .kitchen-intro__info-description {
+    width: 440px;
+  }
+  .kitchen-intro__info-title {
+    width: 440px;
+  }
+  .kitchen-intro__info-text {
+    width: 440px;
+  }
+  .kitchen-intro__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 440px;
+    margin-bottom: 0;
+  }
+  .kitchen-intro .stat__text {
+    width: 405px;
+  }
+  .kitchen-intro__image-bg {
+    width: 440px;
+    height: 288px;
+    content: url(src/images/intro-kitchen-440px.png);
+  }
+  .kitchen-intro__image-elips {
+    left: 38%;
   }
 }
 @media (max-width: 360px) {

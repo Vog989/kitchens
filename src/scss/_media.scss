@@ -381,7 +381,6 @@
       width: 920px;
       margin: 0 auto !important;
       margin-top: 100px !important;
-      //padding-bottom: 80px !important;
       background-color: $background;
       text-align: center;
       transition: transform .3s ease-in-out;
@@ -1058,7 +1057,7 @@
 
     &__stats {
       gap: 40px;
-      margin-bottom: 80px;
+      margin-bottom: 20px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -1348,6 +1347,73 @@
       width: 201px;
     }
   }
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .menu {
+
+    &__list {
+      width: 480px;
+    }
+  }
+
+  .kitchen-intro {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+
+    &__info-description {
+      width: 440px;
+    }
+
+    &__info-title {
+      width: 440px;
+    }
+
+    &__info-text {
+      width: 440px;
+    }
+
+    &__stats {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 440px;
+      margin-bottom: 0;
+    }
+
+    .stat {
+
+      &__text {
+        width: 405px;
+      }
+    }
+
+    &__image-bg {
+      width: 440px;
+      height: 288px;
+      content: url(src/images/intro-kitchen-440px.png);
+    }
+
+    &__image-elips {
+      left: 38%;
+    }
+  }
+
+
 }
 
 @media (max-width: 360px) {
