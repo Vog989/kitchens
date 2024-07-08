@@ -1413,6 +1413,155 @@
     }
   }
 
+  .interior {
+    margin-bottom: 60px;
+
+    &__inner {
+      width: 440px;
+      margin: 0 auto;
+    }
+
+    &__info {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 32px;
+      width: 440px;
+      line-height: 40px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 28px;
+      width: 440px;
+    }
+
+    &__list-points {
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list-item {
+      width: 440px;
+    }
+
+    &__list-item--name {
+      font-size: 20px;
+    }
+
+    &__list-item--text {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &__button {
+      font-size: 20px;
+      padding: 10px 140px;
+    }
+
+    &__images {
+      height: 350px;
+    }
+
+    &__image {
+      display: block;
+
+      &--large {
+        width: 210px;
+        height: 250px;
+        left: 300px;
+      }
+
+      &--medium {
+        width: 200px;
+        height: 240px;
+        right: 297px;
+        bottom: 5px;
+      }
+
+      &--small {
+        width: 90px;
+        height: 90px;
+        left: 600px;
+      }
+    }
+
+    &__pattern-points {
+      width: 82.139px;
+      height: 75.294px;
+      bottom: 42px;
+      left: 363px;
+    }
+  }
+
+  .choice {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+
+    &__inner {
+      width: 480px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__item-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 32px;
+      line-height: 40px;
+      width: 440px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 28px;
+      width: 440px;
+    }
+
+    &__points {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+      width: 440px;
+    }
+
+    &__item-title {
+      font-size: 20px;
+      width: 440px;
+    }
+
+    &__item-text {
+      font-size: 20px;
+      line-height: 28px;
+      width: 440px;
+    }
+
+    &__image {
+      width: 320px;
+    }
+
+    &__image-main {
+      width: 320px;
+      height: 240px;
+      content: url("src/images/choice-kitchen-360px.png");
+    }
+  }
 
 }
 
