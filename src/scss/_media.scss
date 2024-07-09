@@ -1180,6 +1180,7 @@
     }
 
     &__image-main {
+      top: 100px;
       width: 680px;
       height: 500px;
       content: url("src/images/choice-kitchen-768px.png");
@@ -1506,11 +1507,16 @@
     margin-bottom: 60px;
 
     &__inner {
-      width: 480px;
+      width: 440px;
+    }
+
+    &__info-text {
+      width: 440px;
     }
 
     &__text {
       margin-bottom: 30px;
+      width: 440px;
     }
 
     &__item-icon {
@@ -1534,32 +1540,88 @@
     &__points {
       display: flex;
       flex-direction: column;
+      gap: 20px;
+      width: 440px;
     }
 
     &__item {
+      display: flex;
+      align-items: start;
       margin-bottom: 20px;
       width: 440px;
     }
 
+    &__icon {
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+
+    &__item-icon {
+      width: 35px;
+    }
+
+    &__description-item {
+
+    }
+
     &__item-title {
       font-size: 20px;
-      width: 440px;
+      width: 390px;
     }
 
     &__item-text {
       font-size: 20px;
       line-height: 28px;
+      width: 390px;
+    }
+
+
+
+    &__image {
       width: 440px;
     }
 
-    &__image {
+    &__image-main {
+      top: 80px;
+      width: 440px;
+      height: 288px;
+      content: url("src/images/choice-kitchen-480px.png");
+    }
+  }
+
+  .process {
+    margin-bottom: 60px;
+
+    &__text {
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
       width: 320px;
     }
 
-    &__image-main {
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
       width: 320px;
-      height: 240px;
-      content: url("src/images/choice-kitchen-360px.png");
+    }
+
+    &__step {
+      width: 320px;
+    }
+
+    &__step-title {
+      font-size: 20px;
+      line-height: 24px;
+      width: 280px;
+    }
+
+    &__step-description {
+      font-size: 16px;
+      line-height: 24px;
+      width: 280px;
     }
   }
 
@@ -1790,13 +1852,26 @@
       width: 320px;
     }
 
+    &__info-text {
+      width: 320px;
+    }
+
     &__text {
       margin-bottom: 30px;
+      width: 320px;
+    }
+
+    &__points {
+      width: 320px;
+    }
+
+    &__icon {
+      flex-shrink: 0;
+      margin-right: 10px;
     }
 
     &__item-icon {
-      width: 50px;
-      height: 50px;
+      width: 35px;
     }
 
     &__title {
@@ -1824,14 +1899,17 @@
 
     &__item-title {
       font-size: 16px;
+      width: 270px;
     }
 
     &__item-text {
       font-size: 16px;
       line-height: 24px;
+      width: 270px;
     }
 
     &__image {
+      bottom: 175px;
       width: 320px;
     }
 
