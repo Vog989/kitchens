@@ -1378,14 +1378,21 @@
 
     &__info-description {
       width: 440px;
+      margin-bottom: 30px ;
     }
 
     &__info-title {
+      font-size: 50px;
+      line-height: 58px;
       width: 440px;
     }
 
     &__info-text {
       width: 440px;
+    }
+
+    &__actions {
+      margin-bottom: 30px;
     }
 
     &__stats {
@@ -1400,6 +1407,8 @@
 
       &__text {
         width: 405px;
+        font-size: 20px;
+        line-height: 28px;
       }
     }
 
@@ -1455,10 +1464,11 @@
 
     &__list-item--name {
       font-size: 20px;
+      line-height: 28px;
     }
 
     &__list-item--text {
-      font-size: 16px;
+      font-size: 20px;
       line-height: 28px;
     }
 
@@ -1576,7 +1586,6 @@
     }
 
 
-
     &__image {
       width: 440px;
     }
@@ -1672,7 +1681,7 @@
 
     .custom-container {
       width: 440px;
-      padding-left: 20px;
+      padding-left: 0;
       padding-right: 0;
     }
 
@@ -1680,8 +1689,8 @@
     padding-bottom: 60px;
 
     &__description-title {
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 50px;
+      line-height: 58px;
       width: 440px;
       margin-bottom: 10px;
     }
@@ -1716,9 +1725,9 @@
     }
 
     &__swiper-actions {
-      width: 320px;
-      right: 15px;
-      gap: 90px;
+      width: 440px;
+      right: 0;
+      gap: 150px;
       position: absolute;
       display: flex;
       margin-bottom: 20px;
@@ -1732,6 +1741,264 @@
       font-size: 20px;
     }
 
+  }
+
+  .accessories {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__header {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 58px;
+      width: 440px;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 28px;
+      width: 440px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      padding: 10px;
+      width: 420px;
+    }
+
+    &__card-name {
+      padding-top: 10px;
+      width: 400px;
+    }
+
+    &__card-title {
+      font-size: 20px;
+    }
+
+    &__image {
+      width: 400px;
+      height: 262px;
+    }
+  }
+
+  .contact-form {
+    padding-top: 60px;
+    padding-bottom: 0;
+
+
+    &__header {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 58px;
+      text-align: left;
+      width: 440px;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 28px;
+      text-align: left;
+      width: 440px;
+    }
+
+    &__form {
+      width: 440px;
+      padding: 20px;
+    }
+
+    &__label {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 10px;
+      width: 400px;
+    }
+
+    &__input {
+      width: 400px;
+      font-size: 20px;
+      line-height: 28px;
+      padding: 15px 20px;
+    }
+
+    &__textarea {
+      width: 400px;
+      padding: 15px 20px 55px 20px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &__button {
+      font-size: 20px;
+      line-height: 28px;
+      padding: 10px 20px;
+      width: 400px;
+    }
+
+    &__field {
+      margin-bottom: 20px;
+    }
+  }
+
+  .faq {
+    padding-top: 60px;
+    margin-bottom: 60px;
+
+    &__header {
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 50px;
+      width: 440px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 28px;
+      width: 440px;
+      text-align: left;
+    }
+
+    &__question {
+      width: 400px;
+      font-size: 20px;
+      line-height: 28px;
+
+      &:after {
+        right: -45px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__answer {
+      width: 100%;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &__button {
+      padding: 10px 72px;
+      width: 440px;
+      font-size: 20px;
+    }
+  }
+
+  .footer {
+
+    .footer-top {
+      padding-top: 60px;
+      padding-bottom: 30px;
+      border-bottom: none;
+
+      &__sub-icons {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      &__company {
+        margin-bottom: 60px;
+      }
+
+      &__logo {
+        width: 225px;
+      }
+
+      &__logo-img img {
+        width: 225.004px;
+        height: 50px;
+      }
+
+      &__slogan {
+        font-size: 50px;
+        line-height: 58px;
+        width: 440px;
+      }
+
+      //&__link {
+      //  font-size: 20px;
+      //}
+
+      &__accordion {
+        display: block;
+      }
+
+      &__title {
+        position: relative;
+        font-size: 20px;
+        line-height: 28px;
+        width: 440px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        &:after {
+          position: absolute;
+          display: block;
+          top: 0;
+          right: 0;
+          content: '';
+          background-image: url("src/images/icons/chevron.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 32px;
+          height: 32px;
+        }
+
+        &.active:after {
+          transform: rotate(180deg);
+        }
+      }
+
+      &__items {
+        display: none;
+      }
+
+      &__line {
+        width: 440px;
+        height: 1px;
+        background: #fff;
+        opacity: 0.1;
+      }
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 60px;
+
+      &__copy {
+        text-align: center;
+        width: 320px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 30px;
+      }
+
+      &__legal-link {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
   }
 
 }
@@ -2198,6 +2465,7 @@
 
     &__card {
       padding: 10px;
+      width: 320px;
     }
 
     &__card-name {

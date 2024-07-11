@@ -2051,12 +2051,18 @@ a {
   }
   .kitchen-intro__info-description {
     width: 440px;
+    margin-bottom: 30px;
   }
   .kitchen-intro__info-title {
+    font-size: 50px;
+    line-height: 58px;
     width: 440px;
   }
   .kitchen-intro__info-text {
     width: 440px;
+  }
+  .kitchen-intro__actions {
+    margin-bottom: 30px;
   }
   .kitchen-intro__stats {
     display: flex;
@@ -2067,6 +2073,8 @@ a {
   }
   .kitchen-intro .stat__text {
     width: 405px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .kitchen-intro__image-bg {
     width: 440px;
@@ -2110,9 +2118,10 @@ a {
   }
   .interior__list-item--name {
     font-size: 20px;
+    line-height: 28px;
   }
   .interior__list-item--text {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 28px;
   }
   .interior__button {
@@ -2283,12 +2292,12 @@ a {
   }
   .projects-gallery .custom-container {
     width: 440px;
-    padding-left: 20px;
+    padding-left: 0;
     padding-right: 0;
   }
   .projects-gallery__description-title {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 50px;
+    line-height: 58px;
     width: 440px;
     margin-bottom: 10px;
   }
@@ -2317,9 +2326,9 @@ a {
     height: 320px;
   }
   .projects-gallery__swiper-actions {
-    width: 320px;
-    right: 15px;
-    gap: 90px;
+    width: 440px;
+    right: 0;
+    gap: 150px;
     position: absolute;
     display: flex;
     margin-bottom: 20px;
@@ -2329,6 +2338,213 @@ a {
   }
   .projects-gallery__counter {
     font-size: 20px;
+  }
+  .accessories {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .accessories__header {
+    margin-bottom: 30px;
+  }
+  .accessories__title {
+    font-size: 50px;
+    line-height: 58px;
+    width: 440px;
+    margin-bottom: 10px;
+  }
+  .accessories__description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 440px;
+  }
+  .accessories__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .accessories__card {
+    padding: 10px;
+    width: 420px;
+  }
+  .accessories__card-name {
+    padding-top: 10px;
+    width: 400px;
+  }
+  .accessories__card-title {
+    font-size: 20px;
+  }
+  .accessories__image {
+    width: 400px;
+    height: 262px;
+  }
+  .contact-form {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .contact-form__header {
+    margin-bottom: 30px;
+  }
+  .contact-form__title {
+    font-size: 50px;
+    line-height: 58px;
+    text-align: left;
+    width: 440px;
+    margin-bottom: 20px;
+  }
+  .contact-form__description {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    width: 440px;
+  }
+  .contact-form__form {
+    width: 440px;
+    padding: 20px;
+  }
+  .contact-form__label {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    width: 400px;
+  }
+  .contact-form__input {
+    width: 400px;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 15px 20px;
+  }
+  .contact-form__textarea {
+    width: 400px;
+    padding: 15px 20px 55px 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .contact-form__button {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px 20px;
+    width: 400px;
+  }
+  .contact-form__field {
+    margin-bottom: 20px;
+  }
+  .faq {
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+  .faq__header {
+    margin-bottom: 40px;
+  }
+  .faq__list {
+    margin-bottom: 30px;
+  }
+  .faq__title {
+    font-size: 50px;
+    line-height: 50px;
+    width: 440px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .faq__description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 440px;
+    text-align: left;
+  }
+  .faq__question {
+    width: 400px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .faq__question:after {
+    right: -45px;
+    width: 24px;
+    height: 24px;
+  }
+  .faq__answer {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .faq__button {
+    padding: 10px 72px;
+    width: 440px;
+    font-size: 20px;
+  }
+  .footer .footer-top {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-bottom: none;
+  }
+  .footer .footer-top__sub-icons {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .footer .footer-top__company {
+    margin-bottom: 60px;
+  }
+  .footer .footer-top__logo {
+    width: 225px;
+  }
+  .footer .footer-top__logo-img img {
+    width: 225.004px;
+    height: 50px;
+  }
+  .footer .footer-top__slogan {
+    font-size: 50px;
+    line-height: 58px;
+    width: 440px;
+  }
+  .footer .footer-top__accordion {
+    display: block;
+  }
+  .footer .footer-top__title {
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    width: 440px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .footer .footer-top__title:after {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    content: "";
+    background-image: url("src/images/icons/chevron.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+  }
+  .footer .footer-top__title.active:after {
+    transform: rotate(180deg);
+  }
+  .footer .footer-top__items {
+    display: none;
+  }
+  .footer .footer-top__line {
+    width: 440px;
+    height: 1px;
+    background: #fff;
+    opacity: 0.1;
+  }
+  .footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+  .footer .footer-bottom__copy {
+    text-align: center;
+    width: 320px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .footer .footer-bottom__legal-link {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 @media (max-width: 360px) {
@@ -2697,6 +2913,7 @@ a {
   }
   .accessories__card {
     padding: 10px;
+    width: 320px;
   }
   .accessories__card-name {
     padding-top: 10px;
