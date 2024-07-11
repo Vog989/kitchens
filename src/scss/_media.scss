@@ -1599,30 +1599,139 @@
     &__title {
       font-size: 32px;
       line-height: 40px;
-      width: 320px;
+      width: 440px;
     }
 
     &__description {
-      font-size: 16px;
-      line-height: 24px;
-      width: 320px;
+      font-size: 20px;
+      line-height: 28px;
+      width: 440px;
     }
 
     &__step {
-      width: 320px;
+      width: 440px;
     }
 
     &__step-title {
       font-size: 20px;
-      line-height: 24px;
-      width: 280px;
+      line-height: 28px;
+      width: 400px;
     }
 
     &__step-description {
+      font-size: 20px;
+      line-height: 28px;
+      width: 400px;
+    }
+  }
+
+  .cabinet-gallery {
+    padding-top: 60px;
+    margin-bottom: 60px;
+
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 10px;
+      width: 440px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 28px;
+      width: 440px;
+      margin-bottom: 30px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      width: 440px;
+    }
+
+    &__card-title {
+      font-size: 20px;
+    }
+
+    &__image {
+      width: 400px;
+      height: 262px;
+    }
+
+    &__card-name {
+      font-size: 20px;
+      line-height: 28px;
+      width: 400px;
+    }
+  }
+
+  .projects-gallery {
+
+    .custom-container {
+      width: 440px;
+      padding-left: 20px;
+      padding-right: 0;
+    }
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__description-title {
+      font-size: 32px;
+      line-height: 40px;
+      width: 440px;
+      margin-bottom: 10px;
+    }
+
+    &__description-text {
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 28px;
+      width: 440px;
+    }
+
+    .interior__button {
       font-size: 16px;
       line-height: 24px;
-      width: 280px;
+      padding: 10px 145px;
+      width: 420px;
     }
+
+    &__swiper {
+      width: 640px;
+      height: 368px;
+    }
+
+    &__swiper-slide {
+      width: 290px;
+      height: 320px;
+    }
+
+    .swiper-slide-active {
+      width: 290px;
+      height: 320px;
+    }
+
+    &__swiper-actions {
+      width: 320px;
+      right: 15px;
+      gap: 90px;
+      position: absolute;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__patterns {
+      display: none;
+    }
+
+    &__counter {
+      font-size: 20px;
+    }
+
   }
 
 }
@@ -1979,6 +2088,10 @@
       flex-direction: column;
     }
 
+    &__card {
+      width: 320px;
+    }
+
     &__image {
       width: 300px;
       height: 200px;
@@ -1987,6 +2100,7 @@
     &__card-name {
       font-size: 20px;
       line-height: 28px;
+      width: 280px;
     }
   }
 

@@ -2222,25 +2222,113 @@ a {
   .process__title {
     font-size: 32px;
     line-height: 40px;
-    width: 320px;
+    width: 440px;
   }
   .process__description {
-    font-size: 16px;
-    line-height: 24px;
-    width: 320px;
+    font-size: 20px;
+    line-height: 28px;
+    width: 440px;
   }
   .process__step {
-    width: 320px;
+    width: 440px;
   }
   .process__step-title {
     font-size: 20px;
-    line-height: 24px;
-    width: 280px;
+    line-height: 28px;
+    width: 400px;
   }
   .process__step-description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 400px;
+  }
+  .cabinet-gallery {
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+  .cabinet-gallery__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    width: 440px;
+  }
+  .cabinet-gallery__description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 440px;
+    margin-bottom: 30px;
+  }
+  .cabinet-gallery__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .cabinet-gallery__card {
+    width: 440px;
+  }
+  .cabinet-gallery__card-title {
+    font-size: 20px;
+  }
+  .cabinet-gallery__image {
+    width: 400px;
+    height: 262px;
+  }
+  .cabinet-gallery__card-name {
+    font-size: 20px;
+    line-height: 28px;
+    width: 400px;
+  }
+  .projects-gallery {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .projects-gallery .custom-container {
+    width: 440px;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .projects-gallery__description-title {
+    font-size: 32px;
+    line-height: 40px;
+    width: 440px;
+    margin-bottom: 10px;
+  }
+  .projects-gallery__description-text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    width: 440px;
+  }
+  .projects-gallery .interior__button {
     font-size: 16px;
     line-height: 24px;
-    width: 280px;
+    padding: 10px 145px;
+    width: 420px;
+  }
+  .projects-gallery__swiper {
+    width: 640px;
+    height: 368px;
+  }
+  .projects-gallery__swiper-slide {
+    width: 290px;
+    height: 320px;
+  }
+  .projects-gallery .swiper-slide-active {
+    width: 290px;
+    height: 320px;
+  }
+  .projects-gallery__swiper-actions {
+    width: 320px;
+    right: 15px;
+    gap: 90px;
+    position: absolute;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .projects-gallery__patterns {
+    display: none;
+  }
+  .projects-gallery__counter {
+    font-size: 20px;
   }
 }
 @media (max-width: 360px) {
@@ -2520,6 +2608,9 @@ a {
     display: flex;
     flex-direction: column;
   }
+  .cabinet-gallery__card {
+    width: 320px;
+  }
   .cabinet-gallery__image {
     width: 300px;
     height: 200px;
@@ -2527,6 +2618,7 @@ a {
   .cabinet-gallery__card-name {
     font-size: 20px;
     line-height: 28px;
+    width: 280px;
   }
   .projects-gallery {
     padding-top: 60px;
