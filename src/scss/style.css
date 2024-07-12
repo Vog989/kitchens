@@ -984,6 +984,7 @@ a {
   align-items: center;
   font-size: 16px;
   line-height: 24px;
+  padding-bottom: 60px;
 }
 .footer-bottom__legal-link {
   font-size: 16px;
@@ -2096,9 +2097,9 @@ a {
   }
   .interior__title {
     margin-bottom: 10px;
-    font-size: 32px;
     width: 440px;
-    line-height: 40px;
+    font-size: 50px;
+    line-height: 58px;
   }
   .interior__text {
     margin-bottom: 30px;
@@ -2176,9 +2177,9 @@ a {
   }
   .choice__title {
     margin-bottom: 10px;
-    font-size: 32px;
-    line-height: 40px;
     width: 440px;
+    font-size: 50px;
+    line-height: 58px;
   }
   .choice__description {
     font-size: 20px;
@@ -2229,9 +2230,9 @@ a {
     margin-bottom: 60px;
   }
   .process__title {
-    font-size: 32px;
-    line-height: 40px;
     width: 440px;
+    font-size: 50px;
+    line-height: 58px;
   }
   .process__description {
     font-size: 20px;
@@ -2256,10 +2257,10 @@ a {
     margin-bottom: 60px;
   }
   .cabinet-gallery__title {
-    font-size: 32px;
-    line-height: 40px;
     margin-bottom: 10px;
     width: 440px;
+    font-size: 50px;
+    line-height: 58px;
   }
   .cabinet-gallery__description {
     font-size: 20px;
@@ -2272,7 +2273,8 @@ a {
     flex-direction: column;
   }
   .cabinet-gallery__card {
-    width: 440px;
+    padding: 10px;
+    width: 420px;
   }
   .cabinet-gallery__card-title {
     font-size: 20px;
@@ -2284,7 +2286,7 @@ a {
   .cabinet-gallery__card-name {
     font-size: 20px;
     line-height: 28px;
-    width: 400px;
+    width: 395px;
   }
   .projects-gallery {
     padding-top: 60px;
@@ -2347,10 +2349,10 @@ a {
     margin-bottom: 30px;
   }
   .accessories__title {
-    font-size: 50px;
-    line-height: 58px;
     width: 440px;
     margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 58px;
   }
   .accessories__description {
     font-size: 20px;
@@ -2438,11 +2440,11 @@ a {
     margin-bottom: 30px;
   }
   .faq__title {
-    font-size: 50px;
-    line-height: 50px;
+    margin-bottom: 20px;
     width: 440px;
     text-align: left;
-    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 50px;
   }
   .faq__description {
     font-size: 20px;
@@ -2542,9 +2544,297 @@ a {
     line-height: 20px;
     margin-bottom: 30px;
   }
-  .footer .footer-bottom__legal-link {
-    font-size: 14px;
-    line-height: 20px;
+}
+@media (max-width: 430px) {
+  .container {
+    width: 430px;
+  }
+  .menu__list {
+    width: 430px;
+  }
+  .kitchen-intro__inner {
+    width: 390px;
+  }
+  .kitchen-intro__info-description {
+    width: 390px;
+  }
+  .kitchen-intro__info-title {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .kitchen-intro__info-text {
+    width: 390px;
+  }
+  .kitchen-intro__actions {
+    margin-bottom: 30px;
+  }
+  .kitchen-intro__actions-btn {
+    padding: 15px 25px;
+  }
+  .kitchen-intro__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 390px;
+    margin-bottom: 0;
+  }
+  .kitchen-intro .stat__text {
+    width: 405px;
+  }
+  .kitchen-intro__image-bg {
+    width: 390px;
+    height: 255px;
+    content: url(src/images/intro-kitchen-390px.png);
+  }
+  .kitchen-intro__image-elips {
+    left: 33%;
+  }
+  .interior__inner {
+    width: 390px;
+  }
+  .interior__info {
+    width: 390px;
+  }
+  .interior__title {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .interior__text {
+    width: 390px;
+  }
+  .interior__list-item {
+    width: 390px;
+  }
+  .interior__button {
+    padding: 10px 120px;
+  }
+  .choice__inner {
+    width: 390px;
+  }
+  .choice__info-text {
+    width: 390px;
+  }
+  .choice__text {
+    width: 390px;
+  }
+  .choice__title {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .choice__description {
+    width: 390px;
+  }
+  .choice__points {
+    width: 390px;
+  }
+  .choice__item {
+    width: 390px;
+  }
+  .choice__icon {
+    flex-shrink: 0;
+    margin-right: 15px;
+  }
+  .choice__item-icon {
+    width: 35px;
+  }
+  .choice__item-title {
+    font-size: 20px;
+    width: 340px;
+  }
+  .choice__item-text {
+    font-size: 20px;
+    line-height: 28px;
+    width: 340px;
+  }
+  .choice__image {
+    width: 390px;
+  }
+  .choice__image-main {
+    top: 80px;
+    width: 390px;
+    height: 255px;
+    content: url("src/images/choice-kitchen-390px.png");
+  }
+  .process__inner {
+    width: 390px;
+  }
+  .process__title {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .process__description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 390px;
+  }
+  .process__step {
+    width: 390px;
+  }
+  .process__step-title {
+    font-size: 20px;
+    line-height: 28px;
+    width: 340px;
+  }
+  .process__step-description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 340px;
+  }
+  .cabinet-gallery__inner {
+    width: 390px;
+  }
+  .cabinet-gallery__title {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .cabinet-gallery__description {
+    width: 390px;
+  }
+  .cabinet-gallery__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .cabinet-gallery__card {
+    padding: 10px;
+    width: 390px;
+  }
+  .cabinet-gallery__card-title {
+    font-size: 20px;
+  }
+  .cabinet-gallery__image {
+    width: 370px;
+    height: 240px;
+  }
+  .cabinet-gallery__card-name {
+    width: 360px;
+  }
+  .projects-gallery .custom-container {
+    width: 390px;
+  }
+  .projects-gallery__description-title {
+    width: 390px;
+  }
+  .projects-gallery__description-text {
+    width: 390px;
+  }
+  .projects-gallery .interior__button {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 132px;
+    width: 390px;
+  }
+  .projects-gallery__swiper {
+    width: 640px;
+    height: 368px;
+  }
+  .projects-gallery__swiper-slide {
+    width: 290px;
+    height: 320px;
+  }
+  .projects-gallery .swiper-slide-active {
+    width: 290px;
+    height: 320px;
+  }
+  .projects-gallery__swiper-actions {
+    width: 390px;
+    right: 0;
+    gap: 129px;
+    position: absolute;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .projects-gallery__patterns {
+    display: none;
+  }
+  .projects-gallery__counter {
+    font-size: 20px;
+  }
+  .accessories__inner {
+    width: 390px;
+  }
+  .accessories__title {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .accessories__description {
+    width: 390px;
+  }
+  .accessories__card {
+    padding: 10px;
+    width: 390px;
+  }
+  .accessories__card-name {
+    padding-top: 10px;
+    width: 365px;
+  }
+  .accessories__card-title {
+    font-size: 20px;
+  }
+  .accessories__image {
+    width: 370px;
+    height: 240px;
+  }
+  .contact-form__inner {
+    width: 390px;
+  }
+  .contact-form__title {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .contact-form__description {
+    width: 390px;
+  }
+  .contact-form__form {
+    width: 390px;
+  }
+  .contact-form__label {
+    width: 350px;
+  }
+  .contact-form__input {
+    width: 350px;
+  }
+  .contact-form__textarea {
+    width: 350px;
+  }
+  .contact-form__button {
+    width: 350px;
+  }
+  .faq__inner {
+    width: 390px;
+  }
+  .faq__title {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .faq__description {
+    width: 390px;
+  }
+  .faq__question {
+    width: 350px;
+  }
+  .faq__button {
+    padding: 10px 47px;
+    width: 440px;
+    font-size: 20px;
+  }
+  .footer .footer-top__slogan {
+    width: 390px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .footer .footer-top__title {
+    width: 390px;
+  }
+  .footer .footer-top__line {
+    width: 390px;
   }
 }
 @media (max-width: 360px) {
@@ -2917,6 +3207,7 @@ a {
   }
   .accessories__card-name {
     padding-top: 10px;
+    width: 300px;
   }
   .accessories__card-title {
     font-size: 20px;

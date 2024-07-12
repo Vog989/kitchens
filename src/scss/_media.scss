@@ -1437,9 +1437,9 @@
 
     &__title {
       margin-bottom: 10px;
-      font-size: 32px;
       width: 440px;
-      line-height: 40px;
+      font-size: 50px;
+      line-height: 58px;
     }
 
     &__text {
@@ -1536,9 +1536,9 @@
 
     &__title {
       margin-bottom: 10px;
-      font-size: 32px;
-      line-height: 40px;
       width: 440px;
+      font-size: 50px;
+      line-height: 58px;
     }
 
     &__description {
@@ -1606,9 +1606,9 @@
     }
 
     &__title {
-      font-size: 32px;
-      line-height: 40px;
       width: 440px;
+      font-size: 50px;
+      line-height: 58px;
     }
 
     &__description {
@@ -1639,10 +1639,10 @@
     margin-bottom: 60px;
 
     &__title {
-      font-size: 32px;
-      line-height: 40px;
       margin-bottom: 10px;
       width: 440px;
+      font-size: 50px;
+      line-height: 58px;
     }
 
     &__description {
@@ -1658,7 +1658,8 @@
     }
 
     &__card {
-      width: 440px;
+      padding: 10px;
+      width: 420px;
     }
 
     &__card-title {
@@ -1673,7 +1674,7 @@
     &__card-name {
       font-size: 20px;
       line-height: 28px;
-      width: 400px;
+      width: 395px;
     }
   }
 
@@ -1752,10 +1753,10 @@
     }
 
     &__title {
-      font-size: 50px;
-      line-height: 58px;
       width: 440px;
       margin-bottom: 10px;
+      font-size: 50px;
+      line-height: 58px;
     }
 
     &__description {
@@ -1864,11 +1865,11 @@
     }
 
     &__title {
-      font-size: 50px;
-      line-height: 50px;
+      margin-bottom: 20px;
       width: 440px;
       text-align: left;
-      margin-bottom: 20px;
+      font-size: 50px;
+      line-height: 50px;
     }
 
     &__description {
@@ -1993,10 +1994,425 @@
         line-height: 20px;
         margin-bottom: 30px;
       }
+    }
+  }
 
-      &__legal-link {
-        font-size: 14px;
-        line-height: 20px;
+}
+
+@media (max-width: 430px) {
+
+  .container {
+    width: 430px;
+  }
+
+  .menu {
+
+    &__list {
+      width: 430px;
+    }
+  }
+
+  .kitchen-intro {
+
+    &__inner {
+      width: 390px;
+    }
+
+    &__info-description {
+      width: 390px;
+
+    }
+
+    &__info-title {
+      width: 390px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__info-text {
+      width: 390px;
+    }
+
+    &__actions {
+      margin-bottom: 30px;
+    }
+
+    &__actions-btn {
+      padding: 15px 25px;
+    }
+
+    &__stats {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 390px;
+      margin-bottom: 0;
+    }
+
+    .stat {
+
+      &__text {
+        width: 405px;
+      }
+    }
+
+    &__image-bg {
+      width: 390px;
+      height: 255px;
+      content: url(src/images/intro-kitchen-390px.png);
+    }
+
+    &__image-elips {
+      left: 33%;
+    }
+  }
+
+  .interior {
+
+    &__inner {
+      width: 390px;
+    }
+
+    &__info {
+      width: 390px;
+    }
+
+    &__title {
+      width: 390px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__text {
+      width: 390px;
+    }
+
+    &__list-item {
+      width: 390px;
+    }
+
+    &__button {
+      padding: 10px 120px;
+    }
+
+  }
+
+  .choice {
+
+    &__inner {
+      width: 390px;
+    }
+
+    &__info-text {
+      width: 390px;
+    }
+
+    &__text {
+      width: 390px;
+    }
+
+    &__title {
+      width: 390px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__description {
+      width: 390px;
+    }
+
+    &__points {
+      width: 390px;
+    }
+
+    &__item {
+      width: 390px;
+    }
+
+    &__icon {
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+
+    &__item-icon {
+      width: 35px;
+    }
+
+    &__description-item {
+
+    }
+
+    &__item-title {
+      font-size: 20px;
+      width: 340px;
+    }
+
+    &__item-text {
+      font-size: 20px;
+      line-height: 28px;
+      width: 340px;
+    }
+
+
+    &__image {
+      width: 390px;
+    }
+
+    &__image-main {
+      top: 80px;
+      width: 390px;
+      height: 255px;
+      content: url("src/images/choice-kitchen-390px.png");
+    }
+  }
+
+  .process {
+
+    &__inner {
+      width: 390px;
+    }
+
+    &__title {
+      width: 390px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 28px;
+      width: 390px;
+    }
+
+    &__step {
+      width: 390px;
+    }
+
+    &__step-title {
+      font-size: 20px;
+      line-height: 28px;
+      width: 340px;
+    }
+
+    &__step-description {
+      font-size: 20px;
+      line-height: 28px;
+      width: 340px;
+    }
+  }
+
+  .cabinet-gallery {
+
+    &__inner {
+      width: 390px;
+    }
+
+    &__title {
+      width: 390px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__description {
+      width: 390px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      padding: 10px;
+      width: 390px;
+    }
+
+    &__card-title {
+      font-size: 20px;
+    }
+
+    &__image {
+      width: 370px;
+      height: 240px;
+    }
+
+    &__card-name {
+      width: 360px;
+    }
+  }
+
+  .projects-gallery {
+
+    .custom-container {
+      width: 390px;
+    }
+
+    &__description-title {
+      width: 390px;
+    }
+
+    &__description-text {
+      width: 390px;
+    }
+
+    .interior__button {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 10px 132px;
+      width: 390px;
+    }
+
+    &__swiper {
+      width: 640px;
+      height: 368px;
+    }
+
+    &__swiper-slide {
+      width: 290px;
+      height: 320px;
+    }
+
+    .swiper-slide-active {
+      width: 290px;
+      height: 320px;
+    }
+
+    &__swiper-actions {
+      width: 390px;
+      right: 0;
+      gap: 129px;
+      position: absolute;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__patterns {
+      display: none;
+    }
+
+    &__counter {
+      font-size: 20px;
+    }
+
+  }
+
+  .accessories {
+
+    &__inner {
+      width: 390px;
+    }
+
+    &__title {
+      width: 390px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__description {
+      width: 390px;
+    }
+
+    &__card {
+      padding: 10px;
+      width: 390px;
+    }
+
+    &__card-name {
+      padding-top: 10px;
+      width: 365px;
+    }
+
+    &__card-title {
+      font-size: 20px;
+    }
+
+    &__image {
+      width: 370px;
+      height: 240px;
+    }
+  }
+
+  .contact-form {
+
+    &__inner {
+      width: 390px;
+    }
+
+    &__title {
+      width: 390px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__description {
+      width: 390px;
+    }
+
+    &__form {
+      width: 390px;
+    }
+
+    &__label {
+      width: 350px;
+    }
+
+    &__input {
+      width: 350px;
+    }
+
+    &__textarea {
+      width: 350px;
+    }
+
+    &__button {
+      width: 350px;
+    }
+
+  }
+
+  .faq {
+
+    &__inner {
+      width: 390px;
+    }
+
+    &__title {
+      width: 390px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__description {
+      width: 390px;
+    }
+
+    &__question {
+      width: 350px;
+    }
+
+    &__button {
+      padding: 10px 47px;
+      width: 440px;
+      font-size: 20px;
+    }
+  }
+
+  .footer {
+
+    .footer-top {
+
+      &__slogan {
+        width: 390px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      &__title {
+        width: 390px;
+      }
+
+      &__line {
+        width: 390px;
       }
     }
   }
@@ -2470,6 +2886,7 @@
 
     &__card-name {
       padding-top: 10px;
+      width: 300px;
     }
 
     &__card-title {
