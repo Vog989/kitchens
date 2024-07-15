@@ -165,6 +165,11 @@ a {
   justify-content: space-between;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .menu__list {
   display: flex;
   gap: 40px;
@@ -1030,7 +1035,7 @@ a {
   .kitchen-intro__actions {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .kitchen-intro__actions-btn {
     padding: 15px 40px;
@@ -2380,7 +2385,7 @@ a {
   }
   .contact-form {
     padding-top: 60px;
-    padding-bottom: 0;
+    padding-bottom: 60px;
   }
   .contact-form__header {
     margin-bottom: 30px;

@@ -17,6 +17,10 @@
 }
 
 .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &__list {
     display: flex;
     gap: 40px;
