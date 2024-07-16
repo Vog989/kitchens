@@ -1,6 +1,5 @@
 @media (max-width: 1440px) {
 
-
   .container {
     width: 1290px;
   }
@@ -1936,10 +1935,6 @@
         width: 440px;
       }
 
-      //&__link {
-      //  font-size: 20px;
-      //}
-
       &__accordion {
         display: block;
       }
@@ -1985,6 +1980,7 @@
     .footer-bottom {
       display: flex;
       flex-direction: column;
+      padding-top: 0;
       padding-bottom: 60px;
 
       &__copy {

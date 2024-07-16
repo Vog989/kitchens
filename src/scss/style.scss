@@ -227,7 +227,6 @@
     z-index: 0;
     width: 174.545px;
     height: 160px;
-    //background: url('src/images/pattern-points.png') no-repeat;
     background-size: cover;
   }
 
@@ -331,7 +330,6 @@
     font-size: 48px;
     line-height: 60px;
     width: 660px;
-    //height: 120px;
   }
 
   &__description {
@@ -597,7 +595,6 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    //width: 310px;
   }
 
   &__patterns {
@@ -970,17 +967,23 @@
     justify-content: space-between;
   }
 
+  &__list {
+    padding-bottom: 50px;
+  }
+
   &__item {
     margin-bottom: 15px;
+  }
+
+  &__link {
+    &:hover {
+      color: $accent;
+    }
   }
 
   &__menu {
     width: 240px;
     margin-right: 40px;
-  }
-
-  &__list {
-    padding-bottom: 50px;
   }
 
   &__social {
@@ -991,6 +994,10 @@
   &__social-link {
     margin-bottom: 15px;
     display: flex;
+
+    &:hover {
+      color: $accent;
+    }
   }
 
   &__contact-link {
@@ -1002,6 +1009,10 @@
     margin-bottom: 15px;
     display: flex;
     gap: 20px;
+
+    &:hover {
+      color: $accent;
+    }
   }
 
   &__social-link {
@@ -1024,6 +1035,7 @@
   align-items: center;
   font-size: 16px;
   line-height: 24px;
+  padding-top: 50px;
   padding-bottom: 60px;
 
   &__copy {
@@ -1032,7 +1044,7 @@
 
   &__legal-link {
     font-size: 16px;
-    @extend %helveticaneuecyr-400; //need connect helvetica 550
+    @extend %helveticaneuecyr-400;
 
     &:hover {
       text-decoration: underline;
